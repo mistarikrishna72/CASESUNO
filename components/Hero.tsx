@@ -120,22 +120,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEnquiry, onOpenLocationInfo })
 
             {/* Bottom Right Regional Trust Marker */}
             <div className="mt-3.5 flex justify-end">
-              <div
-                onClick={onOpenLocationInfo}
-                className="flex items-center gap-2 text-right group cursor-pointer select-none bg-[#faf9f55e] p-2 rounded-xl"
-              >
-                <div className="flex items-center justify-center w-6 h-6 rounded-full bg-[#EBE7DE] text-[#696256] group-hover:bg-[#1E1D1A] group-hover:text-white transition-colors shrink-0">
-                  <MapPin className="w-3.5 h-3.5" />
-                </div>
-                <div className="text-left">
-                  <p className="text-[12.5px] font-semibold text-[#252320] leading-tight group-hover:text-black transition-colors">
-                    {t.hero.locationCity}
-                  </p>
-                  <p className="text-[11px] text-[#000000] leading-tight font-bold">
-                    {t.hero.locationSub}
-                  </p>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
