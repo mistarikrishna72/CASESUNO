@@ -68,48 +68,63 @@ export const AboutModal: React.FC<AboutModalProps> = ({
           </div>
 
           {/* Narrative */}
-          <div className="space-y-3 sm:space-y-4 text-xs sm:text-sm text-[#524E46] leading-relaxed">
-            <h4
-              className={`text-lg sm:text-xl text-[#1E1D1A] ${
-                isGu || isHi ? 'font-sans font-semibold' : 'font-serif'
-              }`}
-            >
-              {isGu
-                ? 'સુરત, ગુજરાતમાં અમે શા માટે શરૂઆત કરી'
-                : isHi
-                ? 'सूरत, गुजरात में हमने शुरुआत क्यों की'
-                : 'Why We Started in Surat, Gujarat'}
-            </h4>
-            <p>
-              {isGu
-                ? 'આપણા સુરતના ગતિશીલ વાણિજ્યિક અને કાપડ હબમાં, વ્યક્તિઓ, પરિવારો અને ઉદ્યોગસાહસિકો અણધારી કાનૂની નોટિસ, મિલકતની અસ્પષ્ટતા, વારસાઈ વહેંચણી અને વેપારી મતભેદોનો સામનો કરતા હોય છે.'
-                : isHi
-                ? 'हमारे सूरत के गतिशील वाणिज्यिक और कपड़ा केंद्र में, व्यक्ति, परिवार और उद्यमी अप्रत्याशित कानूनी नोटिस, संपत्ति की अस्पष्टता, पारिवारिक वसीयत और व्यापारिक मतभेदों का सामना करते रहते हैं।'
-                : 'In our fast-growing commercial and textile hub of Surat, individuals, families, and business owners regularly face unexpected legal notices, property ambiguities, family settlements, and commercial disagreements.'}
-            </p>
-            <p>
-              {isGu
-                ? 'મોટેભાગે, સૌથી મોટો અવરોધ વિવાદ નથી હોતો—પરંતુ શરૂઆતની મૂંઝવણ હોય છે: મારે ક્યાં જવું? કોના પર વિશ્વાસ કરવો? કયા કાગળોની જરૂર પડશે? શું વધારે ફી વસૂલવામાં આવશે?'
-                : isHi
-                ? 'अक्सर सबसे बड़ी बाधा विवाद नहीं होता—बल्कि प्रारंभिक भ्रम और असमंजस होता है: मुझे कहाँ जाना चाहिए? किस पर भरोसा करें? किन दस्तावेजों की आवश्यकता होगी? क्या अत्यधिक शुल्क लिया जाएगा?'
-                : "Often, the hardest hurdle isn't the legal dispute itself—it's the initial paralysis. Where do I go? Who can I trust? Will I get overcharged? What documents do I actually need?"}
-            </p>
-            <p>
-              {isGu ? (
-                <>
-                  <strong>CASE SUNO</strong> ની સ્થાપના એક જ સ્પષ્ટ હેતુ સાથે થઈ છે: મૂંઝવણ અને પ્રગતિ વચ્ચેનો શાંત, વ્યવસ્થિત સેતુ બનવું. અમે કાયદાકીય તકરારોને પ્રોત્સાહન આપતા નથી. અમે તમારી વાત સાંભળીએ છીએ, કાગળો વ્યવસ્થિત કરીએ છીએ, વાસ્તવિક વિકલ્પો સ્પષ્ટ કરીએ છીએ અને જરૂર જણાય ત્યારે જ સ્વતંત્ર વ્યાવસાયિકો સાથે જોડીએ છીએ.
-                </>
-              ) : isHi ? (
-                <>
-                  <strong>CASE SUNO</strong> की स्थापना एक स्पष्ट उद्देश्य के साथ हुई है: असमंजस और समाधान के बीच एक शांत, व्यवस्थित सेतु बनना। हम अनावश्यक विवादों को बढ़ावा नहीं देते। हम आपकी बात सुनते हैं, कागजात व्यवस्थित करते हैं, व्यावहारिक विकल्प स्पष्ट करते हैं और जरूरत पड़ने पर ही स्वतंत्र विशेषज्ञों से संपर्क कराते हैं।
-                </>
-              ) : (
-                <>
-                  <strong>CASE SUNO</strong> was founded with a singular, quiet purpose: to be the calm, structured bridge between confusion and progress. We do not solicit litigation. Instead, we listen deeply, organize your paperwork, clarify realistic options, and introduce you to verified, independent professionals only when necessary.
-                </>
-              )}
-            </p>
-          </div>
+<div className="space-y-3 sm:space-y-4 text-xs sm:text-sm text-[#524E46] leading-relaxed">
+  <h4
+    className={`text-lg sm:text-xl text-[#1E1D1A] ${
+      isGu || isHi ? 'font-sans font-semibold' : 'font-serif'
+    }`}
+  >
+    {isGu
+      ? 'અમે શા માટે શરૂઆત કરી'
+      : isHi
+      ? 'हमने शुरुआत क्यों की'
+      : 'Why We Started'}
+  </h4>
+
+  <p>
+    {isGu
+      ? 'વ્યક્તિઓ, પરિવારો અને વ્યવસાયિકો ઘણીવાર અણધારી કાનૂની નોટિસ, મિલકતની અસ્પષ્ટતા, વારસાઈ વહેંચણી અને વેપારી મતભેદોનો સામનો કરતા હોય છે.'
+      : isHi
+      ? 'व्यक्ति, परिवार और व्यवसायी अक्सर अप्रत्याशित कानूनी नोटिस, संपत्ति की अस्पष्टता, पारिवारिक समझौते और व्यावसायिक मतभेदों का सामना करते हैं।'
+      : 'Individuals, families, and business owners often face unexpected legal notices, property ambiguities, family settlements, and commercial disagreements.'}
+  </p>
+
+  <p>
+    {isGu
+      ? 'મોટેભાગે, સૌથી મોટો અવરોધ વિવાદ નથી હોતો—પરંતુ શરૂઆતની મૂંઝવણ હોય છે: મારે ક્યાં જવું? કોના પર વિશ્વાસ કરવો? કયા કાગળોની જરૂર પડશે? શું વધારે ફી વસૂલવામાં આવશે?'
+      : isHi
+      ? 'अक्सर सबसे बड़ी बाधा विवाद नहीं होता—बल्कि प्रारंभिक भ्रम और असमंजस होता है: मुझे कहाँ जाना चाहिए? किस पर भरोसा करें? किन दस्तावेजों की आवश्यकता होगी? क्या अत्यधिक शुल्क लिया जाएगा?'
+      : "Often, the hardest hurdle isn't the legal dispute itself—it's the initial paralysis. Where do I go? Who can I trust? Will I get overcharged? What documents do I actually need?"}
+  </p>
+
+  <p>
+    {isGu ? (
+      <>
+        <strong>CASE SUNO</strong> ની સ્થાપના એક જ સ્પષ્ટ હેતુ સાથે થઈ છે:
+        મૂંઝવણ અને પ્રગતિ વચ્ચેનો શાંત, વ્યવસ્થિત સેતુ બનવું. અમે કાયદાકીય
+        તકરારોને પ્રોત્સાહન આપતા નથી. અમે તમારી વાત સાંભળીએ છીએ, કાગળો
+        વ્યવસ્થિત કરીએ છીએ, વાસ્તવિક વિકલ્પો સ્પષ્ટ કરીએ છીએ અને જરૂર જણાય
+        ત્યારે જ સ્વતંત્ર વ્યાવસાયિકો સાથે જોડીએ છીએ.
+      </>
+    ) : isHi ? (
+      <>
+        <strong>CASE SUNO</strong> की स्थापना एक स्पष्ट उद्देश्य के साथ हुई है:
+        असमंजस और समाधान के बीच एक शांत, व्यवस्थित सेतु बनना। हम अनावश्यक
+        विवादों को बढ़ावा नहीं देते। हम आपकी बात सुनते हैं, कागजात व्यवस्थित
+        करते हैं, व्यावहारिक विकल्प स्पष्ट करते हैं और जरूरत पड़ने पर ही
+        स्वतंत्र विशेषज्ञों से संपर्क कराते हैं।
+      </>
+    ) : (
+      <>
+        <strong>CASE SUNO</strong> was founded with a singular, quiet purpose:
+        to be the calm, structured bridge between confusion and progress. We do
+        not solicit litigation. Instead, we listen deeply, organize your
+        paperwork, clarify realistic options, and introduce you to verified,
+        independent professionals only when necessary.
+      </>
+    )}
+  </p>
+</div>
 
           {/* Core Operating Principles */}
           <div className="space-y-3 pt-2">
@@ -161,17 +176,6 @@ export const AboutModal: React.FC<AboutModalProps> = ({
             </div>
           </div>
 
-          {/* Location Footnote */}
-          <div className="flex items-center gap-2 pt-2 text-xs text-[#7A7468]">
-            <MapPin className="w-4 h-4 text-[#8C8479] shrink-0" />
-            <span>
-              {isGu
-                ? 'સુરત, ગુજરાતમાં મુખ્ય મથક · સુરક્ષિત ડિજિટલ માધ્યમથી સમગ્ર ભારતમાં સેવાઓ.'
-                : isHi
-                ? 'सूरत, गुजरात में मुख्य केंद्र · सुरक्षित डिजिटल माध्यम द्वारा संपूर्ण भारत में सेवाएं।'
-                : 'Headquartered in Surat, Gujarat · Serving clients across India via secure digital consultations.'}
-            </span>
-          </div>
         </div>
 
         {/* Footer */}

@@ -268,7 +268,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shield-check.js [app-client] (ecmascript) <export default as ShieldCheck>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2d$handshake$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__HeartHandshake$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/heart-handshake.js [app-client] (ecmascript) <export default as HeartHandshake>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Eye$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/eye.js [app-client] (ecmascript) <export default as Eye>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/map-pin.js [app-client] (ecmascript) <export default as MapPin>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$LanguageContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/context/LanguageContext.tsx [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
@@ -359,25 +358,25 @@ const AboutModal = ({ isOpen, onClose, onStartEnquiry })=>{
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
                                     className: `text-lg sm:text-xl text-[#1E1D1A] ${isGu || isHi ? 'font-sans font-semibold' : 'font-serif'}`,
-                                    children: isGu ? 'સુરત, ગુજરાતમાં અમે શા માટે શરૂઆત કરી' : isHi ? 'सूरत, गुजरात में हमने शुरुआत क्यों की' : 'Why We Started in Surat, Gujarat'
+                                    children: isGu ? 'અમે શા માટે શરૂઆત કરી' : isHi ? 'हमने शुरुआत क्यों की' : 'Why We Started'
                                 }, void 0, false, {
                                     fileName: "[project]/components/AboutModal.tsx",
                                     lineNumber: 72,
-                                    columnNumber: 13
+                                    columnNumber: 3
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    children: isGu ? 'આપણા સુરતના ગતિશીલ વાણિજ્યિક અને કાપડ હબમાં, વ્યક્તિઓ, પરિવારો અને ઉદ્યોગસાહસિકો અણધારી કાનૂની નોટિસ, મિલકતની અસ્પષ્ટતા, વારસાઈ વહેંચણી અને વેપારી મતભેદોનો સામનો કરતા હોય છે.' : isHi ? 'हमारे सूरत के गतिशील वाणिज्यिक और कपड़ा केंद्र में, व्यक्ति, परिवार और उद्यमी अप्रत्याशित कानूनी नोटिस, संपत्ति की अस्पष्टता, पारिवारिक वसीयत और व्यापारिक मतभेदों का सामना करते रहते हैं।' : 'In our fast-growing commercial and textile hub of Surat, individuals, families, and business owners regularly face unexpected legal notices, property ambiguities, family settlements, and commercial disagreements.'
+                                    children: isGu ? 'વ્યક્તિઓ, પરિવારો અને વ્યવસાયિકો ઘણીવાર અણધારી કાનૂની નોટિસ, મિલકતની અસ્પષ્ટતા, વારસાઈ વહેંચણી અને વેપારી મતભેદોનો સામનો કરતા હોય છે.' : isHi ? 'व्यक्ति, परिवार और व्यवसायी अक्सर अप्रत्याशित कानूनी नोटिस, संपत्ति की अस्पष्टता, पारिवारिक समझौते और व्यावसायिक मतभेदों का सामना करते हैं।' : 'Individuals, families, and business owners often face unexpected legal notices, property ambiguities, family settlements, and commercial disagreements.'
                                 }, void 0, false, {
                                     fileName: "[project]/components/AboutModal.tsx",
-                                    lineNumber: 83,
-                                    columnNumber: 13
+                                    lineNumber: 84,
+                                    columnNumber: 3
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: isGu ? 'મોટેભાગે, સૌથી મોટો અવરોધ વિવાદ નથી હોતો—પરંતુ શરૂઆતની મૂંઝવણ હોય છે: મારે ક્યાં જવું? કોના પર વિશ્વાસ કરવો? કયા કાગળોની જરૂર પડશે? શું વધારે ફી વસૂલવામાં આવશે?' : isHi ? 'अक्सर सबसे बड़ी बाधा विवाद नहीं होता—बल्कि प्रारंभिक भ्रम और असमंजस होता है: मुझे कहाँ जाना चाहिए? किस पर भरोसा करें? किन दस्तावेजों की आवश्यकता होगी? क्या अत्यधिक शुल्क लिया जाएगा?' : "Often, the hardest hurdle isn't the legal dispute itself—it's the initial paralysis. Where do I go? Who can I trust? Will I get overcharged? What documents do I actually need?"
                                 }, void 0, false, {
                                     fileName: "[project]/components/AboutModal.tsx",
-                                    lineNumber: 90,
-                                    columnNumber: 13
+                                    lineNumber: 92,
+                                    columnNumber: 3
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: isGu ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -386,56 +385,56 @@ const AboutModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                                 children: "CASE SUNO"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/AboutModal.tsx",
-                                                lineNumber: 100,
-                                                columnNumber: 19
+                                                lineNumber: 103,
+                                                columnNumber: 9
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             " ની સ્થાપના એક જ સ્પષ્ટ હેતુ સાથે થઈ છે: મૂંઝવણ અને પ્રગતિ વચ્ચેનો શાંત, વ્યવસ્થિત સેતુ બનવું. અમે કાયદાકીય તકરારોને પ્રોત્સાહન આપતા નથી. અમે તમારી વાત સાંભળીએ છીએ, કાગળો વ્યવસ્થિત કરીએ છીએ, વાસ્તવિક વિકલ્પો સ્પષ્ટ કરીએ છીએ અને જરૂર જણાય ત્યારે જ સ્વતંત્ર વ્યાવસાયિકો સાથે જોડીએ છીએ."
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/AboutModal.tsx",
-                                        lineNumber: 99,
-                                        columnNumber: 17
+                                        lineNumber: 102,
+                                        columnNumber: 7
                                     }, ("TURBOPACK compile-time value", void 0)) : isHi ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                                 children: "CASE SUNO"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/AboutModal.tsx",
-                                                lineNumber: 104,
-                                                columnNumber: 19
+                                                lineNumber: 111,
+                                                columnNumber: 9
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             " की स्थापना एक स्पष्ट उद्देश्य के साथ हुई है: असमंजस और समाधान के बीच एक शांत, व्यवस्थित सेतु बनना। हम अनावश्यक विवादों को बढ़ावा नहीं देते। हम आपकी बात सुनते हैं, कागजात व्यवस्थित करते हैं, व्यावहारिक विकल्प स्पष्ट करते हैं और जरूरत पड़ने पर ही स्वतंत्र विशेषज्ञों से संपर्क कराते हैं।"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/AboutModal.tsx",
-                                        lineNumber: 103,
-                                        columnNumber: 17
+                                        lineNumber: 110,
+                                        columnNumber: 7
                                     }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                                 children: "CASE SUNO"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/AboutModal.tsx",
-                                                lineNumber: 108,
-                                                columnNumber: 19
+                                                lineNumber: 119,
+                                                columnNumber: 9
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             " was founded with a singular, quiet purpose: to be the calm, structured bridge between confusion and progress. We do not solicit litigation. Instead, we listen deeply, organize your paperwork, clarify realistic options, and introduce you to verified, independent professionals only when necessary."
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/AboutModal.tsx",
-                                        lineNumber: 107,
-                                        columnNumber: 17
+                                        lineNumber: 118,
+                                        columnNumber: 7
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/components/AboutModal.tsx",
-                                    lineNumber: 97,
-                                    columnNumber: 13
+                                    lineNumber: 100,
+                                    columnNumber: 3
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AboutModal.tsx",
                             lineNumber: 71,
-                            columnNumber: 11
+                            columnNumber: 1
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "space-y-3 pt-2",
@@ -445,7 +444,7 @@ const AboutModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                     children: isGu ? 'અમારી મુખ્ય પ્રતિબદ્ધતાઓ' : isHi ? 'हमारी मुख्य प्रतिबद्धताएं' : 'Our Guiding Commitments'
                                 }, void 0, false, {
                                     fileName: "[project]/components/AboutModal.tsx",
-                                    lineNumber: 116,
+                                    lineNumber: 131,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -458,7 +457,7 @@ const AboutModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                                     className: "w-4 h-4 text-[#73634B] mb-2"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/AboutModal.tsx",
-                                                    lineNumber: 121,
+                                                    lineNumber: 136,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -466,7 +465,7 @@ const AboutModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                                     children: isGu ? 'સંપૂર્ણ ગોપનીયતા' : isHi ? 'पूर्ण गोपनीयता' : 'Absolute Privacy'
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/AboutModal.tsx",
-                                                    lineNumber: 122,
+                                                    lineNumber: 137,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -474,13 +473,13 @@ const AboutModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                                     children: isGu ? 'તમારી પરિસ્થિતિ સંપૂર્ણ ખાનગી અને સુરક્ષિત રહે છે.' : isHi ? 'आपकी स्थिति पूर्णतः निजी और सुरक्षित रहती है।' : 'Your situation stays strictly confidential and unshared.'
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/AboutModal.tsx",
-                                                    lineNumber: 125,
+                                                    lineNumber: 140,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/AboutModal.tsx",
-                                            lineNumber: 120,
+                                            lineNumber: 135,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -490,7 +489,7 @@ const AboutModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                                     className: "w-4 h-4 text-[#73634B] mb-2"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/AboutModal.tsx",
-                                                    lineNumber: 135,
+                                                    lineNumber: 150,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -498,7 +497,7 @@ const AboutModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                                     children: isGu ? 'શૂન્ય છુપી ફી' : isHi ? 'कोई छिपा शुल्क नहीं' : 'Zero Hidden Fees'
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/AboutModal.tsx",
-                                                    lineNumber: 136,
+                                                    lineNumber: 151,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -506,13 +505,13 @@ const AboutModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                                     children: isGu ? 'પારદર્શક કિંમતો, કોઈ અણધાર્યા ખર્ચ નહીં.' : isHi ? 'पारदर्शी शुल्क, कोई अप्रत्याशित खर्च नहीं।' : 'Clear upfront costs with no misleading retainers.'
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/AboutModal.tsx",
-                                                    lineNumber: 139,
+                                                    lineNumber: 154,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/AboutModal.tsx",
-                                            lineNumber: 134,
+                                            lineNumber: 149,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -522,7 +521,7 @@ const AboutModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                                     className: "w-4 h-4 text-[#73634B] mb-2"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/AboutModal.tsx",
-                                                    lineNumber: 149,
+                                                    lineNumber: 164,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -530,7 +529,7 @@ const AboutModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                                     children: isGu ? 'સ્વતંત્ર ચકાસણી' : isHi ? 'सत्यापित विशेषज्ञ' : 'Independent Vetting'
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/AboutModal.tsx",
-                                                    lineNumber: 150,
+                                                    lineNumber: 165,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -538,48 +537,25 @@ const AboutModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                                     children: isGu ? 'લાયકાત અને યોગ્યતાના આધારે જ નિષ્ણાતો સાથે જોડાણ.' : isHi ? 'योग्यता और अनुभव के आधार पर ही विशेषज्ञों से परिचय।' : 'Referrals based on merit, competence, and your exact case fit.'
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/AboutModal.tsx",
-                                                    lineNumber: 153,
+                                                    lineNumber: 168,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/AboutModal.tsx",
-                                            lineNumber: 148,
+                                            lineNumber: 163,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/AboutModal.tsx",
-                                    lineNumber: 119,
+                                    lineNumber: 134,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AboutModal.tsx",
-                            lineNumber: 115,
-                            columnNumber: 11
-                        }, ("TURBOPACK compile-time value", void 0)),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex items-center gap-2 pt-2 text-xs text-[#7A7468]",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
-                                    className: "w-4 h-4 text-[#8C8479] shrink-0"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/AboutModal.tsx",
-                                    lineNumber: 166,
-                                    columnNumber: 13
-                                }, ("TURBOPACK compile-time value", void 0)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    children: isGu ? 'સુરત, ગુજરાતમાં મુખ્ય મથક · સુરક્ષિત ડિજિટલ માધ્યમથી સમગ્ર ભારતમાં સેવાઓ.' : isHi ? 'सूरत, गुजरात में मुख्य केंद्र · सुरक्षित डिजिटल माध्यम द्वारा संपूर्ण भारत में सेवाएं।' : 'Headquartered in Surat, Gujarat · Serving clients across India via secure digital consultations.'
-                                }, void 0, false, {
-                                    fileName: "[project]/components/AboutModal.tsx",
-                                    lineNumber: 167,
-                                    columnNumber: 13
-                                }, ("TURBOPACK compile-time value", void 0))
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/components/AboutModal.tsx",
-                            lineNumber: 165,
+                            lineNumber: 130,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
@@ -597,7 +573,7 @@ const AboutModal = ({ isOpen, onClose, onStartEnquiry })=>{
                             children: isGu ? 'બંધ કરો' : isHi ? 'बंद करें' : 'Close'
                         }, void 0, false, {
                             fileName: "[project]/components/AboutModal.tsx",
-                            lineNumber: 179,
+                            lineNumber: 183,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -611,26 +587,26 @@ const AboutModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                     children: isGu ? 'પૂછપરછ શરૂ કરો' : isHi ? 'अपनी पूछताछ शुरू करें' : 'Start Your Enquiry'
                                 }, void 0, false, {
                                     fileName: "[project]/components/AboutModal.tsx",
-                                    lineNumber: 192,
+                                    lineNumber: 196,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
                                     className: "w-3.5 h-3.5"
                                 }, void 0, false, {
                                     fileName: "[project]/components/AboutModal.tsx",
-                                    lineNumber: 193,
+                                    lineNumber: 197,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AboutModal.tsx",
-                            lineNumber: 185,
+                            lineNumber: 189,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AboutModal.tsx",
-                    lineNumber: 178,
+                    lineNumber: 182,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             ]
@@ -2452,7 +2428,7 @@ const FaqModal = ({ isOpen, onClose, onStartEnquiry })=>{
     const faqsGu = [
         {
             q: 'CASE SUNO ખરેખર શું છે?',
-            a: 'CASE SUNO એ સુરત, ગુજરાતમાં સ્થિત વ્યાવસાયિક પરામર્શ, કેસ સંકલન અને વહીવટી માર્ગદર્શન સેવા છે. અમે વ્યક્તિઓ અને વ્યવસાયોને તેમની મૂંઝવણભરી કાનૂની, વાણિજ્યિક અને દસ્તાવેજી સમસ્યાઓ ઉકેલવામાં, કાગળો વ્યવસ્થિત કરવામાં અને જરૂર જણાય ત્યારે ચકાસાયેલા વકીલો કે CA સાથે સંકલન કરવામાં મદદ કરીએ છીએ.'
+            a: 'CASE SUNO એ વ્યાવસાયિક પરામર્શ, કેસ સંકલન અને વહીવટી માર્ગદર્શન સેવા છે. અમે વ્યક્તિઓ અને વ્યવસાયોને તેમની મૂંઝવણભરી કાનૂની, વાણિજ્યિક અને દસ્તાવેજી સમસ્યાઓ ઉકેલવામાં, કાગળો વ્યવસ્થિત કરવામાં અને જરૂર જણાય ત્યારે ચકાસાયેલા વકીલો કે CA સાથે સંકલન કરવામાં મદદ કરીએ છીએ.'
         },
         {
             q: 'શું CASE SUNO કોઈ વકીલ પેઢી (Law Firm) છે?',
@@ -2460,7 +2436,7 @@ const FaqModal = ({ isOpen, onClose, onStartEnquiry })=>{
         },
         {
             q: 'એપોઇન્ટમેન્ટ આધારિત સહાય કેવી રીતે કાર્ય કરે છે?',
-            a: 'દરેક ક્લાયન્ટને પૂરતો સમય આપવા અને સંપૂર્ણ ગોપનીયતા જાળવવા માટે, અમારા તમામ સત્રો માત્ર અગાઉથી નક્કી કરેલ એપોઇન્ટમેન્ટ મુજબ જ યોજાય છે. તમે ઓનલાઇન વિડીયો કોલ અથવા સુરત ઓફિસમાં રૂબરૂ મુલાકાત બુક કરી શકો છો.'
+            a: 'દરેક ક્લાયન્ટને પૂરતો સમય આપવા અને સંપૂર્ણ ગોપનીયતા જાળવવા માટે, અમારા તમામ સત્રો માત્ર અગાઉથી નક્કી કરેલ એપોઇન્ટમેન્ટ મુજબ જ યોજાય છે. તમે ઓનલાઇન વિડીયો અથવા ફોન સત્ર બુક કરી શકો છો.'
         },
         {
             q: 'શું મારી માહિતી ખાનગી રાખવામાં આવે છે?',
@@ -2471,8 +2447,8 @@ const FaqModal = ({ isOpen, onClose, onStartEnquiry })=>{
             a: 'પ્રારંભિક પૂછપરછ અને વિગતો સમજવી મફત છે. ઊંડાણપૂર્વક દસ્તાવેજ વિશ્લેષણ અને કેસ ફાઇલ તૈયાર કરવા માટે અમે અગાઉથી નક્કી કરેલા પારદર્શક ચાર્જ જણાવીએ છીએ. કોઈ છુપા ખર્ચ હોતા નથી.'
         },
         {
-            q: 'શું તમે સુરત બહારના ક્લાયન્ટ્સને મદદ કરી શકો છો?',
-            a: 'હા! અમારું મુખ્ય મથક સુરતમાં હોવા છતાં, અમારા ૬૦% થી વધુ ક્લાયન્ટ્સ સમગ્ર ગુજરાત, મુંબઈ અને દેશભરમાંથી અમારા સુરક્ષિત ઓનલાઇન પોર્ટલ દ્વારા માર્ગદર્શન મેળવે છે.'
+            q: 'શું CASE SUNO કોઈપણ સ્થળેથી ક્લાયન્ટ્સને મદદ કરી શકે છે?',
+            a: 'હા. CASE SUNO સુરક્ષિત ઓનલાઇન માધ્યમ દ્વારા વિવિધ સ્થળોએ રહેલા ક્લાયન્ટ્સને માર્ગદર્શન અને સંકલન સેવાઓ પ્રદાન કરી શકે છે.'
         },
         {
             q: 'પૂછપરછ સબમિટ કર્યા પછી શું થાય છે?',
@@ -2482,7 +2458,7 @@ const FaqModal = ({ isOpen, onClose, onStartEnquiry })=>{
     const faqsHi = [
         {
             q: 'CASE SUNO वास्तव में क्या है?',
-            a: 'CASE SUNO सूरत, गुजरात में स्थित एक पेशेवर परामर्श, केस समन्वय और प्रशासनिक मार्गदर्शन सेवा है। हम व्यक्तियों और व्यापारिक संस्थानों को उनकी जटिल व्यक्तिगत, व्यावसायिक और दस्तावेजी समस्याओं को सुलझाने, तथ्यों को व्यवस्थित करने और जरूरत पड़ने पर स्वतंत्र अधिवक्ताओं या सीए के साथ समन्वय करने में सहायता करते हैं।'
+            a: 'CASE SUNO एक पेशेवर परामर्श, केस समन्वय और प्रशासनिक मार्गदर्शन सेवा है। हम व्यक्तियों और व्यापारिक संस्थानों को उनकी जटिल व्यक्तिगत, व्यावसायिक और दस्तावेजी समस्याओं को सुलझाने, तथ्यों को व्यवस्थित करने और जरूरत पड़ने पर स्वतंत्र अधिवक्ताओं या सीए के साथ समन्वय करने में सहायता करते हैं।'
         },
         {
             q: 'क्या CASE SUNO कोई लॉ फर्म (Law Firm) है?',
@@ -2490,7 +2466,7 @@ const FaqModal = ({ isOpen, onClose, onStartEnquiry })=>{
         },
         {
             q: 'अपॉइंटमेंट आधारित सहायता कैसे काम करती है?',
-            a: 'प्रत्येक क्लाइंट को पूरा ध्यान देने और पूर्ण गोपनीयता बनाए रखने के लिए, हमारे सभी सत्र केवल पूर्व-निर्धारित अपॉइंटमेंट के आधार पर ही आयोजित किए जाते हैं। आप ऑनलाइन वीडियो/फोन सत्र या सूरत कार्यालय में व्यक्तिगत बैठक बुक कर सकते हैं।'
+            a: 'प्रत्येक क्लाइंट को पूरा ध्यान देने और पूर्ण गोपनीयता बनाए रखने के लिए, हमारे सभी सत्र केवल पूर्व-निर्धारित अपॉइंटमेंट के आधार पर ही आयोजित किए जाते हैं। आप ऑनलाइन वीडियो या फोन सत्र बुक कर सकते हैं।'
         },
         {
             q: 'क्या मेरी जानकारी गोपनीय रखी जाती है?',
@@ -2501,8 +2477,8 @@ const FaqModal = ({ isOpen, onClose, onStartEnquiry })=>{
             a: 'प्रारंभिक पूछताछ और केस विवरण समझना निःशुल्क है। गहन दस्तावेज विश्लेषण और केस फाइल संरचना के लिए हम काम शुरू होने से पहले पारदर्शी और स्पष्ट अनुमान प्रदान करते हैं। कोई अप्रत्याशित शुल्क नहीं होता।'
         },
         {
-            q: 'क्या आप सूरत से बाहर के ग्राहकों की भी सहायता करते हैं?',
-            a: 'हाँ! सूरत में हमारा मुख्य कार्यालय होने के बावजूद, हमारे ६०% से अधिक ग्राहक पूरे गुजरात, मुंबई और देश भर से हमारे सुरक्षित डिजिटल माध्यम द्वारा ऑनलाइन परामर्श प्राप्त करते हैं।'
+            q: 'क्या CASE SUNO अलग-अलग स्थानों के ग्राहकों की सहायता कर सकता है?',
+            a: 'हाँ। CASE SUNO सुरक्षित ऑनलाइन माध्यम के द्वारा अलग-अलग स्थानों पर रहने वाले ग्राहकों को मार्गदर्शन और समन्वय सेवाएँ प्रदान कर सकता है।'
         },
         {
             q: 'पूछताछ दर्ज करने के बाद क्या प्रक्रिया होती है?',
@@ -2512,7 +2488,7 @@ const FaqModal = ({ isOpen, onClose, onStartEnquiry })=>{
     const faqsEn = [
         {
             q: 'What exactly is CASE SUNO?',
-            a: 'CASE SUNO is a professional consultation, case organization, and administrative guidance service based in Surat, Gujarat. We help individuals and businesses untangle complex personal, commercial, and documentation problems, structure their materials cleanly, and coordinate with verified independent advocates, CAs, or mediators when formal intervention is required.'
+            a: 'CASE SUNO is a professional consultation, case organization, and administrative guidance service. We help individuals and businesses untangle complex personal, commercial, and documentation problems, structure their materials cleanly, and coordinate with verified independent advocates, CAs, or mediators when formal intervention is required.'
         },
         {
             q: 'Is CASE SUNO a law firm?',
@@ -2520,7 +2496,7 @@ const FaqModal = ({ isOpen, onClose, onStartEnquiry })=>{
         },
         {
             q: 'How does appointment-based assistance work?',
-            a: 'To guarantee dedicated attention and complete confidentiality, all sessions are conducted strictly by appointment. You can book a confidential virtual video/phone session or an in-person meeting at our Surat office. Walk-ins are not accommodated to safeguard client privacy.'
+            a: 'To guarantee dedicated attention and complete confidentiality, all sessions are conducted strictly by appointment. You can book a confidential virtual video or phone session. Walk-ins are not accommodated to safeguard client privacy.'
         },
         {
             q: 'Is my information kept confidential?',
@@ -2531,8 +2507,8 @@ const FaqModal = ({ isOpen, onClose, onStartEnquiry })=>{
             a: 'Preliminary intake and inquiry review are free. For in-depth document organization, case dossier structuring, and ongoing administrative coordination, we provide clear, upfront milestone-based quotes before any work begins. There are never surprise fees or billable hour inflation.'
         },
         {
-            q: 'Can you help if I am outside Surat?',
-            a: 'Yes! While our primary office is located in Surat, Gujarat, over 60% of our clients utilize our secure online appointment infrastructure across Gujarat, Mumbai, and pan-India.'
+            q: 'Can you help clients from different locations?',
+            a: 'Yes. CASE SUNO can provide guidance and coordination services to clients in different locations through secure online appointment infrastructure.'
         },
         {
             q: 'What happens after I submit an inquiry?',
@@ -2565,7 +2541,7 @@ const FaqModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                     children: isGu ? 'વારંવાર પૂછાતા પ્રશ્નો (FAQ)' : isHi ? 'अक्सर पूछे जाने वाले प्रश्न (FAQ)' : 'Frequently Asked Questions'
                                 }, void 0, false, {
                                     fileName: "[project]/components/FaqModal.tsx",
-                                    lineNumber: 131,
+                                    lineNumber: 132,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
@@ -2582,12 +2558,12 @@ const FaqModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                 className: "w-5 h-5"
                             }, void 0, false, {
                                 fileName: "[project]/components/FaqModal.tsx",
-                                lineNumber: 149,
+                                lineNumber: 150,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/components/FaqModal.tsx",
-                            lineNumber: 144,
+                            lineNumber: 145,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
@@ -2613,20 +2589,20 @@ const FaqModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                             children: faq.q
                                         }, void 0, false, {
                                             fileName: "[project]/components/FaqModal.tsx",
-                                            lineNumber: 167,
+                                            lineNumber: 169,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
                                             className: `w-4 h-4 text-[#8C8479] shrink-0 transition-transform duration-200 ${isOpen ? 'rotate-180 text-black' : ''}`
                                         }, void 0, false, {
                                             fileName: "[project]/components/FaqModal.tsx",
-                                            lineNumber: 174,
+                                            lineNumber: 177,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/FaqModal.tsx",
-                                    lineNumber: 162,
+                                    lineNumber: 164,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 isOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2634,19 +2610,19 @@ const FaqModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                     children: faq.a
                                 }, void 0, false, {
                                     fileName: "[project]/components/FaqModal.tsx",
-                                    lineNumber: 182,
+                                    lineNumber: 185,
                                     columnNumber: 19
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, idx, true, {
                             fileName: "[project]/components/FaqModal.tsx",
-                            lineNumber: 158,
+                            lineNumber: 160,
                             columnNumber: 15
                         }, ("TURBOPACK compile-time value", void 0));
                     })
                 }, void 0, false, {
                     fileName: "[project]/components/FaqModal.tsx",
-                    lineNumber: 154,
+                    lineNumber: 155,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2657,7 +2633,7 @@ const FaqModal = ({ isOpen, onClose, onStartEnquiry })=>{
                             children: isGu ? 'કોઈ ચોક્કસ પ્રશ્ન છે?' : isHi ? 'कोई विशिष्ट प्रश्न है?' : 'Have a specific query?'
                         }, void 0, false, {
                             fileName: "[project]/components/FaqModal.tsx",
-                            lineNumber: 193,
+                            lineNumber: 196,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2669,7 +2645,7 @@ const FaqModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                     children: isGu ? 'બંધ કરો' : isHi ? 'बंद करें' : 'Close'
                                 }, void 0, false, {
                                     fileName: "[project]/components/FaqModal.tsx",
-                                    lineNumber: 201,
+                                    lineNumber: 205,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2683,32 +2659,32 @@ const FaqModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                             children: isGu ? 'અમારી ટીમને પૂછો' : isHi ? 'हमारी टीम से पूछें' : 'Ask Our Team'
                                         }, void 0, false, {
                                             fileName: "[project]/components/FaqModal.tsx",
-                                            lineNumber: 214,
+                                            lineNumber: 219,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
                                             className: "w-3.5 h-3.5"
                                         }, void 0, false, {
                                             fileName: "[project]/components/FaqModal.tsx",
-                                            lineNumber: 215,
+                                            lineNumber: 222,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/FaqModal.tsx",
-                                    lineNumber: 207,
+                                    lineNumber: 212,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/FaqModal.tsx",
-                            lineNumber: 200,
+                            lineNumber: 204,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/FaqModal.tsx",
-                    lineNumber: 192,
+                    lineNumber: 195,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             ]
