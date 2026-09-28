@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["file:///D:/CASE_SUNO/second-draft/app/providers.tsx"],"sourcesContent":["'use client';\n\nimport React from 'react';\nimport { LanguageProvider } from '../context/LanguageContext';\n\nexport function Providers({ children }: { children: React.ReactNode }) {\n  return <LanguageProvider>{children}</LanguageProvider>;\n}\n"],"names":["Providers","children","LanguageProvider"],"mappings":";;;;;;;;;;AAAA;;;AAKO,SAASA,UAAU,EAAEC,QAAQ,EAAiC;IACnE,qBAAO,8OAACC;kBAAkBD;;;;;;AAC5B"}}]
+}

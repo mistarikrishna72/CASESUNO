@@ -1,69 +1,171 @@
-import Image from "next/image";
+'use client';
+
+import React, { useState } from 'react';
+import { Header } from '../components/Header';
+import { Hero } from '../components/Hero';
+import { ServicesSection, ServiceItem } from '../components/ServicesSection';
+import { ProcessSection } from '../components/ProcessSection';
+import { WhyChooseSection } from '../components/WhyChooseSection';
+import { BeliefBanner } from '../components/BeliefBanner';
+import { CtaSection } from '../components/CtaSection';
+import { Footer } from '../components/Footer';
+
+import { EnquiryModal } from '../components/EnquiryModal';
+import { ServiceDetailModal } from '../components/ServiceDetailModal';
+import { WhatsAppDrawer } from '../components/WhatsAppDrawer';
+import { AboutModal } from '../components/AboutModal';
+import { ResourcesModal } from '../components/ResourcesModal';
+import { FaqModal } from '../components/FaqModal';
+import { ContactModal } from '../components/ContactModal';
+import { LegalModal } from '../components/LegalModal';
 
 export default function Home() {
+  // Modal state management
+  const [enquiryModalOpen, setEnquiryModalOpen] = useState(false);
+  const [selectedEnquiryCategory, setSelectedEnquiryCategory] = useState<string>('Individual Assistance');
+
+  const [selectedService, setSelectedService] = useState<ServiceItem | null>(null);
+  const [whatsAppDrawerOpen, setWhatsAppDrawerOpen] = useState(false);
+  const [aboutModalOpen, setAboutModalOpen] = useState(false);
+  const [resourcesModalOpen, setResourcesModalOpen] = useState(false);
+  const [faqModalOpen, setFaqModalOpen] = useState(false);
+  const [contactModalOpen, setContactModalOpen] = useState(false);
+  const [legalModalType, setLegalModalType] = useState<'privacy' | 'terms' | 'disclaimer' | null>(null);
+
+  const handleOpenEnquiry = (category?: string) => {
+    if (category) {
+      setSelectedEnquiryCategory(category);
+    }
+    setEnquiryModalOpen(true);
+  };
+
+  const handleSelectService = (service: ServiceItem) => {
+    setSelectedService(service);
+  };
+
+  const handleViewAllServices = () => {
+    const el = document.getElementById('services');
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <div className="min-h-screen flex flex-col bg-[#FAF9F6] text-[#222222] font-sans antialiased selection:bg-[#E2DDD5] selection:text-black">
+      {/* 1. Header Navigation with Language Switcher and Smooth Underline */}
+      <Header
+        onOpenEnquiry={handleOpenEnquiry}
+        onOpenAbout={() => setAboutModalOpen(true)}
+        onOpenResources={() => setResourcesModalOpen(true)}
+        onOpenFaq={() => setFaqModalOpen(true)}
+        onOpenContact={() => setContactModalOpen(true)}
+        onOpenHowItWorks={() => {
+          const el = document.getElementById('how-it-works');
+          if (el) el.scrollIntoView({ behavior: 'smooth' });
+        }}
+      />
+
+      {/* Main Content Sections exactly reflecting DESIGN.jpeg */}
+      <main className="flex-1">
+        {/* 2. Hero Section */}
+        <Hero
+          onOpenEnquiry={() => handleOpenEnquiry('Individual Assistance')}
+          onOpenLocationInfo={() => setContactModalOpen(true)}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+
+        {/* 3. Our Services Section */}
+        <ServicesSection
+          onSelectService={handleSelectService}
+          onViewAllServices={handleViewAllServices}
+        />
+
+        {/* 4. How It Works Section */}
+        <ProcessSection
+          onKnowMore={() => setFaqModalOpen(true)}
+          onOpenEnquiry={() => handleOpenEnquiry()}
+        />
+
+        {/* 5. Why Choose CASE SUNO Section */}
+        <WhyChooseSection />
+
+        {/* 6. Dark Statement Banner / Our Belief */}
+        <BeliefBanner onOurStory={() => setAboutModalOpen(true)} />
+
+        {/* 7. CTA / Have a Question? Section */}
+        <CtaSection
+          onStartEnquiry={() => handleOpenEnquiry()}
+          onOpenWhatsApp={() => setWhatsAppDrawerOpen(true)}
+        />
       </main>
+
+      {/* 8. Footer */}
+      <Footer
+        onOpenAbout={() => setAboutModalOpen(true)}
+        onOpenResources={() => setResourcesModalOpen(true)}
+        onOpenFaq={() => setFaqModalOpen(true)}
+        onOpenContact={() => setContactModalOpen(true)}
+        onOpenLegal={(type) => setLegalModalType(type)}
+      />
+
+      {/* Interactive Working Modals */}
+      <EnquiryModal
+        isOpen={enquiryModalOpen}
+        onClose={() => setEnquiryModalOpen(false)}
+        initialCategory={selectedEnquiryCategory}
+      />
+
+      <ServiceDetailModal
+        service={selectedService}
+        onClose={() => setSelectedService(null)}
+        onStartEnquiry={(serviceTitle) => {
+          setSelectedService(null);
+          handleOpenEnquiry(serviceTitle);
+        }}
+      />
+
+      <WhatsAppDrawer
+        isOpen={whatsAppDrawerOpen}
+        onClose={() => setWhatsAppDrawerOpen(false)}
+      />
+
+      <AboutModal
+        isOpen={aboutModalOpen}
+        onClose={() => setAboutModalOpen(false)}
+        onStartEnquiry={() => {
+          setAboutModalOpen(false);
+          handleOpenEnquiry();
+        }}
+      />
+
+      <ResourcesModal
+        isOpen={resourcesModalOpen}
+        onClose={() => setResourcesModalOpen(false)}
+        onStartEnquiry={() => {
+          setResourcesModalOpen(false);
+          handleOpenEnquiry('Documentation Help');
+        }}
+      />
+
+      <FaqModal
+        isOpen={faqModalOpen}
+        onClose={() => setFaqModalOpen(false)}
+        onStartEnquiry={() => {
+          setFaqModalOpen(false);
+          handleOpenEnquiry();
+        }}
+      />
+
+      <ContactModal
+        isOpen={contactModalOpen}
+        onClose={() => setContactModalOpen(false)}
+        onStartEnquiry={() => {
+          setContactModalOpen(false);
+          handleOpenEnquiry();
+        }}
+      />
+
+      <LegalModal
+        type={legalModalType}
+        onClose={() => setLegalModalType(null)}
+      />
     </div>
   );
 }

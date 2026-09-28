@@ -1,0 +1,6 @@
+{
+  "name": "CASE SUNO - Know What to Do Next",
+  "description": "CASE SUNO listens, organises and helps you move forward with trusted professionals, where required. Professional consultation and assistance in Surat, Gujarat.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
