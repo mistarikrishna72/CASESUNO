@@ -115,7 +115,6 @@
     --radius-sm: .25rem;
     --radius-md: .375rem;
     --radius-lg: .5rem;
-    --radius-xl: .75rem;
     --blur-xs: 4px;
     --blur-md: 12px;
     --default-transition-duration: .15s;
@@ -924,10 +923,6 @@
     border-radius: var(--radius-sm);
   }
 
-  .rounded-xl {
-    border-radius: var(--radius-xl);
-  }
-
   .rounded-xs {
     border-radius: var(--radius-xs);
   }
@@ -1127,10 +1122,6 @@
     background-color: #e4ddd0;
   }
 
-  .bg-\[\#EBE7DE\] {
-    background-color: #ebe7de;
-  }
-
   .bg-\[\#ECE5DD\] {
     background-color: #ece5dd;
   }
@@ -1186,10 +1177,6 @@
 
   .bg-\[\#e7e6ef\] {
     background-color: #e7e6ef;
-  }
-
-  .bg-\[\#faf9f55e\] {
-    background-color: #faf9f55e;
   }
 
   .bg-black\/60 {
@@ -1623,10 +1610,6 @@
     text-wrap: balance;
   }
 
-  .text-\[\#000000\] {
-    color: #000;
-  }
-
   .text-\[\#1A1917\] {
     color: #1a1917;
   }
@@ -1815,20 +1798,12 @@
     color: #222;
   }
 
-  .text-\[\#252320\] {
-    color: #252320;
-  }
-
   .text-\[\#262420\] {
     color: #262420;
   }
 
   .text-\[\#575249\] {
     color: #575249;
-  }
-
-  .text-\[\#696256\] {
-    color: #696256;
   }
 
   .text-\[\#787268\] {
@@ -2017,10 +1992,6 @@
     .group-hover\:translate-x-1:is(:where(.group):hover *) {
       --tw-translate-x: var(--spacing);
       translate: var(--tw-translate-x) var(--tw-translate-y);
-    }
-
-    .group-hover\:bg-\[\#1E1D1A\]:is(:where(.group):hover *) {
-      background-color: #1e1d1a;
     }
 
     .group-hover\:bg-\[\#1F1E1B\]:is(:where(.group):hover *) {

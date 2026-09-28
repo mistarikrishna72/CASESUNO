@@ -151,8 +151,7 @@ export const Footer: React.FC<FooterProps> = ({
 
           {/* Regional Trust Marker */}
           <div className="flex items-center gap-2 text-left sm:text-right">
-            <MapPin className="w-3.5 h-3.5 text-[#8F8778] shrink-0" />
-            <span>{t.footer.locationNotice}</span>
+            Online & Appointment-Based Assistance
           </div>
         </div>
       </div>
