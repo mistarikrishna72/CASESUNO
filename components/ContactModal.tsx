@@ -62,49 +62,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
         {/* Content Body */}
         <div className="p-4 sm:p-6 overflow-y-auto space-y-5 sm:space-y-6">
           {/* Office Details */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-            <div className="p-4 bg-white border border-[#E8E4DB] rounded-sm space-y-2">
-              <div className="flex items-center gap-2 text-[#7A6B52] font-semibold text-xs uppercase tracking-wider">
-                <MapPin className="w-4 h-4" />
-                <span>{isGu ? 'સુરત ઓફિસ' : isHi ? 'सूरत कार्यालय' : 'Surat Office'}</span>
-              </div>
-              <p className="text-xs text-[#2A2824] font-medium leading-relaxed">
-                {isGu
-                  ? '૪૦૨, ટાઈટેનિયમ સ્ક્વેર, રીંગ રોડ પાસે, અઠવા લાઇન્સ, સુરત, ગુજરાત ૩૯૫૦૦૭'
-                  : isHi
-                  ? '४०२, टाइटेनियम स्क्वायर, रिंग रोड के पास, अठवा लाइन्स, सूरत, गुजरात ३९५००७'
-                  : '402, Titanium Square, Near Ring Road, Athwa Lines, Surat, Gujarat 395007'}
-              </p>
-              <p className="text-[11px] text-[#787268]">
-                {isGu
-                  ? '* મુલાકાત સંપૂર્ણપણે એપોઇન્ટમેન્ટ આધારિત છે જેથી ક્લાયન્ટની ગોપનીયતા જળવાય.'
-                  : isHi
-                  ? '* क्लाइंट गोपनीयता बनाए रखने के लिए मुलाकातें पूर्णतः अपॉइंटमेंट आधारित हैं।'
-                  : '* Visits are strictly appointment-based to ensure privacy.'}
-              </p>
-            </div>
-
-            <div className="p-4 bg-white border border-[#E8E4DB] rounded-sm space-y-2">
-              <div className="flex items-center gap-2 text-[#7A6B52] font-semibold text-xs uppercase tracking-wider">
-                <Clock className="w-4 h-4" />
-                <span>{isGu ? 'પરામર્શ સમય' : isHi ? 'परामर्श समय' : 'Assistance Hours'}</span>
-              </div>
-              <p className="text-xs text-[#2A2824] leading-relaxed">
-                {isGu
-                  ? 'સોમવાર – શનિવાર: સવારે ૧૦:૦૦ થી સાંજે ૭:૦૦ IST'
-                  : isHi
-                  ? 'सोमवार – शनिवार: सुबह १०:०० से शाम ७:०० IST'
-                  : 'Monday – Saturday: 10:00 AM – 7:00 PM IST'}
-              </p>
-              <p className="text-[11px] text-[#787268]">
-                {isGu
-                  ? 'રવિવાર: વિશેષ વિનંતી પર વર્ચ્યુઅલ સહાય'
-                  : isHi
-                  ? 'रविवार: विशेष अनुरोध पर वर्चुअल परामर्श'
-                  : 'Sunday: Emergency virtual intake by request'}
-              </p>
-            </div>
-          </div>
+          
 
           {/* Quick Communication Channels */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
@@ -117,9 +75,6 @@ export const ContactModal: React.FC<ContactModalProps> = ({
               </div>
               <div>
                 <span className="block font-medium text-[#1E1D1A]">+91 98765 43210</span>
-                <span className="block text-[11px] text-[#7A7468]">
-                  {isGu ? 'સુરત હેલ્પડેસ્ક' : isHi ? 'सूरत सहायता केंद्र' : 'Surat Intake Desk'}
-                </span>
               </div>
             </a>
 

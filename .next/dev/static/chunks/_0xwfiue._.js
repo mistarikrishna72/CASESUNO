@@ -821,10 +821,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-client] (ecmascript) <export default as X>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-client] (ecmascript) <export default as ArrowRight>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/map-pin.js [app-client] (ecmascript) <export default as MapPin>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/phone.js [app-client] (ecmascript) <export default as Phone>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/mail.js [app-client] (ecmascript) <export default as Mail>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/clock.js [app-client] (ecmascript) <export default as Clock>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/calendar.js [app-client] (ecmascript) <export default as Calendar>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-check.js [app-client] (ecmascript) <export default as CheckCircle2>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$LanguageContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/context/LanguageContext.tsx [app-client] (ecmascript)");
@@ -907,111 +905,6 @@ const ContactModal = ({ isOpen, onClose, onStartEnquiry })=>{
                     className: "p-4 sm:p-6 overflow-y-auto space-y-5 sm:space-y-6",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "p-4 bg-white border border-[#E8E4DB] rounded-sm space-y-2",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-center gap-2 text-[#7A6B52] font-semibold text-xs uppercase tracking-wider",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
-                                                    className: "w-4 h-4"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/ContactModal.tsx",
-                                                    lineNumber: 68,
-                                                    columnNumber: 17
-                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    children: isGu ? 'સુરત ઓફિસ' : isHi ? 'सूरत कार्यालय' : 'Surat Office'
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/ContactModal.tsx",
-                                                    lineNumber: 69,
-                                                    columnNumber: 17
-                                                }, ("TURBOPACK compile-time value", void 0))
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/ContactModal.tsx",
-                                            lineNumber: 67,
-                                            columnNumber: 15
-                                        }, ("TURBOPACK compile-time value", void 0)),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-xs text-[#2A2824] font-medium leading-relaxed",
-                                            children: isGu ? '૪૦૨, ટાઈટેનિયમ સ્ક્વેર, રીંગ રોડ પાસે, અઠવા લાઇન્સ, સુરત, ગુજરાત ૩૯૫૦૦૭' : isHi ? '४०२, टाइटेनियम स्क्वायर, रिंग रोड के पास, अठवा लाइन्स, सूरत, गुजरात ३९५००७' : '402, Titanium Square, Near Ring Road, Athwa Lines, Surat, Gujarat 395007'
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/ContactModal.tsx",
-                                            lineNumber: 71,
-                                            columnNumber: 15
-                                        }, ("TURBOPACK compile-time value", void 0)),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-[11px] text-[#787268]",
-                                            children: isGu ? '* મુલાકાત સંપૂર્ણપણે એપોઇન્ટમેન્ટ આધારિત છે જેથી ક્લાયન્ટની ગોપનીયતા જળવાય.' : isHi ? '* क्लाइंट गोपनीयता बनाए रखने के लिए मुलाकातें पूर्णतः अपॉइंटमेंट आधारित हैं।' : '* Visits are strictly appointment-based to ensure privacy.'
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/ContactModal.tsx",
-                                            lineNumber: 78,
-                                            columnNumber: 15
-                                        }, ("TURBOPACK compile-time value", void 0))
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/ContactModal.tsx",
-                                    lineNumber: 66,
-                                    columnNumber: 13
-                                }, ("TURBOPACK compile-time value", void 0)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "p-4 bg-white border border-[#E8E4DB] rounded-sm space-y-2",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-center gap-2 text-[#7A6B52] font-semibold text-xs uppercase tracking-wider",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
-                                                    className: "w-4 h-4"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/ContactModal.tsx",
-                                                    lineNumber: 89,
-                                                    columnNumber: 17
-                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    children: isGu ? 'પરામર્શ સમય' : isHi ? 'परामर्श समय' : 'Assistance Hours'
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/ContactModal.tsx",
-                                                    lineNumber: 90,
-                                                    columnNumber: 17
-                                                }, ("TURBOPACK compile-time value", void 0))
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/ContactModal.tsx",
-                                            lineNumber: 88,
-                                            columnNumber: 15
-                                        }, ("TURBOPACK compile-time value", void 0)),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-xs text-[#2A2824] leading-relaxed",
-                                            children: isGu ? 'સોમવાર – શનિવાર: સવારે ૧૦:૦૦ થી સાંજે ૭:૦૦ IST' : isHi ? 'सोमवार – शनिवार: सुबह १०:०० से शाम ७:०० IST' : 'Monday – Saturday: 10:00 AM – 7:00 PM IST'
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/ContactModal.tsx",
-                                            lineNumber: 92,
-                                            columnNumber: 15
-                                        }, ("TURBOPACK compile-time value", void 0)),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-[11px] text-[#787268]",
-                                            children: isGu ? 'રવિવાર: વિશેષ વિનંતી પર વર્ચ્યુઅલ સહાય' : isHi ? 'रविवार: विशेष अनुरोध पर वर्चुअल परामर्श' : 'Sunday: Emergency virtual intake by request'
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/ContactModal.tsx",
-                                            lineNumber: 99,
-                                            columnNumber: 15
-                                        }, ("TURBOPACK compile-time value", void 0))
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/ContactModal.tsx",
-                                    lineNumber: 87,
-                                    columnNumber: 13
-                                }, ("TURBOPACK compile-time value", void 0))
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/components/ContactModal.tsx",
-                            lineNumber: 65,
-                            columnNumber: 11
-                        }, ("TURBOPACK compile-time value", void 0)),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1024,42 +917,32 @@ const ContactModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                                 className: "w-4 h-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/ContactModal.tsx",
-                                                lineNumber: 116,
+                                                lineNumber: 74,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/components/ContactModal.tsx",
-                                            lineNumber: 115,
+                                            lineNumber: 73,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "block font-medium text-[#1E1D1A]",
-                                                    children: "+91 98765 43210"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/ContactModal.tsx",
-                                                    lineNumber: 119,
-                                                    columnNumber: 17
-                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "block text-[11px] text-[#7A7468]",
-                                                    children: isGu ? 'સુરત હેલ્પડેસ્ક' : isHi ? 'सूरत सहायता केंद्र' : 'Surat Intake Desk'
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/ContactModal.tsx",
-                                                    lineNumber: 120,
-                                                    columnNumber: 17
-                                                }, ("TURBOPACK compile-time value", void 0))
-                                            ]
-                                        }, void 0, true, {
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "block font-medium text-[#1E1D1A]",
+                                                children: "+91 98765 43210"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/ContactModal.tsx",
+                                                lineNumber: 77,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        }, void 0, false, {
                                             fileName: "[project]/components/ContactModal.tsx",
-                                            lineNumber: 118,
+                                            lineNumber: 76,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/ContactModal.tsx",
-                                    lineNumber: 111,
+                                    lineNumber: 69,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1072,12 +955,12 @@ const ContactModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                                 className: "w-4 h-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/ContactModal.tsx",
-                                                lineNumber: 131,
+                                                lineNumber: 86,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/components/ContactModal.tsx",
-                                            lineNumber: 130,
+                                            lineNumber: 85,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1087,7 +970,7 @@ const ContactModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                                     children: "help@casesuno.com"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/ContactModal.tsx",
-                                                    lineNumber: 134,
+                                                    lineNumber: 89,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1095,25 +978,25 @@ const ContactModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                                     children: isGu ? 'ગોપનીય દસ્તાવેજ મેઇલ' : isHi ? 'गोपनीय दस्तावेज ईमेल' : 'Confidential Dossiers'
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/ContactModal.tsx",
-                                                    lineNumber: 135,
+                                                    lineNumber: 90,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/ContactModal.tsx",
-                                            lineNumber: 133,
+                                            lineNumber: 88,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/ContactModal.tsx",
-                                    lineNumber: 126,
+                                    lineNumber: 81,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ContactModal.tsx",
-                            lineNumber: 110,
+                            lineNumber: 68,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1126,7 +1009,7 @@ const ContactModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                             className: "w-4 h-4 text-[#8C8479]"
                                         }, void 0, false, {
                                             fileName: "[project]/components/ContactModal.tsx",
-                                            lineNumber: 145,
+                                            lineNumber: 100,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -1134,13 +1017,13 @@ const ContactModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                             children: isGu ? 'એપોઇન્ટમેન્ટ સ્લોટ માટે વિનંતી કરો' : isHi ? 'अपॉइंटमेंट स्लॉट के लिए अनुरोध करें' : 'Request an Appointment Slot'
                                         }, void 0, false, {
                                             fileName: "[project]/components/ContactModal.tsx",
-                                            lineNumber: 146,
+                                            lineNumber: 101,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/ContactModal.tsx",
-                                    lineNumber: 144,
+                                    lineNumber: 99,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 booked ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1150,7 +1033,7 @@ const ContactModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                             className: "w-5 h-5 shrink-0 mt-0.5"
                                         }, void 0, false, {
                                             fileName: "[project]/components/ContactModal.tsx",
-                                            lineNumber: 161,
+                                            lineNumber: 116,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1160,26 +1043,26 @@ const ContactModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                                     children: isGu ? 'વિનંતી પ્રાપ્ત થઈ છે!' : isHi ? 'अनुरोध प्राप्त हुआ!' : 'Slot Request Received!'
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/ContactModal.tsx",
-                                                    lineNumber: 163,
+                                                    lineNumber: 118,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: isGu ? `અમારા કોઓર્ડિનેટર તમારા અનુકૂળ સમય (${preferredDate || 'આગામી સ્લોટ'}) ની પુષ્ટિ કરવા માટે ${contactName || 'તમને'} ${contactPhone} પર સંપર્ક કરશે.` : isHi ? `हमारे समन्वयक आपके पसंदीदा समय (${preferredDate || 'आगामी स्लॉट'}) की पुष्टि के लिए ${contactName || 'आपसे'} ${contactPhone} पर संपर्क करेंगे।` : `Our case coordinator will confirm your preferred timing (${preferredDate || 'Upcoming opening'}) with ${contactName || 'you'} at ${contactPhone}.`
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/ContactModal.tsx",
-                                                    lineNumber: 166,
+                                                    lineNumber: 121,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/ContactModal.tsx",
-                                            lineNumber: 162,
+                                            lineNumber: 117,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/ContactModal.tsx",
-                                    lineNumber: 160,
+                                    lineNumber: 115,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                                     onSubmit: handleBookingSubmit,
@@ -1195,7 +1078,7 @@ const ContactModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                                             children: isGu ? 'તમારું નામ *' : isHi ? 'आपका नाम *' : 'Your Name *'
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/ContactModal.tsx",
-                                                            lineNumber: 179,
+                                                            lineNumber: 134,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1207,13 +1090,13 @@ const ContactModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                                             className: "w-full p-2 text-xs bg-[#FAF9F6] border border-[#D5CFBF] rounded-sm text-[#1E1D1A]"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/ContactModal.tsx",
-                                                            lineNumber: 182,
+                                                            lineNumber: 137,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/ContactModal.tsx",
-                                                    lineNumber: 178,
+                                                    lineNumber: 133,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1223,7 +1106,7 @@ const ContactModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                                             children: isGu ? 'ફોન નંબર *' : isHi ? 'फ़ोन नंबर *' : 'Phone Number *'
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/ContactModal.tsx",
-                                                            lineNumber: 193,
+                                                            lineNumber: 148,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1235,13 +1118,13 @@ const ContactModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                                             className: "w-full p-2 text-xs bg-[#FAF9F6] border border-[#D5CFBF] rounded-sm text-[#1E1D1A]"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/ContactModal.tsx",
-                                                            lineNumber: 196,
+                                                            lineNumber: 151,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/ContactModal.tsx",
-                                                    lineNumber: 192,
+                                                    lineNumber: 147,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1251,7 +1134,7 @@ const ContactModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                                             children: isGu ? 'પસંદગીની તારીખ' : isHi ? 'पसंदीदा तारीख' : 'Preferred Date'
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/ContactModal.tsx",
-                                                            lineNumber: 207,
+                                                            lineNumber: 162,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1261,19 +1144,19 @@ const ContactModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                                             className: "w-full p-2 text-xs bg-[#FAF9F6] border border-[#D5CFBF] rounded-sm text-[#1E1D1A]"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/ContactModal.tsx",
-                                                            lineNumber: 210,
+                                                            lineNumber: 165,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/ContactModal.tsx",
-                                                    lineNumber: 206,
+                                                    lineNumber: 161,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/ContactModal.tsx",
-                                            lineNumber: 177,
+                                            lineNumber: 132,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1284,24 +1167,24 @@ const ContactModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                                 children: isGu ? 'એપોઇન્ટમેન્ટ વિનંતી કન્ફર્મ કરો' : isHi ? 'अपॉइंटमेंट अनुरोध की पुष्टि करें' : 'Confirm Appointment Request'
                                             }, void 0, false, {
                                                 fileName: "[project]/components/ContactModal.tsx",
-                                                lineNumber: 220,
+                                                lineNumber: 175,
                                                 columnNumber: 19
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/components/ContactModal.tsx",
-                                            lineNumber: 219,
+                                            lineNumber: 174,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/ContactModal.tsx",
-                                    lineNumber: 176,
+                                    lineNumber: 131,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ContactModal.tsx",
-                            lineNumber: 143,
+                            lineNumber: 98,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
@@ -1319,7 +1202,7 @@ const ContactModal = ({ isOpen, onClose, onStartEnquiry })=>{
                             children: isGu ? 'બંધ કરો' : isHi ? 'बंद करें' : 'Close'
                         }, void 0, false, {
                             fileName: "[project]/components/ContactModal.tsx",
-                            lineNumber: 238,
+                            lineNumber: 193,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1333,26 +1216,26 @@ const ContactModal = ({ isOpen, onClose, onStartEnquiry })=>{
                                     children: isGu ? 'વિસ્તૃત કેસ બ્રીફ ભરો' : isHi ? 'विस्तृत केस विवरण भरें' : 'Fill Detailed Case Brief'
                                 }, void 0, false, {
                                     fileName: "[project]/components/ContactModal.tsx",
-                                    lineNumber: 251,
+                                    lineNumber: 206,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
                                     className: "w-3.5 h-3.5"
                                 }, void 0, false, {
                                     fileName: "[project]/components/ContactModal.tsx",
-                                    lineNumber: 252,
+                                    lineNumber: 207,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ContactModal.tsx",
-                            lineNumber: 244,
+                            lineNumber: 199,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/ContactModal.tsx",
-                    lineNumber: 237,
+                    lineNumber: 192,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             ]
