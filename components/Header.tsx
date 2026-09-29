@@ -65,7 +65,7 @@ export const Header: React.FC<HeaderProps> = ({
           className="focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-black/50 rounded-sm shrink-0"
           aria-label="CASE SUNO Home"
         >
-          <img src="/logo.svg" alt="CASE SUNO Logo" className="h-15  w-auto" />
+          <img src="/logo.png" alt="CASE SUNO Logo" className="h-20  w-auto" />
         </a>
 
         {/* Zone 2: Desktop Navigation Links with Smooth Animated Underlines */}

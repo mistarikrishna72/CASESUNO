@@ -2669,9 +2669,9 @@ const Footer = ({ onOpenAbout, onOpenResources, onOpenFaq, onOpenContact, onOpen
                                 }),
                             className: "cursor-pointer",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                src: "/logo.svg",
+                                src: "/logo.png",
                                 alt: "CASE SUNO Logo",
-                                className: "h-15  w-auto"
+                                className: "h-20  w-auto"
                             }, void 0, false, {
                                 fileName: "[project]/components/Footer.tsx",
                                 lineNumber: 42,
@@ -2774,7 +2774,7 @@ const Footer = ({ onOpenAbout, onOpenResources, onOpenFaq, onOpenContact, onOpen
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                            href: "https://instagram.com",
+                                            href: "https://www.instagram.com/casesuno.in/",
                                             target: "_blank",
                                             rel: "noreferrer",
                                             className: "w-7 h-7 rounded-full bg-[#EFECE5] hover:bg-[#1E1D1A] hover:text-white text-[#4A463E] flex items-center justify-center transition-colors",
@@ -2978,9 +2978,9 @@ const Header = ({ onOpenEnquiry, onOpenAbout, onOpenResources, onOpenFaq, onOpen
                         className: "focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-black/50 rounded-sm shrink-0",
                         "aria-label": "CASE SUNO Home",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                            src: "/logo.svg",
+                            src: "/logo.png",
                             alt: "CASE SUNO Logo",
-                            className: "h-15  w-auto"
+                            className: "h-20  w-auto"
                         }, void 0, false, {
                             fileName: "[project]/components/Header.tsx",
                             lineNumber: 68,

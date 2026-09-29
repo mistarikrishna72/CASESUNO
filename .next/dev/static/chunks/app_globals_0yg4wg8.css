@@ -68,7 +68,6 @@
       "Courier New", monospace;
     --color-red-50: #fef2f2;
     --color-red-200: #ffcaca;
-    --color-red-300: #ffa3a3;
     --color-red-800: #9f0712;
     --color-emerald-50: #ecfdf5;
     --color-emerald-200: #a4f4cf;
@@ -127,7 +126,6 @@
     :root, :host {
       --color-red-50: lab(96.5005% 4.18511 1.52329);
       --color-red-200: lab(86.017% 19.8815 7.75869);
-      --color-red-300: lab(76.5514% 36.4219 15.5335);
       --color-red-800: lab(33.7174% 55.8993 41.0293);
       --color-emerald-50: lab(97.8462% -6.94963 1.85487);
       --color-emerald-200: lab(90.2247% -31.039 9.47084);
@@ -488,10 +486,6 @@
 
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
-  }
-
-  .mt-3\.5 {
-    margin-top: calc(var(--spacing) * 3.5);
   }
 
   .mt-4 {
@@ -1199,10 +1193,6 @@
     background-color: #f4f0e6;
   }
 
-  .bg-\[\#F4F1EA\] {
-    background-color: #f4f1ea;
-  }
-
   .bg-\[\#F4F1EA\]\/90 {
     background-color: #f4f1eae6;
     background-color: lab(95.2345% .138491 3.76319 / .9);
@@ -1245,10 +1235,6 @@
 
   .bg-red-50 {
     background-color: var(--color-red-50);
-  }
-
-  .bg-red-300 {
-    background-color: var(--color-red-300);
   }
 
   .bg-white {
@@ -1450,20 +1436,12 @@
     padding-top: calc(var(--spacing) * 3);
   }
 
-  .pt-4 {
-    padding-top: calc(var(--spacing) * 4);
-  }
-
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
   }
 
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
-  }
-
-  .pt-8 {
-    padding-top: calc(var(--spacing) * 8);
   }
 
   .pt-12 {
@@ -1517,11 +1495,6 @@
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
-  }
-
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
 
   .text-base {
@@ -1609,11 +1582,6 @@
   .leading-\[1\.08\] {
     --tw-leading: 1.08;
     line-height: 1.08;
-  }
-
-  .leading-\[1\.12\] {
-    --tw-leading: 1.12;
-    line-height: 1.12;
   }
 
   .leading-\[1\.14\] {
@@ -2416,10 +2384,6 @@
       justify-content: flex-start;
     }
 
-    .sm\:gap-2 {
-      gap: calc(var(--spacing) * 2);
-    }
-
     .sm\:gap-3 {
       gap: calc(var(--spacing) * 3);
     }
@@ -2522,16 +2486,8 @@
       padding-top: calc(var(--spacing) * 6);
     }
 
-    .sm\:pt-12 {
-      padding-top: calc(var(--spacing) * 12);
-    }
-
     .sm\:pt-14 {
       padding-top: calc(var(--spacing) * 14);
-    }
-
-    .sm\:pb-16 {
-      padding-bottom: calc(var(--spacing) * 16);
     }
 
     .sm\:text-right {
@@ -2744,10 +2700,6 @@
       gap: calc(var(--spacing) * 6);
     }
 
-    .lg\:gap-8 {
-      gap: calc(var(--spacing) * 8);
-    }
-
     .lg\:gap-10 {
       gap: calc(var(--spacing) * 10);
     }
@@ -2784,32 +2736,12 @@
       padding-block: calc(var(--spacing) * 24);
     }
 
-    .lg\:pt-4 {
-      padding-top: calc(var(--spacing) * 4);
-    }
-
-    .lg\:pt-10 {
-      padding-top: calc(var(--spacing) * 10);
-    }
-
-    .lg\:pt-16 {
-      padding-top: calc(var(--spacing) * 16);
-    }
-
-    .lg\:pb-24 {
-      padding-bottom: calc(var(--spacing) * 24);
-    }
-
     .lg\:text-left {
       text-align: left;
     }
 
     .lg\:text-\[2\.65rem\] {
       font-size: 2.65rem;
-    }
-
-    .lg\:text-\[3\.4rem\] {
-      font-size: 3.4rem;
     }
 
     .lg\:text-\[3\.25rem\] {

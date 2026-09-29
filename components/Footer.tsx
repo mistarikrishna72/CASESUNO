@@ -39,7 +39,7 @@ export const Footer: React.FC<FooterProps> = ({
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="cursor-pointer"
           >
-            <img src="/logo.svg" alt="CASE SUNO Logo" className="h-15  w-auto" />
+            <img src="/logo.png" alt="CASE SUNO Logo" className="h-20  w-auto" />
           </div>
 
           {/* Navigation Links Mirror */}
@@ -98,7 +98,7 @@ export const Footer: React.FC<FooterProps> = ({
                 <Linkedin className="w-3.5 h-3.5" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/casesuno.in/"
                 target="_blank"
                 rel="noreferrer"
                 className="w-7 h-7 rounded-full bg-[#EFECE5] hover:bg-[#1E1D1A] hover:text-white text-[#4A463E] flex items-center justify-center transition-colors"
