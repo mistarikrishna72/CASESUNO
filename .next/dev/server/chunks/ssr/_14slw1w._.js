@@ -3512,7 +3512,7 @@ const Hero = ({ onOpenEnquiry, onOpenLocationInfo })=>{
                     className: "\n            w-full\n            grid\n            grid-cols-1\n            lg:grid-cols-12\n            gap-8\n            lg:gap-10\n            xl:gap-16\n            py-10\n            sm:py-12\n            md:py-16\n            lg:py-14\n            xl:py-16\n          ",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "\n              w-[120%]\n              lg:col-span-6\n              xl:col-span-5\n              flex\n              flex-col\n              justify-center\n              min-w-0\n            ",
+                            className: "\n              w-[100%]\n              lg:col-span-6\n              xl:col-span-5\n              flex\n              flex-col\n              justify-center\n              min-w-0\n            ",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "\n                space-y-5\n                sm:space-y-6\n                md:space-y-7\n              ",
@@ -3544,7 +3544,7 @@ const Hero = ({ onOpenEnquiry, onOpenLocationInfo })=>{
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                             className: `
-                  w-[100%]
+                  w-[120%]
                   max-w-[720px]
                   text-[2.25rem]
                   leading-[1.08]

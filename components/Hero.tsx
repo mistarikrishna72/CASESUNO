@@ -94,7 +94,7 @@ export const Hero: React.FC<HeroProps> = ({
           ========================== */}
           <div
             className="
-              w-[120%]
+              w-[100%]
               lg:col-span-6
               xl:col-span-5
               flex
@@ -138,7 +138,7 @@ export const Hero: React.FC<HeroProps> = ({
               {/* Main Heading */}
               <h1
                 className={`
-                  w-[100%]
+                  w-full
                   max-w-[720px]
                   text-[2.25rem]
                   leading-[1.08]
