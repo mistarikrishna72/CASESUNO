@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Logo } from './Logo';
 import { Menu, X, ArrowRight, Globe } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -130,7 +129,7 @@ export const Header: React.FC<HeaderProps> = ({
         </nav>
 
         {/* Zone 3: 3-Way Language Switcher & Primary Action */}
-        <div className="hidden sm:flex items-center gap-2.5 md:gap-3.5 shrink-0">
+        <div className="hidden xl:flex items-center gap-2.5 md:gap-3.5 shrink-0">
           {/* Segmented Control for English, Hindi, Gujarati */}
           <div
             className="inline-flex items-center p-0.5 rounded-full border border-[#DCD6C9] bg-[#F1ECE1] shadow-2xs select-none"
@@ -189,7 +188,8 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
 
         {/* Mobile Header Actions */}
-        <div className="flex sm:hidden items-center gap-2 shrink-0">
+        <div className="flex xl:hidden items-center gap-2 shrink-0">
+
           {/* Quick cycle button */}
           <button
             onClick={toggleLanguage}

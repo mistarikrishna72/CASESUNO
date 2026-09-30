@@ -1,5 +1,4 @@
 import React from 'react';
-import { Logo } from './Logo';
 import { Linkedin, Instagram, Youtube, MapPin } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
