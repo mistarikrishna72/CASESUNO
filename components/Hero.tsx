@@ -48,13 +48,16 @@ export const Hero: React.FC<HeroProps> = ({
 
       {/* Optional subtle overlay for text readability */}
       <div
-        aria-hidden="true"
-        className="
-          absolute inset-0 -z-[5]
-          bg-white/10
-          pointer-events-none
-        "
-      />
+  aria-hidden="true"
+  className="
+    absolute inset-0 -z-[5]
+    pointer-events-none
+   bg-gradient-to-r
+    from-[#FAF9F6]/85
+    via-[#FAF9F6]/35
+    to-transparent
+  "
+/>
 
       <div
         className="
@@ -105,7 +108,8 @@ export const Hero: React.FC<HeroProps> = ({
           >
             <div
               className="
-              w-[50vw]
+               sm
+               sm:w-[100vw]
                 space-y-5
                 sm:space-y-6
                 md:space-y-7
@@ -119,15 +123,15 @@ export const Hero: React.FC<HeroProps> = ({
                   gap-2.5
                   text-[10px]
                   sm:text-xs
-                  font-semibold
+                  font-extrabold
                   tracking-[0.18em]
                   sm:tracking-[0.2em]
-                  text-[#8C8479]
+                  text-[#5F5E58]
                   uppercase
                 "
               >
                 <span
-                  className="w-5 sm:w-6 h-px bg-[#8C8479] shrink-0"
+                  className="w-5 sm:w-6 h-px bg-[#7A746A] shrink-0"
                   aria-hidden="true"
                 />
 
@@ -150,7 +154,7 @@ export const Hero: React.FC<HeroProps> = ({
                   xl:text-[3.75rem]
                   font-medium
                   tracking-tight
-                  text-[#1E1D1A]
+                  text-[#171613]
                   text-balance
                   ${isIndic ? 'font-sans font-semibold' : 'font-serif'}
                 `}
@@ -172,7 +176,8 @@ export const Hero: React.FC<HeroProps> = ({
                   sm:text-[15px]
                   md:text-base
                   leading-[1.7]
-                  text-[#57534D]
+                  font-extrabold
+                  text-[#3F3F3B]
                 "
               >
                 {t.hero.desc}
