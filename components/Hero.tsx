@@ -105,6 +105,7 @@ export const Hero: React.FC<HeroProps> = ({
           >
             <div
               className="
+              w-[50vw]
                 space-y-5
                 sm:space-y-6
                 md:space-y-7
@@ -138,7 +139,7 @@ export const Hero: React.FC<HeroProps> = ({
               {/* Main Heading */}
               <h1
                 className={`
-                  w-full
+                  w-[100%]
                   max-w-[720px]
                   text-[2.25rem]
                   leading-[1.08]
