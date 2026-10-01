@@ -2973,7 +2973,7 @@ const Header = ({ onOpenEnquiry, onOpenAbout, onOpenResources, onOpenFaq, onOpen
         className: `sticky top-0 z-40 w-full transition-all duration-300 ${scrolled ? "bg-[#FAF9F6]/95 backdrop-blur-md shadow-xs border-b border-[#E8E4DB]" : "bg-[#FAF9F6] border-b border-transparent"}`,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 h-20 flex items-center justify-between gap-3 sm:gap-4",
+                className: "max-w-[1400px] mx-auto px-2 sm:px-6 lg:px-12 h-20 flex items-center justify-between gap-3 sm:gap-4",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                         href: "#",
@@ -2989,7 +2989,7 @@ const Header = ({ onOpenEnquiry, onOpenAbout, onOpenResources, onOpenFaq, onOpen
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                             src: "/logo.png",
                             alt: "CASE SUNO Logo",
-                            className: "h-20 w-auto"
+                            className: "h-15 bg-red-100"
                         }, void 0, false, {
                             fileName: "[project]/components/Header.tsx",
                             lineNumber: 74,

@@ -60,7 +60,7 @@ const [showAuth, setShowAuth] = useState(false);
           : "bg-[#FAF9F6] border-b border-transparent"
       }`}
     >
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 h-20 flex items-center justify-between gap-3 sm:gap-4">
+      <div className="max-w-[1400px] mx-auto px-2 sm:px-6 lg:px-12 h-20 flex items-center justify-between gap-3 sm:gap-4">
         {/* Zone 1: Brand Wordmark */}
         <a
           href="#"
@@ -71,7 +71,7 @@ const [showAuth, setShowAuth] = useState(false);
           className="focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-black/50 rounded-sm shrink-0"
           aria-label="CASE SUNO Home"
         >
-          <img src="/logo.png" alt="CASE SUNO Logo" className="h-20 w-auto" />
+          <img src="/logo.png" alt="CASE SUNO Logo" className="h-15 bg-red-100" />
         </a>
 
         {/* Zone 2: Desktop Navigation Links with Smooth Animated Underlines */}

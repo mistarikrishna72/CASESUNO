@@ -439,16 +439,8 @@
     top: calc(var(--spacing) * 5);
   }
 
-  .right-2 {
-    right: calc(var(--spacing) * 2);
-  }
-
   .right-2\.5 {
     right: calc(var(--spacing) * 2.5);
-  }
-
-  .right-3 {
-    right: calc(var(--spacing) * 3);
   }
 
   .right-4 {
@@ -603,10 +595,6 @@
     margin-bottom: calc(var(--spacing) * 5);
   }
 
-  .mb-7 {
-    margin-bottom: calc(var(--spacing) * 7);
-  }
-
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
   }
@@ -617,10 +605,6 @@
 
   .mb-12 {
     margin-bottom: calc(var(--spacing) * 12);
-  }
-
-  .mb-14 {
-    margin-bottom: calc(var(--spacing) * 14);
   }
 
   .line-clamp-3 {
@@ -1337,10 +1321,6 @@
     background-color: #ded8cc;
   }
 
-  .bg-\[\#E4DDD0\] {
-    background-color: #e4ddd0;
-  }
-
   .bg-\[\#E8F0EB\] {
     background-color: #e8f0eb;
   }
@@ -1359,10 +1339,6 @@
 
   .bg-\[\#F1ECE1\] {
     background-color: #f1ece1;
-  }
-
-  .bg-\[\#F1EDE4\] {
-    background-color: #f1ede4;
   }
 
   .bg-\[\#F2EDE2\] {
@@ -1441,10 +1417,6 @@
 
   .bg-red-100 {
     background-color: var(--color-red-100);
-  }
-
-  .bg-transparent {
-    background-color: #0000;
   }
 
   .bg-white {
@@ -1684,10 +1656,6 @@
     padding-top: calc(var(--spacing) * 12);
   }
 
-  .pr-3 {
-    padding-right: calc(var(--spacing) * 3);
-  }
-
   .pr-4 {
     padding-right: calc(var(--spacing) * 4);
   }
@@ -1780,10 +1748,6 @@
 
   .text-\[2\.25rem\] {
     font-size: 2.25rem;
-  }
-
-  .text-\[8px\] {
-    font-size: 8px;
   }
 
   .text-\[9px\] {
@@ -1927,11 +1891,6 @@
     letter-spacing: .18em;
   }
 
-  .tracking-\[0\.22em\] {
-    --tw-tracking: .22em;
-    letter-spacing: .22em;
-  }
-
   .tracking-\[0\.25em\] {
     --tw-tracking: .25em;
     letter-spacing: .25em;
@@ -2015,10 +1974,6 @@
 
   .text-\[\#3E3A33\] {
     color: #3e3a33;
-  }
-
-  .text-\[\#3F3B35\] {
-    color: #3f3b35;
   }
 
   .text-\[\#3F3F3B\] {
@@ -2161,10 +2116,6 @@
     color: #806c29;
   }
 
-  .text-\[\#4285F4\] {
-    color: #4285f4;
-  }
-
   .text-\[\#38352F\] {
     color: #38352f;
   }
@@ -2207,10 +2158,6 @@
 
   .text-\[\#262420\] {
     color: #262420;
-  }
-
-  .text-\[\#575249\] {
-    color: #575249;
   }
 
   .text-\[\#787268\] {
@@ -2710,14 +2657,6 @@
       display: none;
     }
 
-    .max-md\:max-h-\[92vh\] {
-      max-height: 92vh;
-    }
-
-    .max-md\:overflow-y-auto {
-      overflow-y: auto;
-    }
-
     .max-md\:px-6 {
       padding-inline: calc(var(--spacing) * 6);
     }
@@ -2770,10 +2709,6 @@
 
     .sm\:w-6 {
       width: calc(var(--spacing) * 6);
-    }
-
-    .sm\:w-\[100vw\] {
-      width: 100vw;
     }
 
     .sm\:w-auto {
