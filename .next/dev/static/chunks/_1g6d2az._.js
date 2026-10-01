@@ -829,29 +829,56 @@ const translations = {
 const LanguageContext = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createContext"])(undefined);
 const LanguageProvider = ({ children })=>{
     _s();
-    const [language, setLanguageState] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
-        "LanguageProvider.useState": ()=>{
+    // FIX:
+    // Do NOT read localStorage inside the useState initializer.
+    // Server cannot access localStorage, while the browser can.
+    // Starting with English guarantees identical SSR + client HTML.
+    const [language, setLanguageState] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('en');
+    /**
+   * Load previously selected language after the component
+   * has mounted in the browser.
+   */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "LanguageProvider.useEffect": ()=>{
             try {
                 const saved = localStorage.getItem('case_suno_lang');
-                return saved === 'gu' || saved === 'hi' || saved === 'en' ? saved : 'en';
+                if (saved === 'gu' || saved === 'hi' || saved === 'en') {
+                    setLanguageState(saved);
+                }
             } catch  {
-                return 'en';
+            // Ignore localStorage errors.
             }
         }
-    }["LanguageProvider.useState"]);
-    const setLanguage = (lang)=>{
+    }["LanguageProvider.useEffect"], []);
+    /**
+   * Change language manually.
+   */ const setLanguage = (lang)=>{
         setLanguageState(lang);
         try {
             localStorage.setItem('case_suno_lang', lang);
             document.documentElement.lang = lang;
         } catch  {
-        // ignore
+        // Ignore localStorage errors.
         }
     };
-    const toggleLanguage = ()=>{
-        setLanguage(language === 'en' ? 'hi' : language === 'hi' ? 'gu' : 'en');
+    /**
+   * Cycle through:
+   * English → Hindi → Gujarati → English
+   */ const toggleLanguage = ()=>{
+        setLanguageState((currentLanguage)=>{
+            const nextLanguage = currentLanguage === 'en' ? 'hi' : currentLanguage === 'hi' ? 'gu' : 'en';
+            try {
+                localStorage.setItem('case_suno_lang', nextLanguage);
+                document.documentElement.lang = nextLanguage;
+            } catch  {
+            // Ignore localStorage errors.
+            }
+            return nextLanguage;
+        });
     };
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+    /**
+   * Keep the HTML lang attribute synchronized
+   * with the currently selected language.
+   */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "LanguageProvider.useEffect": ()=>{
             document.documentElement.lang = language;
         }
@@ -869,11 +896,11 @@ const LanguageProvider = ({ children })=>{
         children: children
     }, void 0, false, {
         fileName: "[project]/context/LanguageContext.tsx",
-        lineNumber: 890,
-        columnNumber: 10
+        lineNumber: 1094,
+        columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
-_s(LanguageProvider, "vnUDADynoWF7bAZFuyjRyRBvaFU=");
+_s(LanguageProvider, "6heUTvE9vfou9W5uJs02OyLgRqY=");
 _c = LanguageProvider;
 const useLanguage = ()=>{
     _s1();

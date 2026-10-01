@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { Menu, X, ArrowRight, Globe, ChevronDown } from 'lucide-react';
-import { useLanguage } from '../context/LanguageContext';
+import React, { useState, useEffect } from "react";
+import { Menu, X, ArrowRight, Globe, ChevronDown } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
 
 interface HeaderProps {
   onOpenEnquiry: (serviceCategory?: string) => void;
@@ -27,36 +27,36 @@ export const Header: React.FC<HeaderProps> = ({
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const scrollToSection = (id: string) => {
     setMobileMenuOpen(false);
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   const getMobileLangLabel = () => {
-    if (language === 'en') return 'EN';
-    if (language === 'hi') return 'हिं';
-    return 'ગુજ';
+    if (language === "en") return "EN";
+    if (language === "hi") return "हिं";
+    return "ગુજ";
   };
 
   const getLanguageLabel = () => {
-    if (language === 'en') return 'English';
-    if (language === 'hi') return 'हिंदी';
-    return 'ગુજરાતી';
+    if (language === "en") return "English";
+    if (language === "hi") return "हिंदी";
+    return "ગુજરાતી";
   };
 
   return (
     <header
       className={`sticky top-0 z-40 w-full transition-all duration-300 ${
         scrolled
-          ? 'bg-[#FAF9F6]/95 backdrop-blur-md shadow-xs border-b border-[#E8E4DB]'
-          : 'bg-[#FAF9F6] border-b border-transparent'
+          ? "bg-[#FAF9F6]/95 backdrop-blur-md shadow-xs border-b border-[#E8E4DB]"
+          : "bg-[#FAF9F6] border-b border-transparent"
       }`}
     >
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 h-20 flex items-center justify-between gap-3 sm:gap-4">
@@ -65,7 +65,7 @@ export const Header: React.FC<HeaderProps> = ({
           href="#"
           onClick={(e) => {
             e.preventDefault();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            window.scrollTo({ top: 0, behavior: "smooth" });
           }}
           className="focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-black/50 rounded-sm shrink-0"
           aria-label="CASE SUNO Home"
@@ -82,7 +82,7 @@ export const Header: React.FC<HeaderProps> = ({
             href="#home"
             onClick={(e) => {
               e.preventDefault();
-              window.scrollTo({ top: 0, behavior: 'smooth' });
+              window.scrollTo({ top: 0, behavior: "smooth" });
             }}
             className="nav-link-underline text-[#1A1917] font-semibold transition-colors py-1 cursor-pointer"
           >
@@ -92,7 +92,7 @@ export const Header: React.FC<HeaderProps> = ({
             href="#how-it-works"
             onClick={(e) => {
               e.preventDefault();
-              scrollToSection('how-it-works');
+              scrollToSection("how-it-works");
             }}
             className="nav-link-underline hover:text-[#1A1917] transition-colors py-1 cursor-pointer"
           >
@@ -102,7 +102,7 @@ export const Header: React.FC<HeaderProps> = ({
             href="#services"
             onClick={(e) => {
               e.preventDefault();
-              scrollToSection('services');
+              scrollToSection("services");
             }}
             className="nav-link-underline hover:text-[#1A1917] transition-colors py-1 cursor-pointer"
           >
@@ -140,7 +140,9 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="relative">
             <select
               value={language}
-              onChange={(e) => setLanguage(e.target.value as 'en' | 'hi' | 'gu')}
+              onChange={(e) =>
+                setLanguage(e.target.value as "en" | "hi" | "gu")
+              }
               className="appearance-none pl-9 pr-8 py-2 text-xs font-semibold rounded-full border border-[#DCD6C9] bg-[#F1ECE1] text-[#1F1E1B] shadow-2xs cursor-pointer outline-none focus:ring-2 focus:ring-[#1F1E1B]/20"
               aria-label="Language selection"
             >
@@ -165,7 +167,6 @@ export const Header: React.FC<HeaderProps> = ({
 
         {/* Mobile Header Actions */}
         <div className="flex xl:hidden items-center gap-2 shrink-0">
-
           {/* Quick cycle button */}
           <button
             onClick={toggleLanguage}
@@ -177,19 +178,16 @@ export const Header: React.FC<HeaderProps> = ({
           </button>
 
           <button
-            onClick={() => onOpenEnquiry()}
-            className="inline-flex items-center px-3 py-1.5 bg-[#1F1E1B] text-white text-xs font-medium rounded-sm"
-          >
-            {t.nav.getStarted}
-          </button>
-
-          <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="p-1.5 text-[#2C2A26] hover:text-black focus:outline-hidden rounded-sm"
             aria-label="Toggle navigation menu"
             aria-expanded={mobileMenuOpen}
           >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {mobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
       </div>
@@ -197,37 +195,13 @@ export const Header: React.FC<HeaderProps> = ({
       {/* Mobile Menu Dropdown */}
       {mobileMenuOpen && (
         <div className="xl:hidden border-b border-[#E8E4DB] bg-[#FAF9F6] px-5 sm:px-6 py-6 space-y-5 animate-in fade-in slide-in-from-top-2 duration-200 shadow-md">
-          {/* Mobile 3-Way Language Toggle */}
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3 bg-[#F1EDE4] rounded-md border border-[#DDD6C8] gap-2.5">
-            <span className="text-xs font-medium text-[#575249] flex items-center gap-1.5">
-              <Globe className="w-3.5 h-3.5 text-[#7A7468]" />
-              <span>Language / भाषा / ભાષા</span>
-            </span>
-            <div className="relative">
-              <select
-                value={language}
-                onChange={(e) =>
-                  setLanguage(e.target.value as 'en' | 'hi' | 'gu')
-                }
-                className="appearance-none w-full sm:w-auto min-w-[140px] pl-3 pr-8 py-2 text-xs font-semibold rounded-full border border-[#D9D2C5] bg-[#E4DDD0] text-[#1E1D1A] outline-none cursor-pointer"
-                aria-label="Language selection"
-              >
-                <option value="en">English</option>
-                <option value="hi">हिंदी</option>
-                <option value="gu">ગુજરાતી</option>
-              </select>
-
-              <ChevronDown className="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[#5C564C] pointer-events-none" />
-            </div>
-          </div>
-
           <div className="flex flex-col space-y-3 text-sm font-medium text-[#4A4742]">
             <a
               href="#home"
               onClick={(e) => {
                 e.preventDefault();
                 setMobileMenuOpen(false);
-                window.scrollTo({ top: 0, behavior: 'smooth' });
+                window.scrollTo({ top: 0, behavior: "smooth" });
               }}
               className="py-1.5 text-[#1A1917] font-semibold border-b border-[#F0EBE0]"
             >
@@ -237,7 +211,7 @@ export const Header: React.FC<HeaderProps> = ({
               href="#how-it-works"
               onClick={(e) => {
                 e.preventDefault();
-                scrollToSection('how-it-works');
+                scrollToSection("how-it-works");
               }}
               className="py-1.5 hover:text-[#1A1917] border-b border-[#F0EBE0]"
             >
@@ -247,7 +221,7 @@ export const Header: React.FC<HeaderProps> = ({
               href="#services"
               onClick={(e) => {
                 e.preventDefault();
-                scrollToSection('services');
+                scrollToSection("services");
               }}
               className="py-1.5 hover:text-[#1A1917] border-b border-[#F0EBE0]"
             >

@@ -159,7 +159,8 @@ export const translations: Record<Language, Translations> = {
             'Consumer grievances and vendor disputes',
             'Personal contract or employment transitions',
           ],
-          deliveryMode: 'Confidential online video call or in-person in Surat (by appointment)',
+          deliveryMode:
+            'Confidential online video call or in-person in Surat (by appointment)',
         },
         {
           id: 'business-support',
@@ -179,7 +180,8 @@ export const translations: Record<Language, Translations> = {
             'Standard terms of service and client engagement letters',
             'Regulatory compliance audits for local Surat businesses',
           ],
-          deliveryMode: 'Dedicated executive liaison with virtual & on-premise review',
+          deliveryMode:
+            'Dedicated executive liaison with virtual & on-premise review',
         },
         {
           id: 'documentation-help',
@@ -199,12 +201,14 @@ export const translations: Record<Language, Translations> = {
             'Drafting unambiguous service level agreements',
             'Creating digital archives of critical family or firm records',
           ],
-          deliveryMode: 'Secure document upload portal + review meetings',
+          deliveryMode:
+            'Secure document upload portal + review meetings',
         },
         {
           id: 'professional-coordination',
           title: 'Professional Coordination',
-          shortDesc: 'Connect with verified independent professionals where required.',
+          shortDesc:
+            'Connect with verified independent professionals where required.',
           overview:
             'Finding the right lawyer, chartered accountant, or domain specialist can be daunting. We connect you with verified, independent, peer-reviewed professionals suited specifically to your exact case requirements and budget.',
           whatWeDo: [
@@ -219,12 +223,14 @@ export const translations: Record<Language, Translations> = {
             'Patent, trademark, and intellectual property filings',
             'Property title search and technical valuation reports',
           ],
-          deliveryMode: 'Curated introductions with structured case handover',
+          deliveryMode:
+            'Curated introductions with structured case handover',
         },
         {
           id: 'ongoing-support',
           title: 'Ongoing Support',
-          shortDesc: 'Follow-up and administrative assistance till completion.',
+          shortDesc:
+            'Follow-up and administrative assistance till completion.',
           overview:
             'Most matters stretch over weeks or months, during which tracking dates and following up becomes overwhelming. CASE SUNO stays by your side as an administrative partner until your issue reaches its conclusion.',
           whatWeDo: [
@@ -239,7 +245,8 @@ export const translations: Record<Language, Translations> = {
             'Staged contractual payments and deliverables tracking',
             'Quarterly compliance reviews and renewals',
           ],
-          deliveryMode: 'Regular status briefings via WhatsApp, portal, and monthly check-ins',
+          deliveryMode:
+            'Regular status briefings via WhatsApp, portal, and monthly check-ins',
         },
       ],
     },
@@ -263,7 +270,11 @@ export const translations: Record<Language, Translations> = {
           desc: "Understand what problem or requirement you're facing.",
           detail:
             'We start with an unhurried, patient conversation. No legal jargon or intimidating formalities. You explain your situation, who is involved, and what outcome you hope to achieve.',
-          deliverables: ['Intake summary', 'Problem statement clarification', 'Immediate risk checklist'],
+          deliverables: [
+            'Intake summary',
+            'Problem statement clarification',
+            'Immediate risk checklist',
+          ],
         },
         {
           step: '02',
@@ -271,7 +282,11 @@ export const translations: Record<Language, Translations> = {
           desc: 'Collect basic information and relevant documents.',
           detail:
             'We identify which papers, notices, communications, or contracts exist. We compile existing materials and identify missing pieces without making you run in circles.',
-          deliverables: ['Document inventory', 'Chronological timeline of events', 'Key fact verification'],
+          deliverables: [
+            'Document inventory',
+            'Chronological timeline of events',
+            'Key fact verification',
+          ],
         },
         {
           step: '03',
@@ -279,7 +294,11 @@ export const translations: Record<Language, Translations> = {
           desc: 'Structure the information, documents and requirements.',
           detail:
             'Raw confusion turns into clarity. We structure your case into an orderly dossier with an executive summary, clear references, and indexed attachments.',
-          deliverables: ['Structured Case Dossier', 'Objective options breakdown', 'Decision roadmap'],
+          deliverables: [
+            'Structured Case Dossier',
+            'Objective options breakdown',
+            'Decision roadmap',
+          ],
         },
         {
           step: '04',
@@ -287,7 +306,11 @@ export const translations: Record<Language, Translations> = {
           desc: 'Connect with the right independent professionals where required.',
           detail:
             'If legal counsel, CA audit, property surveyor, or mediator is required, we connect you with vetted practitioners suited to your matter, presenting them with your organized brief so you save time and consultation fees.',
-          deliverables: ['Specialist recommendation', 'Standardized brief handover', 'Transparent fee alignment'],
+          deliverables: [
+            'Specialist recommendation',
+            'Standardized brief handover',
+            'Transparent fee alignment',
+          ],
         },
         {
           step: '05',
@@ -295,7 +318,11 @@ export const translations: Record<Language, Translations> = {
           desc: 'Provide permitted administrative support and tracking.',
           detail:
             'We do not disappear after the handoff. CASE SUNO coordinates administrative timelines, calendars key dates, and updates you regularly until resolution.',
-          deliverables: ['Milestone status reports', 'Calendar alerts for critical deadlines', 'Post-resolution archive'],
+          deliverables: [
+            'Milestone status reports',
+            'Calendar alerts for critical deadlines',
+            'Post-resolution archive',
+          ],
         },
       ],
     },
@@ -307,22 +334,26 @@ export const translations: Record<Language, Translations> = {
         {
           title: 'People-First Approach',
           desc: 'Your situation is heard and understood.',
-          additional: 'Compassionate listening without judgment. We treat every case with human empathy.',
+          additional:
+            'Compassionate listening without judgment. We treat every case with human empathy.',
         },
         {
           title: 'Transparent Process',
           desc: 'Clear information and fair pricing.',
-          additional: 'No hidden surcharges, no arbitrary markups. Straightforward milestones and upfront fee estimates.',
+          additional:
+            'No hidden surcharges, no arbitrary markups. Straightforward milestones and upfront fee estimates.',
         },
         {
           title: 'Technology-Enabled',
           desc: 'Simple, secure and convenient online platform.',
-          additional: 'Schedule calls, safely upload sensitive dossiers, and monitor progress from anywhere.',
+          additional:
+            'Schedule calls, safely upload sensitive dossiers, and monitor progress from anywhere.',
         },
         {
           title: 'Trusted Network',
           desc: 'Independent, qualified professionals where required.',
-          additional: 'Strictly vetted advocates, chartered accountants, and company secretaries with proven track records.',
+          additional:
+            'Strictly vetted advocates, chartered accountants, and company secretaries with proven track records.',
         },
       ],
     },
@@ -348,9 +379,11 @@ export const translations: Record<Language, Translations> = {
       privacy: 'Privacy Policy',
       terms: 'Terms & Conditions',
       disclaimer: 'Disclaimer',
-      locationNotice: 'Surat, Gujarat, India · Online & Appointment-Based Assistance',
+      locationNotice:
+        'Surat, Gujarat, India · Online & Appointment-Based Assistance',
     },
   },
+
   gu: {
     nav: {
       home: 'હોમ',
@@ -364,10 +397,10 @@ export const translations: Record<Language, Translations> = {
     },
     hero: {
       kicker: 'વ્યક્તિગત • વ્યવસાય • દસ્તાવેજીકરણ • કેસ સહાય',
-     titleLine1: 'કોઈ સમસ્યા છે?',
-titleLine2: 'અમને જણાવો.',
-titleLine3: 'અમે તમારી મદદ કરીશું',
-titleLine4: 'તેને સમજવામાં.',
+      titleLine1: 'કોઈ સમસ્યા છે?',
+      titleLine2: 'અમને જણાવો.',
+      titleLine3: 'અમે તમારી મદદ કરીશું',
+      titleLine4: 'તેને સમજવામાં.',
       desc: 'CASE SUNO તમારી પરિસ્થિતિ સમજવામાં, જરૂરી બાબતોને વ્યવસ્થિત કરવામાં અને યોગ્ય સહાય મેળવવામાં તમારી મદદ કરે છે.',
       ctaPrimary: 'તમારી પૂછપરછ શરૂ કરો',
       badgeConfidential: 'ગોપનીય',
@@ -377,7 +410,12 @@ titleLine4: 'તેને સમજવામાં.',
       badgeOnline: 'ઓનલાઇન &',
       badgeOnlineSub: 'એપોઇન્ટમેન્ટ આધારિત',
       locationSub: 'ઓનલાઇન અને એપોઇન્ટમેન્ટ આધારિત સહાય',
-      mantra: ['લોકો (People)', 'સમસ્યાઓ (Problems)', 'પ્રક્રિયાઓ (Processes)', 'પ્રગતિ (Progress)'],
+      mantra: [
+        'લોકો (People)',
+        'સમસ્યાઓ (Problems)',
+        'પ્રક્રિયાઓ (Processes)',
+        'પ્રગતિ (Progress)',
+      ],
     },
     services: {
       kicker: 'અમારી સેવાઓ',
@@ -389,7 +427,8 @@ titleLine4: 'તેને સમજવામાં.',
         {
           id: 'individual-assistance',
           title: 'વ્યક્તિગત સહાય (Individual Assistance)',
-          shortDesc: 'વ્યક્તિગત, પારિવારિક અને રોજિંદા પ્રશ્નો માટે માર્ગદર્શન.',
+          shortDesc:
+            'વ્યક્તિગત, પારિવારિક અને રોજિંદા પ્રશ્નો માટે માર્ગદર્શન.',
           overview:
             'પારિવારિક અને વ્યક્તિગત મુશ્કેલીઓ ઘણીવાર મૂંઝવણ અને ચિંતા લાવે છે. CASE SUNO શાંતિપૂર્ણ અને ગોપનીય વાતાવરણ પૂરું પાડે છે જ્યાં તમે તમારી ચિંતાઓ મુક્તપણે જણાવી શકો છો અને આગળના વ્યવહારુ પગલાં સમજી શકો છો.',
           whatWeDo: [
@@ -404,7 +443,8 @@ titleLine4: 'તેને સમજવામાં.',
             'ગ્રાહક તકરાર અને વિક્રેતા સાથે મતભેદ',
             'વ્યક્તિગત કરાર અને રોજગાર સંબંધિત સંક્રમણો',
           ],
-          deliveryMode: 'સુરક્ષિત ઓનલાઇન વિડીયો કોલ અથવા સુરત ઓફિસમાં રૂબરૂ (માત્ર એપોઇન્ટમેન્ટ દ્વારા)',
+          deliveryMode:
+            'સુરક્ષિત ઓનલાઇન વિડીયો કોલ અથવા સુરત ઓફિસમાં રૂબરૂ (માત્ર એપોઇન્ટમેન્ટ દ્વારા)',
         },
         {
           id: 'business-support',
@@ -424,7 +464,8 @@ titleLine4: 'તેને સમજવામાં.',
             'સેવા શરતો અને ક્લાયન્ટ એગ્રીમેન્ટ',
             'સુરતના સ્થાનિક ઉદ્યોગો માટે નિયમપાલન ઓડિટ',
           ],
-          deliveryMode: 'સમર્પિત એક્ઝિક્યુટિવ સંપર્ક સાથે વર્ચ્યુઅલ અને રૂબરૂ સમીક્ષા',
+          deliveryMode:
+            'સમર્પિત એક્ઝિક્યુટિવ સંપર્ક સાથે વર્ચ્યુઅલ અને રૂબરૂ સમીક્ષા',
         },
         {
           id: 'documentation-help',
@@ -444,12 +485,14 @@ titleLine4: 'તેને સમજવામાં.',
             'સ્પષ્ટ સેવા કરારો અને બાહેંધરી પત્રો',
             'મહત્વના કૌટુંબિક અથવા પેઢીના રેકોર્ડનું ડિજિટલ આર્કાઇવિંગ',
           ],
-          deliveryMode: 'સુરક્ષિત ડિજિટલ અપલોડ પોર્ટલ અને વ્યક્તિગત સમીક્ષા સત્રો',
+          deliveryMode:
+            'સુરક્ષિત ડિજિટલ અપલોડ પોર્ટલ અને વ્યક્તિગત સમીક્ષા સત્રો',
         },
         {
           id: 'professional-coordination',
           title: 'વ્યાવસાયિક સંકલન (Professional Coordination)',
-          shortDesc: 'જ્યાં જરૂરી હોય ત્યાં ચકાસાયેલા સ્વતંત્ર વ્યાવસાયિકો સાથે જોડાણ.',
+          shortDesc:
+            'જ્યાં જરૂરી હોય ત્યાં ચકાસાયેલા સ્વતંત્ર વ્યાવસાયિકો સાથે જોડાણ.',
           overview:
             'સાચા વકીલ, ચાર્ટર્ડ એકાઉન્ટન્ટ કે નિષ્ણાત શોધવું મુશ્કેલ બની શકે છે. અમે તમારા કેસ અને બજેટ અનુસાર ચકાસાયેલા અને અનુભવી સ્વતંત્ર વ્યાવસાયિકો સાથે તમારો સંપર્ક કરાવીએ છીએ.',
           whatWeDo: [
@@ -464,12 +507,14 @@ titleLine4: 'તેને સમજવામાં.',
             'ટ્રેડમાર્ક, પેટન્ટ અને બૌદ્ધિક સંપદા રક્ષણ',
             'જમીન માપણી, ટાઇટલ સર્ચ અને વેલ્યુએશન રિપોર્ટ્સ',
           ],
-          deliveryMode: 'સુવ્યવસ્થિત કેસ હેન્ડઓવર સાથે પ્રમાણિત પરિચય',
+          deliveryMode:
+            'સુવ્યવસ્થિત કેસ હેન્ડઓવર સાથે પ્રમાણિત પરિચય',
         },
         {
           id: 'ongoing-support',
           title: 'સતત વહીવટી સહાય (Ongoing Support)',
-          shortDesc: 'સમસ્યા પૂર્ણ થાય ત્યાં સુધી ફોલો-અપ અને વહીવટી સહાય.',
+          shortDesc:
+            'સમસ્યા પૂર્ણ થાય ત્યાં સુધી ફોલો-અપ અને વહીવટી સહાય.',
           overview:
             'ઘણી બાબતો મહિનાઓ સુધી ચાલે છે, જેમાં તારીખો યાદ રાખવી અને સતત ફોલો-અપ લેવું મુશ્કેલ બને છે. પરિણામ ન આવે ત્યાં સુધી CASE SUNO તમારી સાથે એક વહીવટી સહયોગી તરીકે જોડાયેલ રહે છે.',
           whatWeDo: [
@@ -484,7 +529,8 @@ titleLine4: 'તેને સમજવામાં.',
             'તબક્કાવાર કરાર પેમેન્ટ અને ડિલિવરેબલ ટ્રેકિંગ',
             'ત્રિમાસિક નિયમપાલન સમીક્ષાઓ અને રિન્યુઅલ્સ',
           ],
-          deliveryMode: 'વોટ્સએપ, પોર્ટલ અને માસિક ચેક-ઇન દ્વારા નિયમિત અપડેટ્સ',
+          deliveryMode:
+            'વોટ્સએપ, પોર્ટલ અને માસિક ચેક-ઇન દ્વારા નિયમિત અપડેટ્સ',
         },
       ],
     },
@@ -505,69 +551,100 @@ titleLine4: 'તેને સમજવામાં.',
         {
           step: '01',
           title: 'સાંભળવું (Listen)',
-          desc: 'તમે કઈ સમસ્યા કે જરૂરિયાતનો સામનો કરી રહ્યા છો તે સમજવું.',
+          desc:
+            'તમે કઈ સમસ્યા કે જરૂરિયાતનો સામનો કરી રહ્યા છો તે સમજવું.',
           detail:
             'અમે કોઈપણ ઉતાવળ વગર ધીરજપૂર્વક તમારી વાત સાંભળીને શરૂઆત કરીએ છીએ. કોઈ કાનૂની આડંબરો નહીં. તમે તમારી પરિસ્થિતિ અને અપેક્ષિત પરિણામ મુક્ત મને જણાવી શકો છો.',
-          deliverables: ['પ્રારંભિક સારાંશ', 'સમસ્યાનું સ્પષ્ટ નિવેદન', 'તાત્કાલિક જોખમ ચેકલિસ્ટ'],
+          deliverables: [
+            'પ્રારંભિક સારાંશ',
+            'સમસ્યાનું સ્પષ્ટ નિવેદન',
+            'તાત્કાલિક જોખમ ચેકલિસ્ટ',
+          ],
         },
         {
           step: '02',
           title: 'સમજવું (Understand)',
-          desc: 'મૂળભૂત માહિતી અને સંબંધિત દસ્તાવેજો એકત્રિત કરવા.',
+          desc:
+            'મૂળભૂત માહિતી અને સંબંધિત દસ્તાવેજો એકત્રિત કરવા.',
           detail:
             'તમારી પાસે કયા કાગળો, નોટિસ, સંચાર અથવા કરારો ઉપલબ્ધ છે તે ચકાસીએ છીએ. ખોટા ધક્કા ખાધા વગર કઈ બાબતો ખૂટે છે તે નક્કી કરીએ છીએ.',
-          deliverables: ['દસ્તાવેજ યાદી', 'ઘટનાક્રમની સમયરેખા', 'મુખ્ય હકીકતોની ચકાસણી'],
+          deliverables: [
+            'દસ્તાવેજ યાદી',
+            'ઘટનાક્રમની સમયરેખા',
+            'મુખ્ય હકીકતોની ચકાસણી',
+          ],
         },
         {
           step: '03',
           title: 'વ્યવસ્થિત કરવું (Organise)',
-          desc: 'માહિતી, દસ્તાવેજો અને જરૂરિયાતોનું માળખું તૈયાર કરવું.',
+          desc:
+            'માહિતી, દસ્તાવેજો અને જરૂરિયાતોનું માળખું તૈયાર કરવું.',
           detail:
             'મૂંઝવણનું સ્થાન સ્પષ્ટતા લે છે. અમે તમારા કેસને વ્યવસ્થિત ફાઇલમાં ગોઠવીએ છીએ જેમાં સારાંશ, સંદર્ભો અને અનુક્રમણિકા સામેલ હોય છે.',
-          deliverables: ['સંગઠિત કેસ ફાઇલ', 'વિકલ્પોનું તાર્કિક વિશ્લેષણ', 'આગામી નિર્ણય રોડમેપ'],
+          deliverables: [
+            'સંગઠિત કેસ ફાઇલ',
+            'વિકલ્પોનું તાર્કિક વિશ્લેષણ',
+            'આગામી નિર્ણય રોડમેપ',
+          ],
         },
         {
           step: '04',
           title: 'સંકલન (Coordinate)',
-          desc: 'જ્યાં જરૂર હોય ત્યાં યોગ્ય સ્વતંત્ર વ્યાવસાયિકો સાથે જોડાણ કરવું.',
+          desc:
+            'જ્યાં જરૂર હોય ત્યાં યોગ્ય સ્વતંત્ર વ્યાવસાયિકો સાથે જોડાણ કરવું.',
           detail:
             'જો વકીલ, CA, સર્વેયર કે મધ્યસ્થીની જરૂર હોય, તો અમે ચકાસાયેલા નિષ્ણાતો સાથે જોડાણ કરીએ છીએ અને તૈયાર ફાઇલ સોંપીએ છીએ જેથી તમારો સમય અને ફી બચે.',
-          deliverables: ['યોગ્ય નિષ્ણાતની ભલામણ', 'પ્રમાણિત બ્રીફિંગ સોંપણી', 'પારદર્શક ફી સુમેળ'],
+          deliverables: [
+            'યોગ્ય નિષ્ણાતની ભલામણ',
+            'પ્રમાણિત બ્રીફિંગ સોંપણી',
+            'પારદર્શક ફી સુમેળ',
+          ],
         },
         {
           step: '05',
           title: 'ફોલો અપ (Follow Up)',
-          desc: 'મંજૂર વહીવટી સહાય અને નિયમિત ટ્રેકિંગ પ્રદાન કરવું.',
+          desc:
+            'મંજૂર વહીવટી સહાય અને નિયમિત ટ્રેકિંગ પ્રદાન કરવું.',
           detail:
             'અમે કામ સોંપ્યા પછી અલગ નથી થઈ જતા. CASE SUNO સમયરેખાનું સંકલન કરે છે, તારીખો નોંધી રાખે છે અને ઉકેલ ન આવે ત્યાં સુધી સતત અપડેટ આપે છે.',
-          deliverables: ['માઇલસ્ટોન સ્ટેટસ રિપોર્ટ્સ', 'મહત્વપૂર્ણ તારીખો માટે એલર્ટ્સ', 'ઉકેલ પછીનું આર્કાઇવિંગ'],
+          deliverables: [
+            'માઇલસ્ટોન સ્ટેટસ રિપોર્ટ્સ',
+            'મહત્વપૂર્ણ તારીખો માટે એલર્ટ્સ',
+            'ઉકેલ પછીનું આર્કાઇવિંગ',
+          ],
         },
       ],
     },
     whyChoose: {
       kicker: 'શા માટે CASE SUNO પસંદ કરવું',
       title: 'સ્પષ્ટતા. સહાય. પ્રગતિ.',
-      desc: 'તમને આત્મવિશ્વાસ સાથે આગળ વધવામાં મદદ કરવા માટે અમે ટેકનોલોજી, અનુભવ અને માનવીય અભિગમનો સુમેળ સાધીએ છીએ.',
+      desc:
+        'તમને આત્મવિશ્વાસ સાથે આગળ વધવામાં મદદ કરવા માટે અમે ટેકનોલોજી, અનુભવ અને માનવીય અભિગમનો સુમેળ સાધીએ છીએ.',
       pillars: [
         {
           title: 'વ્યક્તિ-પ્રથમ અભિગમ',
           desc: 'તમારી પરિસ્થિતિ સાંભળવામાં અને સમજવામાં આવે છે.',
-          additional: 'કોઈપણ ટીકા વગર સહાનુભૂતિપૂર્વક સાંભળવું. અમે દરેક કેસને માનવીય લાગણી સાથે સંભાળીએ છીએ.',
+          additional:
+            'કોઈપણ ટીકા વગર સહાનુભૂતિપૂર્વક સાંભળવું. અમે દરેક કેસને માનવીય લાગણી સાથે સંભાળીએ છીએ.',
         },
         {
           title: 'પારદર્શક પ્રક્રિયા',
           desc: 'સ્પષ્ટ માહિતી અને વાજબી કિંમત.',
-          additional: 'કોઈ છુપા ચાર્જ નહીં. સીધા માઇલસ્ટોન અને અગાઉથી નક્કી કરેલા વાજબી અંદાજો.',
+          additional:
+            'કોઈ છુપા ચાર્જ નહીં. સીધા માઇલસ્ટોન અને અગાઉથી નક્કી કરેલા વાજબી અંદાજો.',
         },
         {
           title: 'ટેકનોલોજી-સક્ષમ',
           desc: 'સરળ, સુરક્ષિત અને અનુકૂળ ઓનલાઇન પ્લેટફોર્મ.',
-          additional: 'ઓનલાઇન કોલ શેડ્યૂલ કરો, સુરક્ષિત રીતે દસ્તાવેજ અપલોડ કરો અને ક્યાંયથી પણ સ્થિતિ ચકાસો.',
+          additional:
+            'ઓનલાઇન કોલ શેડ્યૂલ કરો, સુરક્ષિત રીતે દસ્તાવેજ અપલોડ કરો અને ક્યાંયથી પણ સ્થિતિ ચકાસો.',
         },
         {
           title: 'વિશ્વસનીય નેટવર્ક',
-          desc: 'જરૂર જણાય ત્યાં સ્વતંત્ર, લાયકાત ધરાવતા વ્યાવસાયિકો.',
-          additional: 'ચકાસાયેલા અને સિદ્ધ અનુભવ ધરાવતા એડવોકેટ્સ, ચાર્ટર્ડ એકાઉન્ટન્ટ્સ અને નિષ્ણાતો.',
+          desc:
+            'જરૂર જણાય ત્યાં સ્વતંત્ર, લાયકાત ધરાવતા વ્યાવસાયિકો.',
+          additional:
+            'ચકાસાયેલા અને સિદ્ધ અનુભવ ધરાવતા એડવોકેટ્સ, ચાર્ટર્ડ એકાઉન્ટન્ટ્સ અને નિષ્ણાતો.',
         },
       ],
     },
@@ -582,7 +659,8 @@ titleLine4: 'તેને સમજવામાં.',
     cta: {
       kicker: 'કોઈ પ્રશ્ન છે?',
       title: 'ચાલો આગળ વધવાનો માર્ગ શોધીએ.',
-      desc: 'તમારી જરૂરિયાત જણાવો અને અમારી ટીમ તમને આગળના પગલાં અને ઉપલબ્ધ સહાય અંગે માર્ગદર્શન આપશે.',
+      desc:
+        'તમારી જરૂરિયાત જણાવો અને અમારી ટીમ તમને આગળના પગલાં અને ઉપલબ્ધ સહાય અંગે માર્ગદર્શન આપશે.',
       startEnquiry: 'તમારી પૂછપરછ શરૂ કરો',
       chatWhatsApp: 'વોટ્સએપ પર વાત કરો',
       quoteLine1: 'એ જ સવાલો.',
@@ -593,9 +671,11 @@ titleLine4: 'તેને સમજવામાં.',
       privacy: 'ગોપનીયતા નીતિ',
       terms: 'નિયમો અને શરતો',
       disclaimer: 'ડિસ્ક્લેમર',
-      locationNotice: 'સુરત, ગુજરાત, ભારત · ઓનલાઇન અને એપોઇન્ટમેન્ટ આધારિત સહાય',
+      locationNotice:
+        'સુરત, ગુજરાત, ભારત · ઓનલાઇન અને એપોઇન્ટમેન્ટ આધારિત સહાય',
     },
   },
+
   hi: {
     nav: {
       home: 'होम',
@@ -610,10 +690,11 @@ titleLine4: 'તેને સમજવામાં.',
     hero: {
       kicker: 'व्यक्तिगत • व्यवसाय • दस्तावेज़ीकरण • केस सहायता',
       titleLine1: 'कोई समस्या है?',
-titleLine2: 'हमें बताएं।',
-titleLine3: 'हम आपकी मदद करेंगे',
-titleLine4: 'उसे समझने में।',
-      desc: 'CASE SUNO आपकी स्थिति को समझने, ज़रूरी चीज़ों को व्यवस्थित करने और सही सहायता पाने में आपकी मदद करता है।',
+      titleLine2: 'हमें बताएं।',
+      titleLine3: 'हम आपकी मदद करेंगे',
+      titleLine4: 'उसे समझने में।',
+      desc:
+        'CASE SUNO आपकी स्थिति को समझने, ज़रूरी चीज़ों को व्यवस्थित करने और सही सहायता पाने में आपकी मदद करता है।',
       ctaPrimary: 'अपनी पूछताछ शुरू करें',
       badgeConfidential: 'गोपनीय',
       badgeConfidentialSub: '& सुरक्षित',
@@ -622,19 +703,26 @@ titleLine4: 'उसे समझने में।',
       badgeOnline: 'ऑनलाइन &',
       badgeOnlineSub: 'अपॉइंटमेंट आधारित',
       locationSub: 'ऑनलाइन और अपॉइंटमेंट आधारित सहायता',
-      mantra: ['लोग (People)', 'समस्याएं (Problems)', 'प्रक्रियाएं (Processes)', 'प्रगति (Progress)'],
+      mantra: [
+        'लोग (People)',
+        'समस्याएं (Problems)',
+        'प्रक्रियाएं (Processes)',
+        'प्रगति (Progress)',
+      ],
     },
     services: {
       kicker: 'हमारी सेवाएं',
       title: 'वास्तविक जीवन की स्थितियों में संपूर्ण सहयोग',
-      desc: 'व्यक्तिगत मामलों से लेकर व्यापारिक संचालन तक, CASE SUNO आपको अपने विकल्पों को समझने और आवश्यकता पड़ने पर सही विशेषज्ञों से जुड़ने में मदद करता है।',
+      desc:
+        'व्यक्तिगत मामलों से लेकर व्यापारिक संचालन तक, CASE SUNO आपको अपने विकल्पों को समझने और आवश्यकता पड़ने पर सही विशेषज्ञों से जुड़ने में मदद करता है।',
       viewAll: 'सभी सेवाएं देखें',
       learnMore: 'और जानें',
       items: [
         {
           id: 'individual-assistance',
           title: 'व्यक्तिगत सहायता (Individual Assistance)',
-          shortDesc: 'व्यक्तिगत, पारिवारिक और रोजमर्रा के मामलों में मार्गदर्शन।',
+          shortDesc:
+            'व्यक्तिगत, पारिवारिक और रोजमर्रा के मामलों में मार्गदर्शन।',
           overview:
             'पारिवारिक और व्यक्तिगत चुनौतियां अक्सर चिंता और भ्रम लेकर आती हैं। CASE SUNO एक शांत और गोपनीय वातावरण प्रदान करता है जहां आप अपनी चिंताओं पर खुलकर चर्चा कर सकते हैं, तथ्यों को समझ सकते हैं और व्यावहारिक कदम उठा सकते हैं।',
           whatWeDo: [
@@ -649,12 +737,14 @@ titleLine4: 'उसे समझने में।',
             'उपभोक्ता शिकायतें व विक्रेता विवाद',
             'व्यक्तिगत अनुबंध व रोजगार बदलाव',
           ],
-          deliveryMode: 'गोपनीय ऑनलाइन वीडियो कॉल या सूरत कार्यालय में व्यक्तिगत बैठक (केवल अपॉइंटमेंट द्वारा)',
+          deliveryMode:
+            'गोपनीय ऑनलाइन वीडियो कॉल या सूरत कार्यालय में व्यक्तिगत बैठक (केवल अपॉइंटमेंट द्वारा)',
         },
         {
           id: 'business-support',
           title: 'व्यापार सहायता (Business Support)',
-          shortDesc: 'परिचालन, अनुपालन और अनुबंध संबंधित सहायता।',
+          shortDesc:
+            'परिचालन, अनुपालन और अनुबंध संबंधित सहायता।',
           overview:
             'व्यापार चलाने के लिए परिचालन अनुबंधों, विक्रेता संबंधों और विनियामक अनुपालन को व्यवस्थित रखना आवश्यक है। हम MSME, संस्थापकों और व्यापारियों को प्रशासनिक बाधाओं को दूर करने में सहायता करते हैं।',
           whatWeDo: [
@@ -669,12 +759,14 @@ titleLine4: 'उसे समझने में।',
             'सेवा शर्तें और ग्राहक अनुबंध पत्र',
             'सूरत के स्थानीय व्यवसायों के लिए अनुपालन ऑडिट',
           ],
-          deliveryMode: 'समर्पित कार्यकारी संपर्क के साथ वर्चुअल और व्यक्तिगत समीक्षा',
+          deliveryMode:
+            'समर्पित कार्यकारी संपर्क के साथ वर्चुअल और व्यक्तिगत समीक्षा',
         },
         {
           id: 'documentation-help',
           title: 'दस्तावेज़ीकरण सहायता (Documentation Help)',
-          shortDesc: 'ड्राफ्टिंग समर्थन और फाइलों का सुव्यवस्थित संगठन।',
+          shortDesc:
+            'ड्राफ्टिंग समर्थन और फाइलों का सुव्यवस्थित संगठन।',
           overview:
             'अव्यवस्थित कागजात विवादों के बढ़ने का प्रमुख कारण होते हैं। हम आपके दस्तावेजों को व्यवस्थित करते हैं, औपचारिक उत्तर ड्राफ्ट करते हैं और यह सुनिश्चित करते हैं कि आपका केस रिकॉर्ड मजबूत हो।',
           whatWeDo: [
@@ -689,12 +781,15 @@ titleLine4: 'उसे समझने में।',
             'स्पष्ट सेवा अनुबंध ड्राफ्ट करना',
             'पारिवारिक या फर्म के पुराने रिकॉर्ड्स का डिजिटल संग्रह',
           ],
-          deliveryMode: 'सुरक्षित दस्तावेज अपलोड पोर्टल और व्यक्तिगत समीक्षा सत्र',
+          deliveryMode:
+            'सुरक्षित दस्तावेज अपलोड पोर्टल और व्यक्तिगत समीक्षा सत्र',
         },
         {
           id: 'professional-coordination',
-          title: 'पेशेवर समन्वय (Professional Coordination)',
-          shortDesc: 'आवश्यकतानुसार सत्यापित स्वतंत्र पेशेवरों से जुड़ाव।',
+          title:
+            'पेशेवर समन्वय (Professional Coordination)',
+          shortDesc:
+            'आवश्यकतानुसार सत्यापित स्वतंत्र पेशेवरों से जुड़ाव।',
           overview:
             'सही वकील, चार्टर्ड एकाउंटेंट या डोमेन विशेषज्ञ खोजना कठिन हो सकता है। हम आपको आपकी आवश्यकता और बजट के अनुसार जाँचे-परखे स्वतंत्र पेशेवरों से जोड़ते हैं।',
           whatWeDo: [
@@ -709,12 +804,15 @@ titleLine4: 'उसे समझने में।',
             'ट्रेडमार्क, पेटेंट और बौद्धिक संपदा पंजीकरण',
             'भूमि सर्वेक्षण, टाइटल सर्च और वैल्यूएशन रिपोर्ट',
           ],
-          deliveryMode: 'सुव्यवस्थित केस हैंडओवर के साथ प्रमाणित परिचय',
+          deliveryMode:
+            'सुव्यवस्थित केस हैंडओवर के साथ प्रमाणित परिचय',
         },
         {
           id: 'ongoing-support',
-          title: 'निरंतर प्रशासनिक सहायता (Ongoing Support)',
-          shortDesc: 'समाधान होने तक नियमित ट्रैकिंग और फॉलो-अप।',
+          title:
+            'निरंतर प्रशासनिक सहायता (Ongoing Support)',
+          shortDesc:
+            'समाधान होने तक नियमित ट्रैकिंग और फॉलो-अप।',
           overview:
             'कई मामले हफ्तों या महीनों तक चलते हैं, जिनमें तारीखें याद रखना और फॉलो-अप लेना तनावपूर्ण हो सकता है। CASE SUNO आपके मामले के संपन्न होने तक प्रशासनिक सहयोगी के रूप में आपके साथ रहता है।',
           whatWeDo: [
@@ -729,7 +827,8 @@ titleLine4: 'उसे समझने में।',
             'चरणबद्ध अनुबंध भुगतान और कार्यों की ट्रैकिंग',
             'त्रैमासिक अनुपालन समीक्षा और नवीनीकरण',
           ],
-          deliveryMode: 'व्हाट्सएप, पोर्टल और मासिक चेक-इन के माध्यम से नियमित अपडेट्स',
+          deliveryMode:
+            'व्हाट्सएप, पोर्टल और मासिक चेक-इन के माध्यम से नियमित अपडेट्स',
         },
       ],
     },
@@ -737,7 +836,8 @@ titleLine4: 'उसे समझने में।',
       kicker: 'यह कैसे काम करता है',
       title: 'एक सरल प्रक्रिया।',
       titleSub: 'अधिक स्पष्ट कल।',
-      desc: 'चीजों को आपके लिए आसान और तनावमुक्त बनाने के लिए तैयार की गई पारदर्शी प्रक्रिया।',
+      desc:
+        'चीजों को आपके लिए आसान और तनावमुक्त बनाने के लिए तैयार की गई पारदर्शी प्रक्रिया।',
       knowMore: 'और जानें',
       clickToInspect: 'विवरण देखने के लिए क्लिक करें',
       hideDetails: 'विवरण छुपाएं',
@@ -750,95 +850,134 @@ titleLine4: 'उसे समझने में।',
         {
           step: '01',
           title: 'सुनना (Listen)',
-          desc: 'समझना कि आप किस समस्या या आवश्यकता का सामना कर रहे हैं।',
+          desc:
+            'समझना कि आप किस समस्या या आवश्यकता का सामना कर रहे हैं।',
           detail:
             'हम बिना किसी जल्दबाजी के धैर्यपूर्वक आपकी बात सुनकर शुरुआत करते हैं। कोई कानूनी आडंबर नहीं। आप अपनी स्थिति और अपेक्षित परिणाम खुलकर बता सकते हैं।',
-          deliverables: ['प्रारंभिक सारांश', 'समस्या का स्पष्ट विवरण', 'तात्कालिक जोखिम चेकलिस्ट'],
+          deliverables: [
+            'प्रारंभिक सारांश',
+            'समस्या का स्पष्ट विवरण',
+            'तात्कालिक जोखिम चेकलिस्ट',
+          ],
         },
         {
           step: '02',
           title: 'समझना (Understand)',
-          desc: 'बुनियादी जानकारी और संबंधित दस्तावेजों को एकत्र करना।',
+          desc:
+            'बुनियादी जानकारी और संबंधित दस्तावेजों को एकत्र करना।',
           detail:
             'हम जांचते हैं कि आपके पास कौन से कागजात, नोटिस, संचार या अनुबंध मौजूद हैं। बिना किसी भटकाव के हम पहचानते हैं कि क्या आवश्यक है।',
-          deliverables: ['दस्तावेज सूची', 'घटनाक्रम की समयरेखा', 'मुख्य तथ्यों का सत्यापन'],
+          deliverables: [
+            'दस्तावेज सूची',
+            'घटनाक्रम की समयरेखा',
+            'मुख्य तथ्यों का सत्यापन',
+          ],
         },
         {
           step: '03',
           title: 'व्यवस्थित करना (Organise)',
-          desc: 'जानकारी, दस्तावेजों और आवश्यकताओं की सुव्यवस्थित रूपरेखा बनाना।',
+          desc:
+            'जानकारी, दस्तावेजों और आवश्यकताओं की सुव्यवस्थित रूपरेखा बनाना।',
           detail:
             'भ्रम का स्थान स्पष्टता लेती है। हम आपके मामले को एक व्यवस्थित फाइल में संकलित करते हैं जिसमें सारांश, संदर्भ और इंडेक्स शामिल होते हैं।',
-          deliverables: ['संगठित केस फाइल', 'विकल्पों का तार्किक विश्लेषण', 'निर्णय रोडमैप'],
+          deliverables: [
+            'संगठित केस फाइल',
+            'विकल्पों का तार्किक विश्लेषण',
+            'निर्णय रोडमैप',
+          ],
         },
         {
           step: '04',
           title: 'समन्वय (Coordinate)',
-          desc: 'आवश्यकतानुसार सही स्वतंत्र पेशेवरों से संपर्क कराना।',
+          desc:
+            'आवश्यकतानुसार सही स्वतंत्र पेशेवरों से संपर्क कराना।',
           detail:
             'यदि वकील, सीए, सर्वेयर या मध्यस्थ की आवश्यकता है, तो हम जांचे-परखे विशेषज्ञों से संपर्क कराते हैं और तैयार फाइल सौंपते हैं जिससे आपका समय और शुल्क बचता है।',
-          deliverables: ['विशेषज्ञ की सिफारिश', 'प्रमाणित ब्रीफिंग हैंडओवर', 'पारदर्शी शुल्क संरेखण'],
+          deliverables: [
+            'विशेषज्ञ की सिफारिश',
+            'प्रमाणित ब्रीफिंग हैंडओवर',
+            'पारदर्शी शुल्क संरेखण',
+          ],
         },
         {
           step: '05',
           title: 'फॉलो-अप (Follow Up)',
-          desc: 'अनुमत प्रशासनिक सहायता और नियमित ट्रैकिंग प्रदान करना।',
+          desc:
+            'अनुमत प्रशासनिक सहायता और नियमित ट्रैकिंग प्रदान करना।',
           detail:
             'हम मामला सौंपने के बाद अलग नहीं होते। CASE SUNO समयसीमा का समन्वय करता है, तारीखें याद रखता है और समाधान तक नियमित अपडेट प्रदान करता है।',
-          deliverables: ['माइलस्टोन स्थिति रिपोर्ट', 'महत्वपूर्ण तारीखों के लिए अलर्ट', 'समाधान के बाद का अभिलेख'],
+          deliverables: [
+            'माइलस्टोन स्थिति रिपोर्ट',
+            'महत्वपूर्ण तारीखों के लिए अलर्ट',
+            'समाधान के बाद का अभिलेख',
+          ],
         },
       ],
     },
     whyChoose: {
       kicker: 'CASE SUNO क्यों चुनें',
       title: 'स्पष्टता। सहायता। प्रगति।',
-      desc: 'हम तकनीक, अनुभव और मानवीय दृष्टिकोण का समन्वय करते हैं ताकि आप आत्मविश्वास के साथ आगे बढ़ सकें।',
+      desc:
+        'हम तकनीक, अनुभव और मानवीय दृष्टिकोण का समन्वय करते हैं ताकि आप आत्मविश्वास के साथ आगे बढ़ सकें।',
       pillars: [
         {
           title: 'मानव-केंद्रित दृष्टिकोण',
-          desc: 'आपकी स्थिति को ध्यानपूर्वक सुना और समझा जाता है।',
-          additional: 'सहानुभूतिपूर्ण सुनवाई। हम हर मामले को संवेदनशीलता और गरिमा के साथ संभालते हैं।',
+          desc:
+            'आपकी स्थिति को ध्यानपूर्वक सुना और समझा जाता है।',
+          additional:
+            'सहानुभूतिपूर्ण सुनवाई। हम हर मामले को संवेदनशीलता और गरिमा के साथ संभालते हैं।',
         },
         {
           title: 'पारदर्शी प्रक्रिया',
           desc: 'स्पष्ट जानकारी और उचित शुल्क।',
-          additional: 'कोई छिपे हुए शुल्क नहीं। सीधे माइलस्टोन और पहले से तय किए गए पारदर्शी अनुमान।',
+          additional:
+            'कोई छिपे हुए शुल्क नहीं। सीधे माइलस्टोन और पहले से तय किए गए पारदर्शी अनुमान।',
         },
         {
           title: 'तकनीक-सक्षम',
-          desc: 'सरल, सुरक्षित और सुविधाजनक ऑनलाइन मंच।',
-          additional: 'ऑनलाइन कॉल शेड्यूल करें, सुरक्षित रूप से दस्तावेज अपलोड करें और स्थिति ट्रैक करें।',
+          desc:
+            'सरल, सुरक्षित और सुविधाजनक ऑनलाइन मंच।',
+          additional:
+            'ऑनलाइन कॉल शेड्यूल करें, सुरक्षित रूप से दस्तावेज अपलोड करें और स्थिति ट्रैक करें।',
         },
         {
           title: 'विश्वसनीय नेटवर्क',
-          desc: 'आवश्यकतानुसार स्वतंत्र, योग्य और अनुभवी पेशेवर।',
-          additional: 'जांचे-परखे अधिवक्ता, चार्टर्ड एकाउंटेंट और विशेषज्ञ।',
+          desc:
+            'आवश्यकतानुसार स्वतंत्र, योग्य और अनुभवी पेशेवर।',
+          additional:
+            'जांचे-परखे अधिवक्ता, चार्टर्ड एकाउंटेंट और विशेषज्ञ।',
         },
       ],
     },
     belief: {
       kicker: 'हमारा विश्वास',
       title: 'आगे क्या करना है, यह जानें।',
-      line1: 'हो सकता है आपके पास हमेशा सभी उत्तर न हों।',
-      line2: 'लेकिन आप हमेशा अगला कदम उठा सकते हैं।',
-      line3: 'CASE SUNO इसी के लिए उपस्थित है।',
+      line1:
+        'हो सकता है आपके पास हमेशा सभी उत्तर न हों।',
+      line2:
+        'लेकिन आप हमेशा अगला कदम उठा सकते हैं।',
+      line3:
+        'CASE SUNO इसी के लिए उपस्थित है।',
       cta: 'हमारी कहानी',
     },
     cta: {
       kicker: 'कोई प्रश्न है?',
       title: 'आइए आगे का रास्ता खोजें।',
-      desc: 'अपनी आवश्यकता साझा करें और हमारी टीम आपको अगले कदमों और उपलब्ध सहायता पर मार्गदर्शन करेगी।',
+      desc:
+        'अपनी आवश्यकता साझा करें और हमारी टीम आपको अगले कदमों और उपलब्ध सहायता पर मार्गदर्शन करेगी।',
       startEnquiry: 'अपनी पूछताछ शुरू करें',
       chatWhatsApp: 'व्हाट्सएप पर बात करें',
       quoteLine1: 'वही सवाल।',
       quoteLine2: 'अधिक स्पष्ट कल।',
     },
     footer: {
-      rights: '© 2026 CASE SUNO. सर्वाधिकार सुरक्षित।',
+      rights:
+        '© 2026 CASE SUNO. सर्वाधिकार सुरक्षित।',
       privacy: 'गोपनीयता नीति',
       terms: 'नियम और शर्तें',
       disclaimer: 'अस्वीकरण (Disclaimer)',
-      locationNotice: 'सूरत, गुजरात, भारत · ऑनलाइन और अपॉइंटमेंट आधारित सहायता',
+      locationNotice:
+        'सूरत, गुजरात, भारत · ऑनलाइन और अपॉइंटमेंट आधारित सहायता',
     },
   },
 };
@@ -850,32 +989,96 @@ interface LanguageContextType {
   t: Translations;
 }
 
-const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+const LanguageContext = createContext<LanguageContextType | undefined>(
+  undefined
+);
 
-export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguageState] = useState<Language>(() => {
+/**
+ * Language Provider
+ *
+ * IMPORTANT:
+ * We intentionally start with English on the first render.
+ * This ensures that the server-rendered HTML and the first
+ * client-rendered HTML are identical, preventing hydration errors.
+ *
+ * The saved language from localStorage is loaded AFTER hydration.
+ */
+export const LanguageProvider: React.FC<{
+  children: React.ReactNode;
+}> = ({ children }) => {
+  // FIX:
+  // Do NOT read localStorage inside the useState initializer.
+  // Server cannot access localStorage, while the browser can.
+  // Starting with English guarantees identical SSR + client HTML.
+  const [language, setLanguageState] = useState<Language>('en');
+
+  /**
+   * Load previously selected language after the component
+   * has mounted in the browser.
+   */
+  useEffect(() => {
     try {
-      const saved = localStorage.getItem('case_suno_lang') as Language;
-      return saved === 'gu' || saved === 'hi' || saved === 'en' ? saved : 'en';
-    } catch {
-      return 'en';
-    }
-  });
+      const saved = localStorage.getItem(
+        'case_suno_lang'
+      ) as Language | null;
 
+      if (
+        saved === 'gu' ||
+        saved === 'hi' ||
+        saved === 'en'
+      ) {
+        setLanguageState(saved);
+      }
+    } catch {
+      // Ignore localStorage errors.
+    }
+  }, []);
+
+  /**
+   * Change language manually.
+   */
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
+
     try {
       localStorage.setItem('case_suno_lang', lang);
       document.documentElement.lang = lang;
     } catch {
-      // ignore
+      // Ignore localStorage errors.
     }
   };
 
+  /**
+   * Cycle through:
+   * English → Hindi → Gujarati → English
+   */
   const toggleLanguage = () => {
-    setLanguage(language === 'en' ? 'hi' : language === 'hi' ? 'gu' : 'en');
+    setLanguageState((currentLanguage) => {
+      const nextLanguage =
+        currentLanguage === 'en'
+          ? 'hi'
+          : currentLanguage === 'hi'
+            ? 'gu'
+            : 'en';
+
+      try {
+        localStorage.setItem(
+          'case_suno_lang',
+          nextLanguage
+        );
+        document.documentElement.lang = nextLanguage;
+      } catch {
+        // Ignore localStorage errors.
+      }
+
+      return nextLanguage;
+    });
   };
 
+  /**
+   * Keep the HTML lang attribute synchronized
+   * with the currently selected language.
+   */
   useEffect(() => {
     document.documentElement.lang = language;
   }, [language]);
@@ -887,13 +1090,21 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     t: translations[language],
   };
 
-  return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>;
+  return (
+    <LanguageContext.Provider value={value}>
+      {children}
+    </LanguageContext.Provider>
+  );
 };
 
 export const useLanguage = (): LanguageContextType => {
   const context = useContext(LanguageContext);
+
   if (!context) {
-    throw new Error('useLanguage must be used within a LanguageProvider');
+    throw new Error(
+      'useLanguage must be used within a LanguageProvider'
+    );
   }
+
   return context;
 };
