@@ -71,7 +71,7 @@ const [showAuth, setShowAuth] = useState(false);
           className="focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-black/50 rounded-sm shrink-0"
           aria-label="CASE SUNO Home"
         >
-          <img src="/logo.png" alt="CASE SUNO Logo" className="h-15 bg-red-100" />
+          <img src="/logo.png" alt="CASE SUNO" className="h-15" />
         </a>
 
         {/* Zone 2: Desktop Navigation Links with Smooth Animated Underlines */}
