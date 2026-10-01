@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X, ArrowRight, Globe, ChevronDown } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
-
+import GetStartedModal from "./auth/GetStartedModal";
 interface HeaderProps {
   onOpenEnquiry: (serviceCategory?: string) => void;
   onOpenAbout: () => void;
@@ -20,7 +20,8 @@ export const Header: React.FC<HeaderProps> = ({
   onOpenHowItWorks,
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+const [scrolled, setScrolled] = useState(false);
+const [showAuth, setShowAuth] = useState(false);
   const { language, setLanguage, toggleLanguage, t } = useLanguage();
 
   useEffect(() => {
@@ -157,7 +158,7 @@ export const Header: React.FC<HeaderProps> = ({
 
           {/* Primary CTA */}
           <button
-            onClick={() => onOpenEnquiry()}
+           onClick={() => setShowAuth(true)}
             className="inline-flex items-center gap-2 px-4 md:px-5 py-2.5 bg-[#1F1E1B] hover:bg-[#33312B] text-white text-[13px] font-medium tracking-wide rounded-sm transition-all duration-200 active:scale-[0.98] shadow-xs cursor-pointer group"
           >
             <span>{t.nav.getStarted}</span>
@@ -267,10 +268,10 @@ export const Header: React.FC<HeaderProps> = ({
 
           <div className="pt-2 border-t border-[#E8E4DB]">
             <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenEnquiry();
-              }}
+  onClick={() => {
+    setMobileMenuOpen(false);
+    setShowAuth(true);
+  }}
               className="w-full flex items-center justify-center gap-2 py-3 bg-[#1F1E1B] text-white text-sm font-medium rounded-sm"
             >
               <span>{t.nav.getStarted}</span>
@@ -279,6 +280,10 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
         </div>
       )}
+      <GetStartedModal
+        isOpen={showAuth}
+        onClose={() => setShowAuth(false)}
+      />
     </header>
   );
 };

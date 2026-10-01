@@ -1,11 +1,6 @@
-import React from 'react';
-import {
-  ArrowRight,
-  ShieldCheck,
-  CheckSquare,
-  Calendar,
-} from 'lucide-react';
-import { useLanguage } from '../context/LanguageContext';
+import React from "react";
+import { ArrowRight, ShieldCheck, CheckSquare, Calendar } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
 
 interface HeroProps {
   onOpenEnquiry: () => void;
@@ -18,7 +13,7 @@ export const Hero: React.FC<HeroProps> = ({
 }) => {
   const { t, language } = useLanguage();
 
-  const isIndic = language === 'gu' || language === 'hi';
+  const isIndic = language === "gu" || language === "hi";
 
   return (
     <section
@@ -48,8 +43,8 @@ export const Hero: React.FC<HeroProps> = ({
 
       {/* Optional subtle overlay for text readability */}
       <div
-  aria-hidden="true"
-  className="
+        aria-hidden="true"
+        className="
     absolute inset-0 -z-[5]
     pointer-events-none
    bg-gradient-to-r
@@ -57,7 +52,7 @@ export const Hero: React.FC<HeroProps> = ({
     via-[#FAF9F6]/35
     to-transparent
   "
-/>
+      />
 
       <div
         className="
@@ -109,7 +104,7 @@ export const Hero: React.FC<HeroProps> = ({
             <div
               className="
                sm
-               sm:w-[100vw]
+               sm:w-full
                 space-y-5
                 sm:space-y-6
                 md:space-y-7
@@ -135,9 +130,7 @@ export const Hero: React.FC<HeroProps> = ({
                   aria-hidden="true"
                 />
 
-                <span className="leading-none">
-                  {t.hero.kicker}
-                </span>
+                <span className="leading-none">{t.hero.kicker}</span>
               </div>
 
               {/* Main Heading */}
@@ -156,7 +149,7 @@ export const Hero: React.FC<HeroProps> = ({
                   tracking-tight
                   text-[#171613]
                   text-balance
-                  ${isIndic ? 'font-sans font-semibold' : 'font-serif'}
+                  ${isIndic ? "font-sans font-semibold" : "font-serif"}
                 `}
               >
                 <span>{t.hero.titleLine1}</span>
