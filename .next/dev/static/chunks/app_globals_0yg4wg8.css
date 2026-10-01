@@ -2,6 +2,9 @@
 @layer properties {
   @supports (((-webkit-hyphens: none)) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color: rgb(from red r g b)))) {
     *, :before, :after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
       --tw-space-y-reverse: 0;
       --tw-border-style: solid;
       --tw-gradient-position: initial;
@@ -46,9 +49,6 @@
       --tw-backdrop-sepia: initial;
       --tw-duration: initial;
       --tw-ease: initial;
-      --tw-translate-x: 0;
-      --tw-translate-y: 0;
-      --tw-translate-z: 0;
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
@@ -424,12 +424,24 @@
     top: 0;
   }
 
+  .top-1\/2 {
+    top: 50%;
+  }
+
   .top-5 {
     top: calc(var(--spacing) * 5);
   }
 
+  .right-2\.5 {
+    right: calc(var(--spacing) * 2.5);
+  }
+
   .right-\[5\%\] {
     right: 5%;
+  }
+
+  .left-3 {
+    left: calc(var(--spacing) * 3);
   }
 
   .left-\[5\%\] {
@@ -791,6 +803,10 @@
     min-width: 0;
   }
 
+  .min-w-\[140px\] {
+    min-width: 140px;
+  }
+
   .flex-1 {
     flex: 1;
   }
@@ -799,12 +815,21 @@
     flex-shrink: 0;
   }
 
+  .-translate-y-1\/2 {
+    --tw-translate-y: calc(calc(1 / 2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+
   .rotate-180 {
     rotate: 180deg;
   }
 
   .cursor-pointer {
     cursor: pointer;
+  }
+
+  .appearance-none {
+    appearance: none;
   }
 
   .grid-cols-1 {
@@ -1037,6 +1062,10 @@
 
   .border-\[\#D5CFBF\] {
     border-color: #d5cfbf;
+  }
+
+  .border-\[\#D9D2C5\] {
+    border-color: #d9d2c5;
   }
 
   .border-\[\#D9D3C7\] {
@@ -1465,6 +1494,10 @@
     padding-right: var(--spacing);
   }
 
+  .pr-8 {
+    padding-right: calc(var(--spacing) * 8);
+  }
+
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
   }
@@ -1479,6 +1512,14 @@
 
   .pl-2 {
     padding-left: calc(var(--spacing) * 2);
+  }
+
+  .pl-3 {
+    padding-left: calc(var(--spacing) * 3);
+  }
+
+  .pl-9 {
+    padding-left: calc(var(--spacing) * 9);
   }
 
   .text-center {
@@ -1535,6 +1576,10 @@
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
 
+  .text-\[1px\] {
+    font-size: 1px;
+  }
+
   .text-\[2\.25rem\] {
     font-size: 2.25rem;
   }
@@ -1577,6 +1622,14 @@
 
   .text-\[14px\] {
     font-size: 14px;
+  }
+
+  .text-\[80px\] {
+    font-size: 80px;
+  }
+
+  .text-\[100px\] {
+    font-size: 100px;
   }
 
   .leading-\[1\.7\] {
@@ -1906,6 +1959,10 @@
     color: #fdfcfb;
   }
 
+  .text-\[px\] {
+    color: px;
+  }
+
   .text-black {
     color: var(--color-black);
   }
@@ -2067,6 +2124,11 @@
   .ease-in-out {
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
+  }
+
+  .outline-none {
+    --tw-outline-style: none;
+    outline-style: none;
   }
 
   .select-none {
@@ -2245,8 +2307,23 @@
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
 
+  .focus\:ring-2:focus {
+    --tw-ring-shadow: var(--tw-ring-inset, ) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+
   .focus\:ring-\[\#1E1D1A\]:focus {
     --tw-ring-color: #1e1d1a;
+  }
+
+  .focus\:ring-\[\#1F1E1B\]\/20:focus {
+    --tw-ring-color: #1f1e1b33;
+  }
+
+  @supports (color: lab(0% 0 0)) {
+    .focus\:ring-\[\#1F1E1B\]\/20:focus {
+      --tw-ring-color: lab(11.2897% -.0371933 2.24468 / .2);
+    }
   }
 
   .focus\:outline-hidden:focus {
@@ -2825,6 +2902,24 @@
   width: 100%;
 }
 
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+
 @property --tw-space-y-reverse {
   syntax: "*";
   inherits: false;
@@ -3060,24 +3155,6 @@
 @property --tw-ease {
   syntax: "*";
   inherits: false
-}
-
-@property --tw-translate-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-
-@property --tw-translate-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-
-@property --tw-translate-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
 }
 
 @property --tw-scale-x {

@@ -3030,6 +3030,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-client] (ecmascript) <export default as X>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-client] (ecmascript) <export default as ArrowRight>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$globe$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Globe$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/globe.js [app-client] (ecmascript) <export default as Globe>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-down.js [app-client] (ecmascript) <export default as ChevronDown>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$LanguageContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/context/LanguageContext.tsx [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
@@ -3068,6 +3069,11 @@ const Header = ({ onOpenEnquiry, onOpenAbout, onOpenResources, onOpenFaq, onOpen
         if (language === 'hi') return 'हिं';
         return 'ગુજ';
     };
+    const getLanguageLabel = ()=>{
+        if (language === 'en') return 'English';
+        if (language === 'hi') return 'हिंदी';
+        return 'ગુજરાતી';
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
         className: `sticky top-0 z-40 w-full transition-all duration-300 ${scrolled ? 'bg-[#FAF9F6]/95 backdrop-blur-md shadow-xs border-b border-[#E8E4DB]' : 'bg-[#FAF9F6] border-b border-transparent'}`,
         children: [
@@ -3088,15 +3094,15 @@ const Header = ({ onOpenEnquiry, onOpenAbout, onOpenResources, onOpenFaq, onOpen
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                             src: "/logo.png",
                             alt: "CASE SUNO Logo",
-                            className: "h-20  w-auto"
+                            className: "h-20 w-auto"
                         }, void 0, false, {
                             fileName: "[project]/components/Header.tsx",
-                            lineNumber: 67,
+                            lineNumber: 73,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/components/Header.tsx",
-                        lineNumber: 58,
+                        lineNumber: 64,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -3116,7 +3122,7 @@ const Header = ({ onOpenEnquiry, onOpenAbout, onOpenResources, onOpenFaq, onOpen
                                 children: t.nav.home
                             }, void 0, false, {
                                 fileName: "[project]/components/Header.tsx",
-                                lineNumber: 75,
+                                lineNumber: 81,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -3129,7 +3135,7 @@ const Header = ({ onOpenEnquiry, onOpenAbout, onOpenResources, onOpenFaq, onOpen
                                 children: t.nav.howItWorks
                             }, void 0, false, {
                                 fileName: "[project]/components/Header.tsx",
-                                lineNumber: 85,
+                                lineNumber: 91,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -3142,7 +3148,7 @@ const Header = ({ onOpenEnquiry, onOpenAbout, onOpenResources, onOpenFaq, onOpen
                                 children: t.nav.services
                             }, void 0, false, {
                                 fileName: "[project]/components/Header.tsx",
-                                lineNumber: 95,
+                                lineNumber: 101,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3151,7 +3157,7 @@ const Header = ({ onOpenEnquiry, onOpenAbout, onOpenResources, onOpenFaq, onOpen
                                 children: t.nav.about
                             }, void 0, false, {
                                 fileName: "[project]/components/Header.tsx",
-                                lineNumber: 105,
+                                lineNumber: 111,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3160,7 +3166,7 @@ const Header = ({ onOpenEnquiry, onOpenAbout, onOpenResources, onOpenFaq, onOpen
                                 children: t.nav.resources
                             }, void 0, false, {
                                 fileName: "[project]/components/Header.tsx",
-                                lineNumber: 111,
+                                lineNumber: 117,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3169,7 +3175,7 @@ const Header = ({ onOpenEnquiry, onOpenAbout, onOpenResources, onOpenFaq, onOpen
                                 children: t.nav.faq
                             }, void 0, false, {
                                 fileName: "[project]/components/Header.tsx",
-                                lineNumber: 117,
+                                lineNumber: 123,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3178,74 +3184,75 @@ const Header = ({ onOpenEnquiry, onOpenAbout, onOpenResources, onOpenFaq, onOpen
                                 children: t.nav.contact
                             }, void 0, false, {
                                 fileName: "[project]/components/Header.tsx",
-                                lineNumber: 123,
+                                lineNumber: 129,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Header.tsx",
-                        lineNumber: 71,
+                        lineNumber: 77,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "hidden xl:flex items-center gap-2.5 md:gap-3.5 shrink-0",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "inline-flex items-center p-0.5 rounded-full border border-[#DCD6C9] bg-[#F1ECE1] shadow-2xs select-none",
-                                role: "group",
-                                "aria-label": "Language selection",
+                                className: "relative",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "pl-2 pr-1 text-[#7A7468]",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$globe$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Globe$3e$__["Globe"], {
-                                            className: "w-3.5 h-3.5"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/Header.tsx",
-                                            lineNumber: 140,
-                                            columnNumber: 15
-                                        }, ("TURBOPACK compile-time value", void 0))
-                                    }, void 0, false, {
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                        value: language,
+                                        onChange: (e)=>setLanguage(e.target.value),
+                                        className: "appearance-none pl-9 pr-8 py-2 text-xs font-semibold rounded-full border border-[#DCD6C9] bg-[#F1ECE1] text-[#1F1E1B] shadow-2xs cursor-pointer outline-none focus:ring-2 focus:ring-[#1F1E1B]/20",
+                                        "aria-label": "Language selection",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                value: "en",
+                                                children: "English"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Header.tsx",
+                                                lineNumber: 147,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                value: "hi",
+                                                children: "हिंदी"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Header.tsx",
+                                                lineNumber: 148,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                value: "gu",
+                                                children: "ગુજરાતી"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Header.tsx",
+                                                lineNumber: 149,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "[project]/components/Header.tsx",
-                                        lineNumber: 139,
+                                        lineNumber: 141,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        type: "button",
-                                        onClick: ()=>setLanguage('en'),
-                                        className: `px-2.5 py-1 text-xs font-semibold rounded-full transition-all duration-200 cursor-pointer ${language === 'en' ? 'bg-[#1F1E1B] text-white shadow-xs' : 'text-[#635E56] hover:text-[#1E1D1A]'}`,
-                                        "aria-pressed": language === 'en',
-                                        children: "EN"
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$globe$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Globe$3e$__["Globe"], {
+                                        className: "absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[#7A7468] pointer-events-none"
                                     }, void 0, false, {
                                         fileName: "[project]/components/Header.tsx",
-                                        lineNumber: 142,
+                                        lineNumber: 152,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        type: "button",
-                                        onClick: ()=>setLanguage('hi'),
-                                        className: `px-2.5 py-1 text-xs font-semibold rounded-full transition-all duration-200 cursor-pointer ${language === 'hi' ? 'bg-[#1F1E1B] text-white shadow-xs' : 'text-[#635E56] hover:text-[#1E1D1A]'}`,
-                                        "aria-pressed": language === 'hi',
-                                        children: "हिंदी"
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
+                                        className: "absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[#7A7468] pointer-events-none"
                                     }, void 0, false, {
                                         fileName: "[project]/components/Header.tsx",
-                                        lineNumber: 154,
-                                        columnNumber: 13
-                                    }, ("TURBOPACK compile-time value", void 0)),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        type: "button",
-                                        onClick: ()=>setLanguage('gu'),
-                                        className: `px-2.5 py-1 text-xs font-semibold rounded-full transition-all duration-200 cursor-pointer ${language === 'gu' ? 'bg-[#1F1E1B] text-white shadow-xs' : 'text-[#635E56] hover:text-[#1E1D1A]'}`,
-                                        "aria-pressed": language === 'gu',
-                                        children: "ગુજરાતી"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/Header.tsx",
-                                        lineNumber: 166,
+                                        lineNumber: 153,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/Header.tsx",
-                                lineNumber: 134,
+                                lineNumber: 140,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3256,26 +3263,26 @@ const Header = ({ onOpenEnquiry, onOpenAbout, onOpenResources, onOpenFaq, onOpen
                                         children: t.nav.getStarted
                                     }, void 0, false, {
                                         fileName: "[project]/components/Header.tsx",
-                                        lineNumber: 185,
+                                        lineNumber: 161,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
                                         className: "w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5"
                                     }, void 0, false, {
                                         fileName: "[project]/components/Header.tsx",
-                                        lineNumber: 186,
+                                        lineNumber: 162,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/Header.tsx",
-                                lineNumber: 181,
+                                lineNumber: 157,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Header.tsx",
-                        lineNumber: 132,
+                        lineNumber: 138,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3290,20 +3297,20 @@ const Header = ({ onOpenEnquiry, onOpenAbout, onOpenResources, onOpenFaq, onOpen
                                         className: "w-3 h-3 text-[#777]"
                                     }, void 0, false, {
                                         fileName: "[project]/components/Header.tsx",
-                                        lineNumber: 199,
+                                        lineNumber: 175,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         children: getMobileLangLabel()
                                     }, void 0, false, {
                                         fileName: "[project]/components/Header.tsx",
-                                        lineNumber: 200,
+                                        lineNumber: 176,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/Header.tsx",
-                                lineNumber: 194,
+                                lineNumber: 170,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3312,7 +3319,7 @@ const Header = ({ onOpenEnquiry, onOpenAbout, onOpenResources, onOpenFaq, onOpen
                                 children: t.nav.getStarted
                             }, void 0, false, {
                                 fileName: "[project]/components/Header.tsx",
-                                lineNumber: 203,
+                                lineNumber: 179,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3324,30 +3331,30 @@ const Header = ({ onOpenEnquiry, onOpenAbout, onOpenResources, onOpenFaq, onOpen
                                     className: "w-6 h-6"
                                 }, void 0, false, {
                                     fileName: "[project]/components/Header.tsx",
-                                    lineNumber: 216,
+                                    lineNumber: 192,
                                     columnNumber: 31
                                 }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__["Menu"], {
                                     className: "w-6 h-6"
                                 }, void 0, false, {
                                     fileName: "[project]/components/Header.tsx",
-                                    lineNumber: 216,
+                                    lineNumber: 192,
                                     columnNumber: 59
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/components/Header.tsx",
-                                lineNumber: 210,
+                                lineNumber: 186,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Header.tsx",
-                        lineNumber: 191,
+                        lineNumber: 167,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Header.tsx",
-                lineNumber: 56,
+                lineNumber: 62,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             mobileMenuOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3363,65 +3370,78 @@ const Header = ({ onOpenEnquiry, onOpenAbout, onOpenResources, onOpenFaq, onOpen
                                         className: "w-3.5 h-3.5 text-[#7A7468]"
                                     }, void 0, false, {
                                         fileName: "[project]/components/Header.tsx",
-                                        lineNumber: 227,
+                                        lineNumber: 203,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         children: "Language / भाषा / ભાષા"
                                     }, void 0, false, {
                                         fileName: "[project]/components/Header.tsx",
-                                        lineNumber: 228,
+                                        lineNumber: 204,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/Header.tsx",
-                                lineNumber: 226,
+                                lineNumber: 202,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center gap-1 bg-[#E4DDD0] p-1 rounded-full justify-between sm:justify-start",
+                                className: "relative",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        type: "button",
-                                        onClick: ()=>setLanguage('en'),
-                                        className: `flex-1 sm:flex-none px-3 py-1 text-xs font-semibold rounded-full transition-colors text-center ${language === 'en' ? 'bg-[#1E1D1A] text-white shadow-2xs' : 'text-[#5C564C]'}`,
-                                        children: "English"
-                                    }, void 0, false, {
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                        value: language,
+                                        onChange: (e)=>setLanguage(e.target.value),
+                                        className: "appearance-none w-full sm:w-auto min-w-[140px] pl-3 pr-8 py-2 text-xs font-semibold rounded-full border border-[#D9D2C5] bg-[#E4DDD0] text-[#1E1D1A] outline-none cursor-pointer",
+                                        "aria-label": "Language selection",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                value: "en",
+                                                children: "English"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Header.tsx",
+                                                lineNumber: 215,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                value: "hi",
+                                                children: "हिंदी"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Header.tsx",
+                                                lineNumber: 216,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                value: "gu",
+                                                children: "ગુજરાતી"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Header.tsx",
+                                                lineNumber: 217,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "[project]/components/Header.tsx",
-                                        lineNumber: 231,
+                                        lineNumber: 207,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        type: "button",
-                                        onClick: ()=>setLanguage('hi'),
-                                        className: `flex-1 sm:flex-none px-3 py-1 text-xs font-semibold rounded-full transition-colors text-center ${language === 'hi' ? 'bg-[#1E1D1A] text-white shadow-2xs' : 'text-[#5C564C]'}`,
-                                        children: "हिंदी"
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
+                                        className: "absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[#5C564C] pointer-events-none"
                                     }, void 0, false, {
                                         fileName: "[project]/components/Header.tsx",
-                                        lineNumber: 240,
-                                        columnNumber: 15
-                                    }, ("TURBOPACK compile-time value", void 0)),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        type: "button",
-                                        onClick: ()=>setLanguage('gu'),
-                                        className: `flex-1 sm:flex-none px-3 py-1 text-xs font-semibold rounded-full transition-colors text-center ${language === 'gu' ? 'bg-[#1E1D1A] text-white shadow-2xs' : 'text-[#5C564C]'}`,
-                                        children: "ગુજરાતી"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/Header.tsx",
-                                        lineNumber: 249,
+                                        lineNumber: 220,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/Header.tsx",
-                                lineNumber: 230,
+                                lineNumber: 206,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Header.tsx",
-                        lineNumber: 225,
+                        lineNumber: 201,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3441,7 +3461,7 @@ const Header = ({ onOpenEnquiry, onOpenAbout, onOpenResources, onOpenFaq, onOpen
                                 children: t.nav.home
                             }, void 0, false, {
                                 fileName: "[project]/components/Header.tsx",
-                                lineNumber: 262,
+                                lineNumber: 225,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -3454,7 +3474,7 @@ const Header = ({ onOpenEnquiry, onOpenAbout, onOpenResources, onOpenFaq, onOpen
                                 children: t.nav.howItWorks
                             }, void 0, false, {
                                 fileName: "[project]/components/Header.tsx",
-                                lineNumber: 273,
+                                lineNumber: 236,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -3467,7 +3487,7 @@ const Header = ({ onOpenEnquiry, onOpenAbout, onOpenResources, onOpenFaq, onOpen
                                 children: t.nav.services
                             }, void 0, false, {
                                 fileName: "[project]/components/Header.tsx",
-                                lineNumber: 283,
+                                lineNumber: 246,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3479,7 +3499,7 @@ const Header = ({ onOpenEnquiry, onOpenAbout, onOpenResources, onOpenFaq, onOpen
                                 children: t.nav.about
                             }, void 0, false, {
                                 fileName: "[project]/components/Header.tsx",
-                                lineNumber: 293,
+                                lineNumber: 256,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3491,7 +3511,7 @@ const Header = ({ onOpenEnquiry, onOpenAbout, onOpenResources, onOpenFaq, onOpen
                                 children: t.nav.resources
                             }, void 0, false, {
                                 fileName: "[project]/components/Header.tsx",
-                                lineNumber: 302,
+                                lineNumber: 265,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3503,7 +3523,7 @@ const Header = ({ onOpenEnquiry, onOpenAbout, onOpenResources, onOpenFaq, onOpen
                                 children: t.nav.faq
                             }, void 0, false, {
                                 fileName: "[project]/components/Header.tsx",
-                                lineNumber: 311,
+                                lineNumber: 274,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3515,13 +3535,13 @@ const Header = ({ onOpenEnquiry, onOpenAbout, onOpenResources, onOpenFaq, onOpen
                                 children: t.nav.contact
                             }, void 0, false, {
                                 fileName: "[project]/components/Header.tsx",
-                                lineNumber: 320,
+                                lineNumber: 283,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Header.tsx",
-                        lineNumber: 261,
+                        lineNumber: 224,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3537,37 +3557,37 @@ const Header = ({ onOpenEnquiry, onOpenAbout, onOpenResources, onOpenFaq, onOpen
                                     children: t.nav.getStarted
                                 }, void 0, false, {
                                     fileName: "[project]/components/Header.tsx",
-                                    lineNumber: 339,
+                                    lineNumber: 302,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
                                     className: "w-4 h-4"
                                 }, void 0, false, {
                                     fileName: "[project]/components/Header.tsx",
-                                    lineNumber: 340,
+                                    lineNumber: 303,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/Header.tsx",
-                            lineNumber: 332,
+                            lineNumber: 295,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/components/Header.tsx",
-                        lineNumber: 331,
+                        lineNumber: 294,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Header.tsx",
-                lineNumber: 223,
+                lineNumber: 199,
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/components/Header.tsx",
-        lineNumber: 49,
+        lineNumber: 55,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };

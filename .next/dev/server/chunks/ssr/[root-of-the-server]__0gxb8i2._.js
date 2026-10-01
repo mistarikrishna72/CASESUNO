@@ -92,12 +92,12 @@ const translations = {
             getStarted: 'Get Started'
         },
         hero: {
-            kicker: 'Real Problems. Practical Guidance.',
-            titleLine1: 'You Focus',
-            titleLine2: 'on Your Life.',
-            titleLine3: 'We Help You',
-            titleLine4: 'Find the Next Step.',
-            desc: 'CASE SUNO listens, organises and helps you move forward with trusted professionals, where required.',
+            kicker: 'Personal • Business • Documentation • Case Assistance',
+            titleLine1: 'Have a Problem?',
+            titleLine2: 'Bring It to Us.',
+            titleLine3: 'We\'ll Help You',
+            titleLine4: 'Figure It Out.',
+            desc: 'CASE SUNO helps you understand your situation, organise what you need, and find the right assistance.',
             ctaPrimary: 'Start Your Enquiry',
             badgeConfidential: 'Confidential',
             badgeConfidentialSub: '& Secure',
@@ -105,7 +105,6 @@ const translations = {
             badgeTransparentSub: 'Process',
             badgeOnline: 'Online &',
             badgeOnlineSub: 'Appointment-Based',
-            locationCity: 'Surat, Gujarat, India',
             locationSub: 'Online & Appointment-Based Assistance',
             mantra: [
                 'People',
@@ -353,12 +352,12 @@ const translations = {
             getStarted: 'શરૂ કરો'
         },
         hero: {
-            kicker: 'વાસ્તવિક સમસ્યાઓ. વ્યવહારુ માર્ગદર્શન.',
-            titleLine1: 'તમે ધ્યાન આપો',
-            titleLine2: 'તમારા જીવન પર.',
-            titleLine3: 'અમે મદદ કરીએ છીએ',
-            titleLine4: 'આગલું પગલું શોધવામાં.',
-            desc: 'CASE SUNO તમારી વાત સાંભળે છે, માહિતી વ્યવસ્થિત કરે છે અને જ્યાં જરૂર હોય ત્યાં વિશ્વસનીય વ્યાવસાયિકો સાથે આગળ વધવામાં મદદ કરે છે.',
+            kicker: 'વ્યક્તિગત • વ્યવસાય • દસ્તાવેજીકરણ • કેસ સહાય',
+            titleLine1: 'કોઈ સમસ્યા છે?',
+            titleLine2: 'અમને જણાવો.',
+            titleLine3: 'અમે તમારી મદદ કરીશું',
+            titleLine4: 'તેને સમજવામાં.',
+            desc: 'CASE SUNO તમારી પરિસ્થિતિ સમજવામાં, જરૂરી બાબતોને વ્યવસ્થિત કરવામાં અને યોગ્ય સહાય મેળવવામાં તમારી મદદ કરે છે.',
             ctaPrimary: 'તમારી પૂછપરછ શરૂ કરો',
             badgeConfidential: 'ગોપનીય',
             badgeConfidentialSub: '& સુરક્ષિત',
@@ -366,7 +365,6 @@ const translations = {
             badgeTransparentSub: 'પ્રક્રિયા',
             badgeOnline: 'ઓનલાઇન &',
             badgeOnlineSub: 'એપોઇન્ટમેન્ટ આધારિત',
-            locationCity: 'સુરત, ગુજરાત, ભારત',
             locationSub: 'ઓનલાઇન અને એપોઇન્ટમેન્ટ આધારિત સહાય',
             mantra: [
                 'લોકો (People)',
@@ -614,12 +612,12 @@ const translations = {
             getStarted: 'शुरुआत करें'
         },
         hero: {
-            kicker: 'वास्तविक समस्याएं। व्यावहारिक मार्गदर्शन।',
-            titleLine1: 'आप ध्यान दें',
-            titleLine2: 'अपने जीवन पर।',
-            titleLine3: 'हम मदद करेंगे',
-            titleLine4: 'अगला कदम उठाने में।',
-            desc: 'CASE SUNO आपकी बात सुनता है, आवश्यक तथ्यों और दस्तावेजों को व्यवस्थित करता है और जरूरत पड़ने पर विश्वसनीय विशेषज्ञों के साथ आगे बढ़ने में सहायता करता है।',
+            kicker: 'व्यक्तिगत • व्यवसाय • दस्तावेज़ीकरण • केस सहायता',
+            titleLine1: 'कोई समस्या है?',
+            titleLine2: 'हमें बताएं।',
+            titleLine3: 'हम आपकी मदद करेंगे',
+            titleLine4: 'उसे समझने में।',
+            desc: 'CASE SUNO आपकी स्थिति को समझने, ज़रूरी चीज़ों को व्यवस्थित करने और सही सहायता पाने में आपकी मदद करता है।',
             ctaPrimary: 'अपनी पूछताछ शुरू करें',
             badgeConfidential: 'गोपनीय',
             badgeConfidentialSub: '& सुरक्षित',
@@ -627,7 +625,6 @@ const translations = {
             badgeTransparentSub: 'प्रक्रिया',
             badgeOnline: 'ऑनलाइन &',
             badgeOnlineSub: 'अपॉइंटमेंट आधारित',
-            locationCity: 'सूरत, गुजरात, भारत',
             locationSub: 'ऑनलाइन और अपॉइंटमेंट आधारित सहायता',
             mantra: [
                 'लोग (People)',
@@ -902,7 +899,7 @@ const LanguageProvider = ({ children })=>{
         children: children
     }, void 0, false, {
         fileName: "[project]/context/LanguageContext.tsx",
-        lineNumber: 894,
+        lineNumber: 890,
         columnNumber: 10
     }, ("TURBOPACK compile-time value", void 0));
 };

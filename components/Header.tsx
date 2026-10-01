@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ArrowRight, Globe } from 'lucide-react';
+import { Menu, X, ArrowRight, Globe, ChevronDown } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 interface HeaderProps {
@@ -45,6 +45,12 @@ export const Header: React.FC<HeaderProps> = ({
     return 'ગુજ';
   };
 
+  const getLanguageLabel = () => {
+    if (language === 'en') return 'English';
+    if (language === 'hi') return 'हिंदी';
+    return 'ગુજરાતી';
+  };
+
   return (
     <header
       className={`sticky top-0 z-40 w-full transition-all duration-300 ${
@@ -64,7 +70,7 @@ export const Header: React.FC<HeaderProps> = ({
           className="focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-black/50 rounded-sm shrink-0"
           aria-label="CASE SUNO Home"
         >
-          <img src="/logo.png" alt="CASE SUNO Logo" className="h-20  w-auto" />
+          <img src="/logo.png" alt="CASE SUNO Logo" className="h-20 w-auto" />
         </a>
 
         {/* Zone 2: Desktop Navigation Links with Smooth Animated Underlines */}
@@ -128,53 +134,23 @@ export const Header: React.FC<HeaderProps> = ({
           </button>
         </nav>
 
-        {/* Zone 3: 3-Way Language Switcher & Primary Action */}
+        {/* Zone 3: Language Dropdown & Primary Action */}
         <div className="hidden xl:flex items-center gap-2.5 md:gap-3.5 shrink-0">
-          {/* Segmented Control for English, Hindi, Gujarati */}
-          <div
-            className="inline-flex items-center p-0.5 rounded-full border border-[#DCD6C9] bg-[#F1ECE1] shadow-2xs select-none"
-            role="group"
-            aria-label="Language selection"
-          >
-            <div className="pl-2 pr-1 text-[#7A7468]">
-              <Globe className="w-3.5 h-3.5" />
-            </div>
-            <button
-              type="button"
-              onClick={() => setLanguage('en')}
-              className={`px-2.5 py-1 text-xs font-semibold rounded-full transition-all duration-200 cursor-pointer ${
-                language === 'en'
-                  ? 'bg-[#1F1E1B] text-white shadow-xs'
-                  : 'text-[#635E56] hover:text-[#1E1D1A]'
-              }`}
-              aria-pressed={language === 'en'}
+          {/* Language Dropdown */}
+          <div className="relative">
+            <select
+              value={language}
+              onChange={(e) => setLanguage(e.target.value as 'en' | 'hi' | 'gu')}
+              className="appearance-none pl-9 pr-8 py-2 text-xs font-semibold rounded-full border border-[#DCD6C9] bg-[#F1ECE1] text-[#1F1E1B] shadow-2xs cursor-pointer outline-none focus:ring-2 focus:ring-[#1F1E1B]/20"
+              aria-label="Language selection"
             >
-              EN
-            </button>
-            <button
-              type="button"
-              onClick={() => setLanguage('hi')}
-              className={`px-2.5 py-1 text-xs font-semibold rounded-full transition-all duration-200 cursor-pointer ${
-                language === 'hi'
-                  ? 'bg-[#1F1E1B] text-white shadow-xs'
-                  : 'text-[#635E56] hover:text-[#1E1D1A]'
-              }`}
-              aria-pressed={language === 'hi'}
-            >
-              हिंदी
-            </button>
-            <button
-              type="button"
-              onClick={() => setLanguage('gu')}
-              className={`px-2.5 py-1 text-xs font-semibold rounded-full transition-all duration-200 cursor-pointer ${
-                language === 'gu'
-                  ? 'bg-[#1F1E1B] text-white shadow-xs'
-                  : 'text-[#635E56] hover:text-[#1E1D1A]'
-              }`}
-              aria-pressed={language === 'gu'}
-            >
-              ગુજરાતી
-            </button>
+              <option value="en">English</option>
+              <option value="hi">हिंदी</option>
+              <option value="gu">ગુજરાતી</option>
+            </select>
+
+            <Globe className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[#7A7468] pointer-events-none" />
+            <ChevronDown className="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[#7A7468] pointer-events-none" />
           </div>
 
           {/* Primary CTA */}
@@ -227,34 +203,21 @@ export const Header: React.FC<HeaderProps> = ({
               <Globe className="w-3.5 h-3.5 text-[#7A7468]" />
               <span>Language / भाषा / ભાષા</span>
             </span>
-            <div className="flex items-center gap-1 bg-[#E4DDD0] p-1 rounded-full justify-between sm:justify-start">
-              <button
-                type="button"
-                onClick={() => setLanguage('en')}
-                className={`flex-1 sm:flex-none px-3 py-1 text-xs font-semibold rounded-full transition-colors text-center ${
-                  language === 'en' ? 'bg-[#1E1D1A] text-white shadow-2xs' : 'text-[#5C564C]'
-                }`}
+            <div className="relative">
+              <select
+                value={language}
+                onChange={(e) =>
+                  setLanguage(e.target.value as 'en' | 'hi' | 'gu')
+                }
+                className="appearance-none w-full sm:w-auto min-w-[140px] pl-3 pr-8 py-2 text-xs font-semibold rounded-full border border-[#D9D2C5] bg-[#E4DDD0] text-[#1E1D1A] outline-none cursor-pointer"
+                aria-label="Language selection"
               >
-                English
-              </button>
-              <button
-                type="button"
-                onClick={() => setLanguage('hi')}
-                className={`flex-1 sm:flex-none px-3 py-1 text-xs font-semibold rounded-full transition-colors text-center ${
-                  language === 'hi' ? 'bg-[#1E1D1A] text-white shadow-2xs' : 'text-[#5C564C]'
-                }`}
-              >
-                हिंदी
-              </button>
-              <button
-                type="button"
-                onClick={() => setLanguage('gu')}
-                className={`flex-1 sm:flex-none px-3 py-1 text-xs font-semibold rounded-full transition-colors text-center ${
-                  language === 'gu' ? 'bg-[#1E1D1A] text-white shadow-2xs' : 'text-[#5C564C]'
-                }`}
-              >
-                ગુજરાતી
-              </button>
+                <option value="en">English</option>
+                <option value="hi">हिंदी</option>
+                <option value="gu">ગુજરાતી</option>
+              </select>
+
+              <ChevronDown className="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[#5C564C] pointer-events-none" />
             </div>
           </div>
 
