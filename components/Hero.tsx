@@ -122,7 +122,7 @@ const heroImage = heroImages[language] ?? heroImages.en;
                 className="
                   flex
                   items-center
-                  gap-2.5
+                  gap-1.5
                   text-[10px]
                   sm:text-xs
                   font-extrabold
@@ -137,13 +137,13 @@ const heroImage = heroImages[language] ?? heroImages.en;
                   aria-hidden="true"
                 />
 
-                <span className="leading-none">{t.hero.kicker}</span>
+                <span className="leading-none text-[10px] font-extrabold">{t.hero.kicker}</span>
               </div>
 
               {/* Main Heading */}
               <h1
                 className={`
-                  w-[100%]
+                  w-full
                   max-w-[720px]
                   text-[2.25rem]
                   leading-[1.08]
@@ -151,7 +151,7 @@ const heroImage = heroImages[language] ?? heroImages.en;
                   sm:leading-[1.08]
                   md:text-[3.4rem]
                   lg:text-[3.35rem]
-                  xl:text-[3.75rem]
+                  xl:text-[3.55rem]
                   font-medium
                   tracking-tight
                   text-[#171613]

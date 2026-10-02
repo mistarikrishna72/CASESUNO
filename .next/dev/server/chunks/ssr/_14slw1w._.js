@@ -3520,7 +3520,7 @@ const Hero = ({ onOpenEnquiry, onOpenLocationInfo })=>{
                                     className: "\n               sm\n               sm:w-full\n                space-y-5\n                sm:space-y-6\n                md:space-y-7\n              ",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "\n                  flex\n                  items-center\n                  gap-2.5\n                  text-[10px]\n                  sm:text-xs\n                  font-extrabold\n                  tracking-[0.18em]\n                  sm:tracking-[0.2em]\n                  text-[#5F5E58]\n                  uppercase\n                ",
+                                            className: "\n                  flex\n                  items-center\n                  gap-1.5\n                  text-[10px]\n                  sm:text-xs\n                  font-extrabold\n                  tracking-[0.18em]\n                  sm:tracking-[0.2em]\n                  text-[#5F5E58]\n                  uppercase\n                ",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "w-5 sm:w-6 h-px bg-[#7A746A] shrink-0",
@@ -3531,7 +3531,7 @@ const Hero = ({ onOpenEnquiry, onOpenLocationInfo })=>{
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "leading-none",
+                                                    className: "leading-none text-[10px] font-extrabold",
                                                     children: t.hero.kicker
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/Hero.tsx",
@@ -3546,7 +3546,7 @@ const Hero = ({ onOpenEnquiry, onOpenLocationInfo })=>{
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                             className: `
-                  w-[100%]
+                  w-full
                   max-w-[720px]
                   text-[2.25rem]
                   leading-[1.08]
@@ -3554,7 +3554,7 @@ const Hero = ({ onOpenEnquiry, onOpenLocationInfo })=>{
                   sm:leading-[1.08]
                   md:text-[3.4rem]
                   lg:text-[3.35rem]
-                  xl:text-[3.75rem]
+                  xl:text-[3.55rem]
                   font-medium
                   tracking-tight
                   text-[#171613]
