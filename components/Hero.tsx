@@ -11,9 +11,17 @@ export const Hero: React.FC<HeroProps> = ({
   onOpenEnquiry,
   onOpenLocationInfo,
 }) => {
-  const { t, language } = useLanguage();
+ const { t, language } = useLanguage();
 
-  const isIndic = language === "gu" || language === "hi";
+const isIndic = language === "gu" || language === "hi";
+
+const heroImages = {
+  en: "/images/hero2.webp",
+  hi: "/images/heroH.webp",
+  gu: "/images/heroG.webp",
+};
+
+const heroImage = heroImages[language] ?? heroImages.en;
 
   return (
     <section
@@ -39,6 +47,9 @@ export const Hero: React.FC<HeroProps> = ({
         style={{
           backgroundImage: 'url("/images/hero-bg.webp")',
         }}
+        // style={{
+        //   backgroundImage: `url("${heroImage}")`,
+        // }}
       />
 
       {/* Optional subtle overlay for text readability */}
@@ -47,10 +58,6 @@ export const Hero: React.FC<HeroProps> = ({
         className="
     absolute inset-0 -z-[5]
     pointer-events-none
-   bg-gradient-to-r
-    from-[#FAF9F6]/85
-    via-[#FAF9F6]/35
-    to-transparent
   "
       />
 

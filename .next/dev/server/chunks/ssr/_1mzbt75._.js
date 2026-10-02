@@ -2988,7 +2988,7 @@ const Header = ({ onOpenEnquiry, onOpenAbout, onOpenResources, onOpenFaq, onOpen
                         "aria-label": "CASE SUNO Home",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                             src: "/logo.png",
-                            alt: "CASE SUNO Logo",
+                            alt: "CASE SUNO",
                             className: "h-15"
                         }, void 0, false, {
                             fileName: "[project]/components/Header.tsx",
@@ -6029,6 +6029,7 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-ssr] (ecmascript) <export default as ArrowRight>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$left$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowLeft$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-left.js [app-ssr] (ecmascript) <export default as ArrowLeft>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-ssr] (ecmascript) <export default as X>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/user.js [app-ssr] (ecmascript) <export default as User>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$scale$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Scale$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/scale.js [app-ssr] (ecmascript) <export default as Scale>");
@@ -6059,6 +6060,13 @@ function GetStartedModal({ isOpen, onClose }) {
     }, [
         isOpen
     ]);
+    /**
+   * Go back to role selection.
+   */ const handleBack = ()=>{
+        setRole(null);
+        setMode("login");
+        setShowPassword(false);
+    };
     if (!isOpen) return null;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "fixed inset-0 z-[100] flex items-start justify-center overflow-y-auto p-4 sm:p-6",
@@ -6068,7 +6076,7 @@ function GetStartedModal({ isOpen, onClose }) {
                 onClick: onClose
             }, void 0, false, {
                 fileName: "[project]/components/auth/GetStartedModal.tsx",
-                lineNumber: 54,
+                lineNumber: 64,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6082,12 +6090,12 @@ function GetStartedModal({ isOpen, onClose }) {
                             size: 20
                         }, void 0, false, {
                             fileName: "[project]/components/auth/GetStartedModal.tsx",
-                            lineNumber: 67,
+                            lineNumber: 77,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/auth/GetStartedModal.tsx",
-                        lineNumber: 62,
+                        lineNumber: 72,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6101,7 +6109,7 @@ function GetStartedModal({ isOpen, onClose }) {
                                         className: "mb-8 h-18 w-auto"
                                     }, void 0, false, {
                                         fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                        lineNumber: 74,
+                                        lineNumber: 84,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -6109,7 +6117,7 @@ function GetStartedModal({ isOpen, onClose }) {
                                         children: t.auth.getStarted
                                     }, void 0, false, {
                                         fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                        lineNumber: 80,
+                                        lineNumber: 90,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6117,13 +6125,13 @@ function GetStartedModal({ isOpen, onClose }) {
                                         children: t.auth.chooseAccount
                                     }, void 0, false, {
                                         fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                        lineNumber: 84,
+                                        lineNumber: 94,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                lineNumber: 72,
+                                lineNumber: 82,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6133,7 +6141,7 @@ function GetStartedModal({ isOpen, onClose }) {
                                         className: "mb-3 h-px w-10 bg-[#1F5C50]"
                                     }, void 0, false, {
                                         fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                        lineNumber: 90,
+                                        lineNumber: 100,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6142,26 +6150,26 @@ function GetStartedModal({ isOpen, onClose }) {
                                             t.auth.trustedSupport,
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                 fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                lineNumber: 94,
+                                                lineNumber: 104,
                                                 columnNumber: 15
                                             }, this),
                                             t.auth.legalJourney
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                        lineNumber: 92,
+                                        lineNumber: 102,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                lineNumber: 89,
+                                lineNumber: 99,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/auth/GetStartedModal.tsx",
-                        lineNumber: 71,
+                        lineNumber: 81,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6173,7 +6181,7 @@ function GetStartedModal({ isOpen, onClose }) {
                                     children: t.auth.howCanWeHelp
                                 }, void 0, false, {
                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                    lineNumber: 105,
+                                    lineNumber: 115,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6181,13 +6189,14 @@ function GetStartedModal({ isOpen, onClose }) {
                                     children: t.auth.selectAccount
                                 }, void 0, false, {
                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                    lineNumber: 109,
+                                    lineNumber: 119,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "mt-8 space-y-4",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            type: "button",
                                             onClick: ()=>setRole("user"),
                                             className: "group flex w-full items-center gap-5 rounded-[16px] border border-[#D8D6CD] bg-white p-5 text-left transition-all duration-200 hover:border-[#1F5C50] hover:bg-[#F4F7F3]",
                                             children: [
@@ -6198,12 +6207,12 @@ function GetStartedModal({ isOpen, onClose }) {
                                                         strokeWidth: 1.7
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                        lineNumber: 120,
+                                                        lineNumber: 131,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                    lineNumber: 119,
+                                                    lineNumber: 130,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6214,7 +6223,7 @@ function GetStartedModal({ isOpen, onClose }) {
                                                             children: t.auth.user
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                            lineNumber: 124,
+                                                            lineNumber: 135,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6222,13 +6231,13 @@ function GetStartedModal({ isOpen, onClose }) {
                                                             children: t.auth.userDescription
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                            lineNumber: 128,
+                                                            lineNumber: 139,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                    lineNumber: 123,
+                                                    lineNumber: 134,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
@@ -6236,16 +6245,17 @@ function GetStartedModal({ isOpen, onClose }) {
                                                     className: "text-[#77756E] transition-transform group-hover:translate-x-1 group-hover:text-[#1F5C50]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                    lineNumber: 133,
+                                                    lineNumber: 144,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                            lineNumber: 115,
+                                            lineNumber: 125,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            type: "button",
                                             onClick: ()=>setRole("professional"),
                                             className: "group flex w-full items-center gap-5 rounded-[16px] border border-[#D8D6CD] bg-white p-5 text-left transition-all duration-200 hover:border-[#1F5C50] hover:bg-[#F4F7F3]",
                                             children: [
@@ -6256,12 +6266,12 @@ function GetStartedModal({ isOpen, onClose }) {
                                                         strokeWidth: 1.7
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                        lineNumber: 145,
+                                                        lineNumber: 157,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                    lineNumber: 144,
+                                                    lineNumber: 156,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6272,7 +6282,7 @@ function GetStartedModal({ isOpen, onClose }) {
                                                             children: t.auth.professional
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                            lineNumber: 149,
+                                                            lineNumber: 161,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6280,13 +6290,13 @@ function GetStartedModal({ isOpen, onClose }) {
                                                             children: t.auth.professionalDescription
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                            lineNumber: 153,
+                                                            lineNumber: 165,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                    lineNumber: 148,
+                                                    lineNumber: 160,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
@@ -6294,32 +6304,52 @@ function GetStartedModal({ isOpen, onClose }) {
                                                     className: "text-[#77756E] transition-transform group-hover:translate-x-1 group-hover:text-[#1F5C50]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                    lineNumber: 158,
+                                                    lineNumber: 170,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                            lineNumber: 140,
+                                            lineNumber: 151,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                    lineNumber: 113,
+                                    lineNumber: 123,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/auth/GetStartedModal.tsx",
-                            lineNumber: 104,
+                            lineNumber: 114,
                             columnNumber: 13
                         }, this) : /* AUTH FORM */ /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    type: "button",
+                                    onClick: handleBack,
+                                    className: "mb-6 cursor-pointer inline-flex items-center gap-2 text-[13px] font-medium text-[#6B6B6B] transition hover:text-[#1F5C50]",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$left$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowLeft$3e$__["ArrowLeft"], {
+                                            size: 16
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/auth/GetStartedModal.tsx",
+                                            lineNumber: 186,
+                                            columnNumber: 17
+                                        }, this),
+                                        "Back"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/auth/GetStartedModal.tsx",
+                                    lineNumber: 181,
+                                    columnNumber: 15
+                                }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "mb-8 flex border-b border-[#DDDAD1]",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            type: "button",
                                             onClick: ()=>setMode("login"),
                                             className: `relative w-1/2 pb-3 text-[14px] font-medium transition ${mode === "login" ? "text-[#1F5C50]" : "text-[#77756E]"}`,
                                             children: [
@@ -6328,16 +6358,17 @@ function GetStartedModal({ isOpen, onClose }) {
                                                     className: "absolute bottom-[-1px] left-0 h-[2px] w-full bg-[#1F5C50]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                    lineNumber: 181,
+                                                    lineNumber: 204,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                            lineNumber: 170,
+                                            lineNumber: 192,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            type: "button",
                                             onClick: ()=>setMode("signup"),
                                             className: `relative w-1/2 pb-3 text-[14px] font-medium transition ${mode === "signup" ? "text-[#1F5C50]" : "text-[#77756E]"}`,
                                             children: [
@@ -6346,19 +6377,19 @@ function GetStartedModal({ isOpen, onClose }) {
                                                     className: "absolute bottom-[-1px] left-0 h-[2px] w-full bg-[#1F5C50]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                    lineNumber: 196,
+                                                    lineNumber: 220,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                            lineNumber: 185,
+                                            lineNumber: 208,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                    lineNumber: 169,
+                                    lineNumber: 191,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -6366,7 +6397,7 @@ function GetStartedModal({ isOpen, onClose }) {
                                     children: mode === "login" ? t.auth.welcomeBack : t.auth.createYourAccount
                                 }, void 0, false, {
                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                    lineNumber: 202,
+                                    lineNumber: 226,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6374,7 +6405,7 @@ function GetStartedModal({ isOpen, onClose }) {
                                     children: mode === "login" ? role === "user" ? t.auth.loginAsUser : t.auth.loginAsProfessional : role === "user" ? t.auth.createUserAccount : t.auth.createProfessionalAccount
                                 }, void 0, false, {
                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                    lineNumber: 209,
+                                    lineNumber: 233,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -6390,7 +6421,7 @@ function GetStartedModal({ isOpen, onClose }) {
                                                     children: t.auth.fullName
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                    lineNumber: 228,
+                                                    lineNumber: 252,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6401,7 +6432,7 @@ function GetStartedModal({ isOpen, onClose }) {
                                                             className: "absolute left-4 top-1/2 -translate-y-1/2 text-[#8A8982]"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                            lineNumber: 233,
+                                                            lineNumber: 257,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -6410,19 +6441,19 @@ function GetStartedModal({ isOpen, onClose }) {
                                                             className: "h-[48px] w-full rounded-[10px] border border-[#D8D6CD] bg-white pl-11 pr-4 text-[13px] outline-none transition focus:border-[#1F5C50] focus:ring-2 focus:ring-[#1F5C50]/10"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                            lineNumber: 238,
+                                                            lineNumber: 262,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                    lineNumber: 232,
+                                                    lineNumber: 256,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                            lineNumber: 227,
+                                            lineNumber: 251,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6432,7 +6463,7 @@ function GetStartedModal({ isOpen, onClose }) {
                                                     children: t.auth.emailAddress
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                    lineNumber: 249,
+                                                    lineNumber: 273,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6443,7 +6474,7 @@ function GetStartedModal({ isOpen, onClose }) {
                                                             className: "absolute left-4 top-1/2 -translate-y-1/2 text-[#8A8982]"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                            lineNumber: 254,
+                                                            lineNumber: 278,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -6452,19 +6483,19 @@ function GetStartedModal({ isOpen, onClose }) {
                                                             className: "h-[48px] w-full rounded-[10px] border border-[#D8D6CD] bg-white pl-11 pr-4 text-[13px] outline-none transition focus:border-[#1F5C50] focus:ring-2 focus:ring-[#1F5C50]/10"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                            lineNumber: 259,
+                                                            lineNumber: 283,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                    lineNumber: 253,
+                                                    lineNumber: 277,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                            lineNumber: 248,
+                                            lineNumber: 272,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6474,7 +6505,7 @@ function GetStartedModal({ isOpen, onClose }) {
                                                     children: t.auth.password
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                    lineNumber: 269,
+                                                    lineNumber: 293,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6485,7 +6516,7 @@ function GetStartedModal({ isOpen, onClose }) {
                                                             className: "absolute left-4 top-1/2 -translate-y-1/2 text-[#8A8982]"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                            lineNumber: 274,
+                                                            lineNumber: 298,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -6494,7 +6525,7 @@ function GetStartedModal({ isOpen, onClose }) {
                                                             className: "h-[48px] w-full rounded-[10px] border border-[#D8D6CD] bg-white pl-11 pr-12 text-[13px] outline-none transition focus:border-[#1F5C50] focus:ring-2 focus:ring-[#1F5C50]/10"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                            lineNumber: 279,
+                                                            lineNumber: 303,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -6506,30 +6537,30 @@ function GetStartedModal({ isOpen, onClose }) {
                                                                 size: 17
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                                lineNumber: 296,
+                                                                lineNumber: 320,
                                                                 columnNumber: 25
                                                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Eye$3e$__["Eye"], {
                                                                 size: 17
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                                lineNumber: 298,
+                                                                lineNumber: 322,
                                                                 columnNumber: 25
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                            lineNumber: 285,
+                                                            lineNumber: 309,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                    lineNumber: 273,
+                                                    lineNumber: 297,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                            lineNumber: 268,
+                                            lineNumber: 292,
                                             columnNumber: 17
                                         }, this),
                                         mode === "signup" && role === "professional" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6537,7 +6568,7 @@ function GetStartedModal({ isOpen, onClose }) {
                                             children: t.auth.professionalVerification
                                         }, void 0, false, {
                                             fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                            lineNumber: 306,
+                                            lineNumber: 330,
                                             columnNumber: 19
                                         }, this),
                                         mode === "login" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6551,14 +6582,14 @@ function GetStartedModal({ isOpen, onClose }) {
                                                             className: "h-4 w-4 rounded border-[#CCC9BF] accent-[#1F5C50]"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                            lineNumber: 315,
+                                                            lineNumber: 339,
                                                             columnNumber: 23
                                                         }, this),
                                                         t.auth.rememberMe
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                    lineNumber: 314,
+                                                    lineNumber: 338,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -6567,13 +6598,13 @@ function GetStartedModal({ isOpen, onClose }) {
                                                     children: t.auth.forgotPassword
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                    lineNumber: 323,
+                                                    lineNumber: 347,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                            lineNumber: 313,
+                                            lineNumber: 337,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -6585,13 +6616,13 @@ function GetStartedModal({ isOpen, onClose }) {
                                                     size: 17
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                    lineNumber: 341,
+                                                    lineNumber: 365,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                            lineNumber: 333,
+                                            lineNumber: 357,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6601,7 +6632,7 @@ function GetStartedModal({ isOpen, onClose }) {
                                                     className: "h-px flex-1 bg-[#DDDAD1]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                    lineNumber: 346,
+                                                    lineNumber: 370,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6609,20 +6640,20 @@ function GetStartedModal({ isOpen, onClose }) {
                                                     children: "OR"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                    lineNumber: 348,
+                                                    lineNumber: 372,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "h-px flex-1 bg-[#DDDAD1]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                    lineNumber: 352,
+                                                    lineNumber: 376,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                            lineNumber: 345,
+                                            lineNumber: 369,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -6637,19 +6668,19 @@ function GetStartedModal({ isOpen, onClose }) {
                                                         alt: "Google"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                        lineNumber: 361,
+                                                        lineNumber: 385,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                    lineNumber: 360,
+                                                    lineNumber: 384,
                                                     columnNumber: 19
                                                 }, this),
                                                 t.auth.continueGoogle
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                            lineNumber: 356,
+                                            lineNumber: 380,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6664,42 +6695,42 @@ function GetStartedModal({ isOpen, onClose }) {
                                                     children: mode === "login" ? t.auth.signUp : t.auth.login
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                                    lineNumber: 377,
+                                                    lineNumber: 401,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                            lineNumber: 372,
+                                            lineNumber: 396,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/auth/GetStartedModal.tsx",
-                                    lineNumber: 219,
+                                    lineNumber: 243,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/auth/GetStartedModal.tsx",
-                            lineNumber: 167,
+                            lineNumber: 179,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/auth/GetStartedModal.tsx",
-                        lineNumber: 101,
+                        lineNumber: 111,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/auth/GetStartedModal.tsx",
-                lineNumber: 60,
+                lineNumber: 70,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/auth/GetStartedModal.tsx",
-        lineNumber: 52,
+        lineNumber: 62,
         columnNumber: 5
     }, this);
 }
