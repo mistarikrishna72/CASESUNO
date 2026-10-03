@@ -63,8 +63,10 @@
 
 @layer theme {
   :root, :host {
-    --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    --font-serif: "Cormorant Garamond", Georgia, Cambria, "Times New Roman", Times, serif;
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+      "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol", "Noto Color Emoji";
+    --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-50: #fef2f2;
@@ -620,16 +622,8 @@
     height: calc(var(--spacing) * 4);
   }
 
-  .h-4\.5 {
-    height: calc(var(--spacing) * 4.5);
-  }
-
   .h-5 {
     height: calc(var(--spacing) * 5);
-  }
-
-  .h-5\.5 {
-    height: calc(var(--spacing) * 5.5);
   }
 
   .h-6 {
@@ -748,16 +742,8 @@
     width: calc(var(--spacing) * 4);
   }
 
-  .w-4\.5 {
-    width: calc(var(--spacing) * 4.5);
-  }
-
   .w-5 {
     width: calc(var(--spacing) * 5);
-  }
-
-  .w-5\.5 {
-    width: calc(var(--spacing) * 5.5);
   }
 
   .w-6 {
@@ -794,10 +780,6 @@
 
   .w-\[250px\] {
     width: 250px;
-  }
-
-  .w-\[260px\] {
-    width: 260px;
   }
 
   .w-auto {
@@ -2384,10 +2366,6 @@
       display: block;
     }
 
-    .sm\:flex {
-      display: flex;
-    }
-
     .sm\:hidden {
       display: none;
     }
@@ -2416,16 +2394,8 @@
       width: calc(var(--spacing) * 12);
     }
 
-    .sm\:w-16 {
-      width: calc(var(--spacing) * 16);
-    }
-
     .sm\:w-\[275px\] {
       width: 275px;
-    }
-
-    .sm\:w-\[285px\] {
-      width: 285px;
     }
 
     .sm\:w-auto {
@@ -2446,10 +2416,6 @@
 
     .sm\:grid-cols-3 {
       grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .sm\:flex-col {
-      flex-direction: column;
     }
 
     .sm\:flex-row {
@@ -2740,16 +2706,8 @@
       width: calc(var(--spacing) * 16);
     }
 
-    .lg\:w-24 {
-      width: calc(var(--spacing) * 24);
-    }
-
     .lg\:w-\[290px\] {
       width: 290px;
-    }
-
-    .lg\:w-\[300px\] {
-      width: 300px;
     }
 
     .lg\:max-w-\[220px\] {
