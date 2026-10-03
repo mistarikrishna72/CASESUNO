@@ -43,11 +43,6 @@ export default function Home() {
     setSelectedService(service);
   };
 
-  const handleViewAllServices = () => {
-    const el = document.getElementById('services');
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <div className="min-h-screen flex flex-col bg-[#FAF9F6] text-[#222222] font-sans antialiased selection:bg-[#E2DDD5] selection:text-black">
       {/* 1. Header Navigation with Language Switcher and Smooth Underline */}
@@ -74,7 +69,6 @@ export default function Home() {
         {/* 3. Our Services Section */}
         <ServicesSection
           onSelectService={handleSelectService}
-          onViewAllServices={handleViewAllServices}
         />
 
         {/* 4. How It Works Section */}
