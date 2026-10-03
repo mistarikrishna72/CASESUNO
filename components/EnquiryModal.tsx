@@ -1,6 +1,12 @@
-import React, { useState } from 'react';
-import { X, ArrowRight, CheckCircle2, Shield, MessageSquare } from 'lucide-react';
-import { useLanguage } from '../context/LanguageContext';
+import React, { useState } from "react";
+import {
+  X,
+  ArrowRight,
+  CheckCircle2,
+  Shield,
+  MessageSquare,
+} from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
 
 interface EnquiryModalProps {
   isOpen: boolean;
@@ -11,102 +17,200 @@ interface EnquiryModalProps {
 export const EnquiryModal: React.FC<EnquiryModalProps> = ({
   isOpen,
   onClose,
-  initialCategory = 'Individual Assistance',
+  initialCategory = "",
 }) => {
   const { language } = useLanguage();
-  const isGu = language === 'gu';
-  const isHi = language === 'hi';
+  const isGu = language === "gu";
+  const isHi = language === "hi";
 
   const [step, setStep] = useState<1 | 2 | 3 | 4>(1);
   const [category, setCategory] = useState(initialCategory);
-  const [urgency, setUrgency] = useState<'Normal' | 'Priority' | 'Immediate'>('Normal');
-  const [hasDocuments, setHasDocuments] = useState<'yes' | 'no' | 'partial'>('partial');
-  const [description, setDescription] = useState('');
+  const [urgency, setUrgency] = useState<"Normal" | "Priority" | "Immediate">(
+    "Normal",
+  );
+  const [hasDocuments, setHasDocuments] = useState<"yes" | "no" | "partial">(
+    "partial",
+  );
+  const [description, setDescription] = useState("");
   const [formData, setFormData] = useState({
-    fullName: '',
-    phone: '',
-    email: '',
-    city: 'Surat',
-    mode: 'Online (Video/Audio)',
+    fullName: "",
+    phone: "",
+    email: "",
+    city: "",
   });
-  const [referenceId, setReferenceId] = useState('');
-  const [errorMsg, setErrorMsg] = useState('');
+  const [referenceId, setReferenceId] = useState("");
+  const [errorMsg, setErrorMsg] = useState("");
+const resetEnquiry = () => {
+  setStep(1);
+  setCategory(initialCategory);
+  setUrgency("Normal");
+  setHasDocuments("partial");
+  setDescription("");
 
+  setFormData({
+    fullName: "",
+    phone: "",
+    email: "",
+    city: "",
+  });
+
+  setReferenceId("");
+  setErrorMsg("");
+};
+const handleClose = () => {
+  resetEnquiry();
+  onClose();
+};
   if (!isOpen) return null;
+  
 
   const categories = [
     {
-      id: 'Individual Assistance',
-      label: isGu ? 'વ્યક્તિગત સહાય' : isHi ? 'व्यक्तिगत सहायता' : 'Individual Assistance',
-      desc: isGu
-        ? 'પારિવારિક, વારસાઈ, મિલકત, ભાડુઆત તકરાર'
+      id: "Notice, Summons & Court / Case",
+      label: isGu
+        ? "નોટિસ, સમન્સ અને કોર્ટ / કેસ"
         : isHi
-        ? 'पारिवारिक, संपत्ति, वसीयत, किराएदार विवाद'
-        : 'Personal, family, inheritance, property, tenant',
+          ? "नोटिस, समन और कोर्ट / केस"
+          : "Notice, Summons & Court / Case",
+      desc: isGu
+        ? "કોર્ટ, સમન્સ, સરકારી અને ડિમાન્ડ નોટિસ, કેસ સહાય, દસ્તાવેજો, સુનાવણી અને કેસ ટ્રેકિંગ"
+        : isHi
+          ? "कोर्ट, समन, सरकारी और डिमांड नोटिस, केस सहायता, दस्तावेज़, सुनवाई और केस ट्रैकिंग"
+          : "Court, summons, government & demand notices, case assistance, documents, hearings & tracking",
     },
+
     {
-      id: 'Business Support',
-      label: isGu ? 'વ્યવસાય સહાય' : isHi ? 'व्यापार सहायता' : 'Business Support',
-      desc: isGu
-        ? 'સંચાલન, વેપારી કરાર, કંપની નિયમપાલન'
+      id: "Police, Cyber & Online Fraud",
+      label: isGu
+        ? "પોલીસ, સાયબર અને ઓનલાઈન છેતરપિંડી"
         : isHi
-        ? 'परिचालन, विक्रेता अनुबंध, विनियामक अनुपालन'
-        : 'Operations, vendor contracts, corporate compliance',
+          ? "पुलिस, साइबर और ऑनलाइन धोखाधड़ी"
+          : "Police, Cyber & Online Fraud",
+      desc: isGu
+        ? "ફરિયાદ, FIR, પોલીસ નોટિસ, જપ્તી, UPI, બેંકિંગ છેતરપિંડી, હેકિંગ અને સ્કેમ"
+        : isHi
+          ? "शिकायत, FIR, पुलिस नोटिस, जब्ती, UPI, बैंकिंग धोखाधड़ी, हैकिंग और स्कैम"
+          : "Complaints, FIR, police notices, seizure, UPI, banking fraud, hacking & scams",
     },
+
     {
-      id: 'Documentation Help',
-      label: isGu ? 'દસ્તાવેજીકરણ સહાય' : isHi ? 'दस्तावेज़ीकरण सहायता' : 'Documentation Help',
-      desc: isGu
-        ? 'કાનૂની જવાબો ડ્રાફ્ટ કરવા, કાગળો વ્યવસ્થિત કરવા'
+      id: "Property & Land",
+      label: isGu
+        ? "મિલકત અને જમીન"
         : isHi
-        ? 'ड्राफ्टिंग समर्थन, फाइलों का सुव्यवस्थित संगठन'
-        : 'Drafting replies, sorting records, dossier building',
+          ? "संपत्ति और भूमि"
+          : "Property & Land",
+      desc: isGu
+        ? "કબજો, મિલકત અને જમીન વિવાદ, બેંક દ્વારા સીલ કરેલી મિલકત અને સોસાયટી બાબતો"
+        : isHi
+          ? "कब्जा, संपत्ति और भूमि विवाद, बैंक द्वारा सील संपत्ति और सोसायटी मामले"
+          : "Possession, property & land disputes, bank-sealed property & society matters",
     },
+
     {
-      id: 'Professional Coordination',
-      label: isGu ? 'વ્યાવસાયિક સંકલન' : isHi ? 'विशेषज्ञ समन्वय' : 'Professional Coordination',
-      desc: isGu
-        ? 'એડવોકેટ્સ, સિનિયર CA, વેલ્યુઅર્સ, મધ્યસ્થી'
+      id: "Bank, Loan, Money & Recovery",
+      label: isGu
+        ? "બેંક, લોન, પૈસા અને વસૂલાત"
         : isHi
-        ? 'अधिवक्ता, वरिष्ठ सीए, मध्यस्थ व मूल्यांकनकर्ता'
-        : 'Advocates, Senior CAs, Valuers, Arbitrators',
+          ? "बैंक, लोन, पैसे और रिकवरी"
+          : "Bank, Loan, Money & Recovery",
+      desc: isGu
+        ? "EMI, લોન, મોર્ટગેજ, બેંક એકાઉન્ટ, બેંક રિકવરી, ચુકવણી, ઇનવોઇસ, રિફંડ અને પૈસાની વસૂલાત"
+        : isHi
+          ? "EMI, लोन, मॉर्गेज, बैंक अकाउंट, बैंक रिकवरी, भुगतान, इनवॉइस, रिफंड और पैसे की रिकवरी"
+          : "EMI, loans, mortgage, bank accounts, bank recovery, payments, invoices, refunds & money recovery",
     },
+
     {
-      id: 'Ongoing Support',
-      label: isGu ? 'સતત સહાય' : isHi ? 'निरंतर प्रशासनिक सहायता' : 'Ongoing Support',
+      id: "Vehicle & RTO",
+      label: isGu ? "વાહન અને RTO" : isHi ? "वाहन और RTO" : "Vehicle & RTO",
       desc: isGu
-        ? 'મુદ્દત ટ્રેકિંગ, વહીવટી ફોલો-અપ'
+        ? "ચલણ, વાહન જપ્તી, RC, લાઇસન્સ, RTO બાબતો અને અકસ્માત"
         : isHi
-        ? 'सुनवाई ट्रैकिंग, नियमित अपडेट्स व फॉलो-अप'
-        : 'Hearing tracking, administrative follow-through',
+          ? "चालान, वाहन जब्ती, RC, लाइसेंस, RTO मामले और दुर्घटनाएं"
+          : "Challans, vehicle seizure, RC, licence, RTO matters & accidents",
     },
+
     {
-      id: 'Other Matters',
-      label: isGu ? 'સામાન્ય / અન્ય બાબત' : isHi ? 'सामान्य / अन्य विषय' : 'General / Other Matter',
-      desc: isGu
-        ? 'જો તમને યોગ્ય શ્રેણી પસંદ કરવામાં મૂંઝવણ હોય'
+      id: "Family Matters",
+      label: isGu
+        ? "કૌટુંબિક બાબતો"
         : isHi
-        ? 'यदि आप उचित श्रेणी चुनने में असमंजस में हैं'
-        : 'Unsure where to categorize your situation',
+          ? "पारिवारिक मामले"
+          : "Family Matters",
+      desc: isGu
+        ? "લગ્ન સંબંધિત બાબતો, ભરણપોષણ અને કૌટુંબિક વિવાદ"
+        : isHi
+          ? "विवाह संबंधी मामले, भरण-पोषण और पारिवारिक विवाद"
+          : "Matrimonial matters, maintenance & family disputes",
+    },
+
+    {
+      id: "Business & Commercial Matters",
+      label: isGu
+        ? "વ્યવસાય અને કોમર્શિયલ બાબતો"
+        : isHi
+          ? "व्यवसाय और व्यावसायिक मामले"
+          : "Business & Commercial Matters",
+      desc: isGu
+        ? "વ્યવસાયિક વિવાદ, બિઝનેસ દસ્તાવેજો, કરાર, ચુકવણી અને કોમર્શિયલ બાબતો"
+        : isHi
+          ? "व्यावसायिक विवाद, बिजनेस दस्तावेज़, अनुबंध, भुगतान और व्यावसायिक मामले"
+          : "Business disputes, business documents, contracts, payments & commercial matters",
+    },
+
+    {
+      id: "Consumer & Insurance",
+      label: isGu
+        ? "ગ્રાહક અને વીમો"
+        : isHi
+          ? "उपभोक्ता और बीमा"
+          : "Consumer & Insurance",
+      desc: isGu
+        ? "પ્રોડક્ટ અને સેવા સંબંધિત સમસ્યાઓ, ગ્રાહક બાબતો અને વીમા દાવા"
+        : isHi
+          ? "उत्पाद और सेवा संबंधी समस्याएं, उपभोक्ता मामले और बीमा दावे"
+          : "Product & service issues, consumer matters & insurance claims",
+    },
+
+    {
+      id: "Documents & Government Services",
+      label: isGu
+        ? "દસ્તાવેજો અને સરકારી સેવાઓ"
+        : isHi
+          ? "दस्तावेज़ और सरकारी सेवाएं"
+          : "Documents & Government Services",
+      desc: isGu
+        ? "દસ્તાવેજીકરણ, અરજીઓ, પ્રમાણપત્રો અને સત્તાવાર સરકારી પ્રક્રિયાઓ"
+        : isHi
+          ? "दस्तावेज़ीकरण, आवेदन, प्रमाणपत्र और आधिकारिक सरकारी प्रक्रियाएं"
+          : "Documentation, applications, certificates & official government processes",
+    },
+
+    {
+      id: "Others",
+      label: isGu ? "અન્ય બાબતો" : isHi ? "अन्य मामले" : "OTHERS..",
+      desc: isGu
+        ? "ઉપરની કોઈ શ્રેણીમાં ન આવતી અન્ય બાબતો — અમારા કોઓર્ડિનેટર યોગ્ય શ્રેણી નક્કી કરવામાં મદદ કરશે"
+        : isHi
+          ? "ऊपर दी गई श्रेणियों में शामिल न होने वाले अन्य मामले — हमारे समन्वयक सही श्रेणी तय करने में मदद करेंगे"
+          : "Any matter not covered above — our coordinator will help identify the appropriate category",
     },
   ];
 
-  const handleNextStep1 = () => {
-    setStep(2);
-  };
 
   const handleNextStep2 = () => {
     if (!description.trim()) {
       setErrorMsg(
         isGu
-          ? 'કૃપા કરીને તમારી સમસ્યાનો ટૂંકો સારાંશ લખો.'
+          ? "કૃપા કરીને તમારી સમસ્યાનો ટૂંકો સારાંશ લખો."
           : isHi
-          ? 'कृपया अपनी समस्या का संक्षिप्त विवरण लिखें।'
-          : 'Please write a brief summary of what you are dealing with.'
+            ? "कृपया अपनी समस्या का संक्षिप्त विवरण लिखें।"
+            : "Please write a brief summary of what you are dealing with.",
       );
       return;
     }
-    setErrorMsg('');
+    setErrorMsg("");
     setStep(3);
   };
 
@@ -115,35 +219,39 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
     if (!formData.fullName.trim()) {
       setErrorMsg(
         isGu
-          ? 'કૃપા કરીને તમારું પૂરું નામ લખો.'
+          ? "કૃપા કરીને તમારું પૂરું નામ લખો."
           : isHi
-          ? 'कृपया अपना पूरा नाम लिखें।'
-          : 'Please enter your full name.'
+            ? "कृपया अपना पूरा नाम लिखें।"
+            : "Please enter your full name.",
       );
       return;
     }
     if (!formData.phone.trim() || formData.phone.length < 8) {
       setErrorMsg(
         isGu
-          ? 'કૃપા કરીને માન્ય વોટ્સએપ/મોબાઇલ નંબર લખો.'
+          ? "કૃપા કરીને માન્ય વોટ્સએપ/મોબાઇલ નંબર લખો."
           : isHi
-          ? 'कृपया मान्य व्हाट्सएप/मोबाइल नंबर दर्ज करें।'
-          : 'Please enter a valid mobile / WhatsApp number.'
+            ? "कृपया मान्य व्हाट्सएप/मोबाइल नंबर दर्ज करें।"
+            : "Please enter a valid mobile / WhatsApp number.",
       );
       return;
     }
 
-    setErrorMsg('');
-    const randomRef = 'CS-' + new Date().getFullYear() + '-' + Math.floor(1000 + Math.random() * 9000);
+    setErrorMsg("");
+    const randomRef =
+      "CS-" +
+      new Date().getFullYear() +
+      "-" +
+      Math.floor(1000 + Math.random() * 9000);
     setReferenceId(randomRef);
     setStep(4);
   };
 
   const openWhatsAppConfirmation = () => {
     const message = encodeURIComponent(
-      `Hello CASE SUNO, I submitted an enquiry (${referenceId}) regarding ${category}.\nName: ${formData.fullName}\nCity: ${formData.city}\nBrief: ${description.slice(0, 100)}...`
+      `Hello CASE SUNO, I submitted an enquiry (${referenceId}) regarding ${category}.\nName: ${formData.fullName}\nCity: ${formData.city}\nBrief: ${description.slice(0, 100)}...`,
     );
-    window.open(`https://wa.me/919876543210?text=${message}`, '_blank');
+    window.open(`https://wa.me/918000784778?text=${message}`, "_blank");
   };
 
   return (
@@ -157,24 +265,28 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
         <div className="flex items-center justify-between px-4 sm:px-6 py-4 border-b border-[#E8E4DB] bg-white">
           <div>
             <span className="text-[10px] font-bold tracking-[0.25em] text-[#8C8479] uppercase block">
-              {isGu ? 'CASE SUNO પૂછપરછ' : isHi ? 'CASE SUNO पूछताछ' : 'Case Suno Enquiry'}
+              {isGu
+                ? "CASE SUNO પૂછપરછ"
+                : isHi
+                  ? "CASE SUNO पूछताछ"
+                  : "Case Suno Enquiry"}
             </span>
             <h3
               className={`text-lg sm:text-xl text-[#1E1D1A] ${
-                isGu || isHi ? 'font-sans font-semibold' : 'font-serif'
+                isGu || isHi ? "font-sans font-semibold" : "font-serif"
               }`}
             >
               {step === 4
                 ? isGu
-                  ? 'પૂછપરછ નોંધાઈ ગઈ છે'
+                  ? "પૂછપરછ નોંધાઈ ગઈ છે"
                   : isHi
-                  ? 'पूछताछ दर्ज कर ली गई है'
-                  : 'Enquiry Registered'
+                    ? "पूछताछ दर्ज कर ली गई है"
+                    : "Enquiry Registered"
                 : isGu
-                ? 'તમારી પૂછપરછ શરૂ કરો'
-                : isHi
-                ? 'अपनी पूछताछ शुरू करें'
-                : 'Start Your Enquiry'}
+                  ? "તમારી પૂછપરછ શરૂ કરો"
+                  : isHi
+                    ? "अपनी पूछताछ शुरू करें"
+                    : "Start Your Enquiry"}
             </h3>
           </div>
 
@@ -182,14 +294,14 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
             {step < 4 && (
               <span className="text-xs text-[#787268] tabular-nums font-medium">
                 {isGu
-                  ? `તબક્કો ${step} / ૩`
+                  ? `તબક્કો ${step} / 3`
                   : isHi
-                  ? `चरण ${step} / ३`
-                  : `Step ${step} of 3`}
+                    ? `चरण ${step} / 3`
+                    : `Step ${step} of 3`}
               </span>
             )}
             <button
-              onClick={onClose}
+              onClick={handleClose}
               className="p-1.5 rounded-full text-[#6B655B] hover:text-black hover:bg-[#F2EFE9] transition-colors cursor-pointer"
               aria-label="Close dialog"
             >
@@ -206,21 +318,21 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
               <div>
                 <h4
                   className={`text-base sm:text-lg text-[#1E1D1A] ${
-                    isGu || isHi ? 'font-sans font-semibold' : 'font-serif'
+                    isGu || isHi ? "font-sans font-semibold" : "font-serif"
                   }`}
                 >
                   {isGu
-                    ? 'તમારી પરિસ્થિતિ સાથે સુસંગત શ્રેણી પસંદ કરો:'
+                    ? "તમારી પરિસ્થિતિ સાથે સુસંગત શ્રેણી પસંદ કરો:"
                     : isHi
-                    ? 'अपनी स्थिति से संबंधित श्रेणी चुनें:'
-                    : 'Select the category that best matches your situation:'}
+                      ? "अपनी स्थिति से संबंधित श्रेणी चुनें:"
+                      : "Select the category that best matches your situation:"}
                 </h4>
                 <p className="text-xs text-[#6B655B] mt-1">
                   {isGu
-                    ? 'ચિંતા કરશો નહીં જો એકથી વધુ લાગુ પડતી હોય, અમારા કોઓર્ડિનેટર કોલ પર સ્પષ્ટતા કરી આપશે.'
+                    ? "ચિંતા કરશો નહીં જો એકથી વધુ લાગુ પડતી હોય, અમારા કોઓર્ડિનેટર કોલ પર સ્પષ્ટતા કરી આપશે."
                     : isHi
-                    ? 'यदि एक से अधिक श्रेणियां लागू होती हैं तो चिंता न करें, हमारे समन्वयक कॉल पर स्पष्ट कर देंगे।'
-                    : "Don't worry if multiple apply; our coordinator will clarify during intake."}
+                      ? "यदि एक से अधिक श्रेणियां लागू होती हैं तो चिंता न करें, हमारे समन्वयक कॉल पर स्पष्ट कर देंगे।"
+                      : "Don't worry if multiple apply; our coordinator will clarify during intake."}
                 </p>
               </div>
 
@@ -229,28 +341,22 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
                   <button
                     key={c.id}
                     type="button"
-                    onClick={() => setCategory(c.id)}
+                    onClick={() => {
+                      setCategory(c.id);
+                      setStep(2);
+                    }}
                     className={`p-3 sm:p-3.5 text-left border rounded-sm transition-all duration-150 cursor-pointer ${
                       category === c.id
-                        ? 'border-[#1E1D1A] bg-white shadow-xs ring-1 ring-[#1E1D1A]'
-                        : 'border-[#E3DED4] bg-[#FAF9F6] hover:bg-white hover:border-[#B5AEA1]'
+                        ? "border-[#1E1D1A] bg-white shadow-xs ring-1 ring-[#1E1D1A]"
+                        : "border-[#E3DED4] bg-[#FAF9F6] hover:bg-white hover:border-[#B5AEA1]"
                     }`}
                   >
-                    <p className="text-sm font-semibold text-[#1E1D1A]">{c.label}</p>
+                    <p className="text-sm font-semibold text-[#1E1D1A]">
+                      {c.label}
+                    </p>
                     <p className="text-xs text-[#6B655B] mt-0.5">{c.desc}</p>
                   </button>
                 ))}
-              </div>
-
-              <div className="pt-3 flex justify-end">
-                <button
-                  type="button"
-                  onClick={handleNextStep1}
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-[#1F1E1B] hover:bg-[#33312B] text-white text-xs font-medium tracking-wide rounded-sm transition-all cursor-pointer"
-                >
-                  <span>{isGu ? 'આગળ વધો' : isHi ? 'आगे बढ़ें' : 'Continue'}</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </button>
               </div>
             </div>
           )}
@@ -261,21 +367,21 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
               <div>
                 <h4
                   className={`text-base sm:text-lg text-[#1E1D1A] ${
-                    isGu || isHi ? 'font-sans font-semibold' : 'font-serif'
+                    isGu || isHi ? "font-sans font-semibold" : "font-serif"
                   }`}
                 >
                   {isGu
-                    ? 'તમે કઈ સમસ્યાનો સામનો કરી રહ્યા છો તે જણાવો'
+                    ? "તમે કઈ સમસ્યાનો સામનો કરી રહ્યા છો તે જણાવો"
                     : isHi
-                    ? 'आप किस समस्या या आवश्यकता का सामना कर रहे हैं?'
-                    : 'Describe what you are facing'}
+                      ? "आप किस समस्या या आवश्यकता का सामना कर रहे हैं?"
+                      : "Describe what you are facing"}
                 </h4>
                 <p className="text-xs text-[#6B655B] mt-1">
                   {isGu
-                    ? 'તમે જેટલું યોગ્ય સમજો એટલું જ જણાવો. તમામ માહિતી સંપૂર્ણપણે ગોપનીય રાખવામાં આવે છે.'
+                    ? "તમે જેટલું યોગ્ય સમજો એટલું જ જણાવો. તમામ માહિતી સંપૂર્ણપણે ગોપનીય રાખવામાં આવે છે."
                     : isHi
-                    ? 'जितनी जानकारी आप सहजता से देना चाहें उतनी ही साझा करें। सभी विवरण पूर्णतः गोपनीय रहेंगे।'
-                    : 'Share only as much as you feel comfortable. All information is strictly confidential.'}
+                      ? "जितनी जानकारी आप सहजता से देना चाहें उतनी ही साझा करें। सभी विवरण पूर्णतः गोपनीय रहेंगे।"
+                      : "Share only as much as you feel comfortable. All information is strictly confidential."}
                 </p>
               </div>
 
@@ -288,10 +394,10 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
               <div>
                 <label className="block text-xs font-semibold text-[#302E2A] mb-1.5">
                   {isGu
-                    ? 'પરિસ્થિતિ / જરૂરિયાતનો સંક્ષિપ્ત સારાંશ *'
+                    ? "પરિસ્થિતિ / જરૂરિયાતનો સંક્ષિપ્ત સારાંશ *"
                     : isHi
-                    ? 'स्थिति / आवश्यकता का संक्षिप्त विवरण *'
-                    : 'Brief Summary of the Situation / Requirement *'}
+                      ? "स्थिति / आवश्यकता का संक्षिप्त विवरण *"
+                      : "Brief Summary of the Situation / Requirement *"}
                 </label>
                 <textarea
                   rows={4}
@@ -299,94 +405,35 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
                   onChange={(e) => setDescription(e.target.value)}
                   placeholder={
                     isGu
-                      ? 'દા.ત., વારસાઈ મિલકત અંગે નોટિસ મળી છે / ભાગીદારી કરાર ચકાસવો છે / વેપારી પેમેન્ટ અટક્યું છે...'
+                      ? "દા.ત., વારસાઈ મિલકત અંગે નોટિસ મળી છે / ભાગીદારી કરાર ચકાસવો છે / વેપારી પેમેન્ટ અટક્યું છે..."
                       : isHi
-                      ? 'उदा. संपत्ति या वसीयत पर नोटिस प्राप्त हुआ / साझेदारी अनुबंध की जांच करानी है / विक्रेता भुगतान लंबित है...'
-                      : 'e.g., Received a notice regarding property inheritance / Need help reviewing a partnership deed / In a payment dispute with a supplier...'
+                        ? "उदा. संपत्ति या वसीयत पर नोटिस प्राप्त हुआ / साझेदारी अनुबंध की जांच करानी है / विक्रेता भुगतान लंबित है..."
+                        : "e.g., Received a notice regarding property inheritance / Need help reviewing a partnership deed / In a payment dispute with a supplier..."
                   }
                   className="w-full p-3 text-sm bg-white border border-[#D5CFBF] rounded-sm focus:outline-hidden focus:ring-1 focus:ring-[#1E1D1A] text-[#1E1D1A] placeholder:text-[#9C9588]"
                 />
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-1">
-                <div>
-                  <label className="block text-xs font-semibold text-[#302E2A] mb-1.5">
-                    {isGu
-                      ? 'કેટલી ઉતાવળમાં પગલું ભરવું છે?'
-                      : isHi
-                      ? 'कितनी जल्दी कदम उठाने की आवश्यकता है?'
-                      : 'How soon do you need to take action?'}
-                  </label>
-                  <div className="flex gap-2">
-                    {(['Normal', 'Priority', 'Immediate'] as const).map((lvl) => (
-                      <button
-                        key={lvl}
-                        type="button"
-                        onClick={() => setUrgency(lvl)}
-                        className={`flex-1 py-2 text-xs font-medium border rounded-sm transition-colors cursor-pointer ${
-                          urgency === lvl
-                            ? 'bg-[#1E1D1A] text-white border-[#1E1D1A]'
-                            : 'bg-white text-[#4A463E] border-[#D9D3C7] hover:border-[#9E9789]'
-                        }`}
-                      >
-                        {isGu
-                          ? lvl === 'Normal'
-                            ? 'સામાન્ય'
-                            : lvl === 'Priority'
-                            ? 'અગ્રતા'
-                            : 'તાત્કાલિક'
-                          : isHi
-                          ? lvl === 'Normal'
-                            ? 'सामान्य'
-                            : lvl === 'Priority'
-                            ? 'प्राथमिकता'
-                            : 'तत्काल'
-                          : lvl}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-xs font-semibold text-[#302E2A] mb-1.5">
-                    {isGu
-                      ? 'દસ્તાવેજો / નોટિસ ઉપલબ્ધ છે?'
-                      : isHi
-                      ? 'दस्तावेज / नोटिस उपलब्ध हैं?'
-                      : 'Do you have documents/notices ready?'}
-                  </label>
-                  <select
-                    value={hasDocuments}
-                    onChange={(e) => setHasDocuments(e.target.value as 'yes' | 'no' | 'partial')}
-                    className="w-full p-2.5 text-xs bg-white border border-[#D5CFBF] rounded-sm text-[#1E1D1A] cursor-pointer"
-                  >
-                    <option value="yes">
-                      {isGu ? 'હા, પૂરા દસ્તાવેજો છે' : isHi ? 'हाँ, पूर्ण दस्तावेज मौजूद हैं' : 'Yes, have complete documents'}
-                    </option>
-                    <option value="partial">
-                      {isGu ? 'અમુક કાગળો છે / અધૂરા છે' : isHi ? 'कुछ कागजात हैं / अधूरे हैं' : 'Have some papers / incomplete'}
-                    </option>
-                    <option value="no">
-                      {isGu ? 'હજી કોઈ કાગળો નથી / માત્ર સલાહ જોઈએ છે' : isHi ? 'अभी कोई दस्तावेज नहीं / केवल मार्गदर्शन चाहिए' : 'No documents yet / just seeking guidance'}
-                    </option>
-                  </select>
-                </div>
               </div>
 
               <div className="pt-3 flex items-center justify-between border-t border-[#EAE6DD]">
                 <button
                   type="button"
                   onClick={() => setStep(1)}
-                  className="px-4 py-2 text-xs text-[#5C564C] hover:text-black font-medium cursor-pointer"
+                  className="px-4 py-2 text-xs text-[#5C564C] hover:text-black font-medium cursor-pointer bg-[#dcd7d7] rounded-lg"
                 >
-                  {isGu ? 'પાછા જાવ' : isHi ? 'पीछे जाएं' : 'Back'}
+                  {isGu ? "પાછા જાવ" : isHi ? "पीछे जाएं" : "Back"}
                 </button>
                 <button
                   type="button"
                   onClick={handleNextStep2}
                   className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#1F1E1B] hover:bg-[#33312B] text-white text-xs font-medium tracking-wide rounded-sm transition-all cursor-pointer"
                 >
-                  <span>{isGu ? 'સંપર્ક વિગતો' : isHi ? 'संपर्क विवरण' : 'Next: Contact Details'}</span>
+                  <span>
+                    {isGu
+                      ? "સંપર્ક વિગતો"
+                      : isHi
+                        ? "संपर्क विवरण"
+                        : "Next: Contact Details"}
+                  </span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </button>
               </div>
@@ -399,21 +446,21 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
               <div>
                 <h4
                   className={`text-base sm:text-lg text-[#1E1D1A] ${
-                    isGu || isHi ? 'font-sans font-semibold' : 'font-serif'
+                    isGu || isHi ? "font-sans font-semibold" : "font-serif"
                   }`}
                 >
                   {isGu
-                    ? 'અમારા કોઓર્ડિનેટર તમારો સંપર્ક કેવી રીતે કરે?'
+                    ? "અમારા કોઓર્ડિનેટર તમારો સંપર્ક કેવી રીતે કરે?"
                     : isHi
-                    ? 'हमारे समन्वयक आपसे किस प्रकार संपर्क करें?'
-                    : 'How should our coordinator reach you?'}
+                      ? "हमारे समन्वयक आपसे किस प्रकार संपर्क करें?"
+                      : "How should our coordinator reach you?"}
                 </h4>
                 <p className="text-xs text-[#6B655B] mt-1">
                   {isGu
-                    ? 'અમે શાંતિપૂર્વક વાતચીત માટે અનુકૂળ સમય નક્કી કરવા તમારો સંપર્ક કરીશું.'
+                    ? "અમે શાંતિપૂર્વક વાતચીત માટે અનુકૂળ સમય નક્કી કરવા તમારો સંપર્ક કરીશું."
                     : isHi
-                    ? 'हम शांत और सुगम बातचीत के लिए उपयुक्त समय तय करने हेतु संपर्क करेंगे।'
-                    : 'We will contact you to confirm a quiet appointment time.'}
+                      ? "हम शांत और सुगम बातचीत के लिए उपयुक्त समय तय करने हेतु संपर्क करेंगे।"
+                      : "We will contact you to confirm a quiet appointment time."}
                 </p>
               </div>
 
@@ -426,27 +473,45 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                 <div>
                   <label className="block text-xs font-semibold text-[#302E2A] mb-1">
-                    {isGu ? 'તમારું પૂરું નામ *' : isHi ? 'आपका पूरा नाम *' : 'Your Full Name *'}
+                    {isGu
+                      ? "તમારું પૂરું નામ *"
+                      : isHi
+                        ? "आपका पूरा नाम *"
+                        : "Your Full Name *"}
                   </label>
                   <input
                     type="text"
                     required
                     value={formData.fullName}
-                    onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                    placeholder={isGu ? 'દા.ત. રાજેશ પટેલ' : isHi ? 'उदा. राजेश शर्मा' : 'e.g. Rajesh Patel'}
+                    onChange={(e) =>
+                      setFormData({ ...formData, fullName: e.target.value })
+                    }
+                    placeholder={
+                      isGu
+                        ? "દા.ત. રાજેશ પટેલ"
+                        : isHi
+                          ? "उदा. राजेश शर्मा"
+                          : "e.g. Rajesh Patel"
+                    }
                     className="w-full p-2.5 text-sm bg-white border border-[#D5CFBF] rounded-sm text-[#1E1D1A]"
                   />
                 </div>
 
                 <div>
                   <label className="block text-xs font-semibold text-[#302E2A] mb-1">
-                    {isGu ? 'વોટ્સએપ / મોબાઇલ નંબર *' : isHi ? 'व्हाट्सएप / मोबाइल नंबर *' : 'WhatsApp / Mobile Number *'}
+                    {isGu
+                      ? "વોટ્સએપ / મોબાઇલ નંબર *"
+                      : isHi
+                        ? "व्हाट्सएप / मोबाइल नंबर *"
+                        : "WhatsApp / Mobile Number *"}
                   </label>
                   <input
                     type="tel"
                     required
                     value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, phone: e.target.value })
+                    }
                     placeholder="+91 98250 12345"
                     className="w-full p-2.5 text-sm bg-white border border-[#D5CFBF] rounded-sm text-[#1E1D1A]"
                   />
@@ -454,12 +519,18 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
 
                 <div>
                   <label className="block text-xs font-semibold text-[#302E2A] mb-1">
-                    {isGu ? 'ઇમેઇલ (વૈકલ્પિક)' : isHi ? 'ईमेल (वैकल्पिक)' : 'Email Address (Optional)'}
+                    {isGu
+                      ? "ઇમેઇલ (વૈકલ્પિક)"
+                      : isHi
+                        ? "ईमेल (वैकल्पिक)"
+                        : "Email Address (Optional)"}
                   </label>
                   <input
                     type="email"
                     value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, email: e.target.value })
+                    }
                     placeholder="name@example.com"
                     className="w-full p-2.5 text-sm bg-white border border-[#D5CFBF] rounded-sm text-[#1E1D1A]"
                   />
@@ -467,51 +538,31 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
 
                 <div>
                   <label className="block text-xs font-semibold text-[#302E2A] mb-1">
-                    {isGu ? 'શહેર / સ્થળ' : isHi ? 'शहर / स्थान' : 'City / Location'}
+                    {isGu
+                      ? "શહેર / સ્થળ"
+                      : isHi
+                        ? "शहर / स्थान"
+                        : "City / Location"}
                   </label>
                   <input
                     type="text"
                     value={formData.city}
-                    onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-                    placeholder="Surat, Gujarat"
+                    onChange={(e) =>
+                      setFormData({ ...formData, city: e.target.value })
+                    }
+                    placeholder="city, state"
                     className="w-full p-2.5 text-sm bg-white border border-[#D5CFBF] rounded-sm text-[#1E1D1A]"
                   />
                 </div>
               </div>
-
-              <div>
-                <label className="block text-xs font-semibold text-[#302E2A] mb-1">
-                  {isGu ? 'પરામર્શ માટે અનુકૂળ માધ્યમ' : isHi ? 'परामर्श के लिए पसंदीदा माध्यम' : 'Preferred Consultation Mode'}
-                </label>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                  {[
-                    isGu ? 'ઓનલાઇન (વિડીયો/ઓડિયો)' : isHi ? 'ऑनलाइन (वीडियो/ऑडियो)' : 'Online (Video/Audio)',
-                    isGu ? 'સુરત ઓફિસ (રૂબરૂ)' : isHi ? 'सूरत कार्यालय (व्यक्तिगत)' : 'Surat Office (In-Person)',
-                  ].map((m) => (
-                    <button
-                      key={m}
-                      type="button"
-                      onClick={() => setFormData({ ...formData, mode: m })}
-                      className={`p-2.5 text-xs text-left border rounded-sm font-medium transition-colors cursor-pointer ${
-                        formData.mode === m
-                          ? 'border-[#1E1D1A] bg-white text-[#1E1D1A] ring-1 ring-[#1E1D1A]'
-                          : 'border-[#D9D3C7] bg-[#FAF9F6] text-[#59544B]'
-                      }`}
-                    >
-                      {m}
-                    </button>
-                  ))}
-                </div>
-              </div>
-
               <div className="p-3 bg-[#F4F0E6] border border-[#E3DCCB] rounded-sm flex items-center gap-2.5 text-xs text-[#524C41]">
                 <Shield className="w-4 h-4 text-[#756C5B] shrink-0" />
                 <span>
                   {isGu
-                    ? 'તમારી ગોપનીયતા સુરક્ષિત છે. અમે તમારી સંમતિ વિના વિગતો ક્યારેય શેર કરતા નથી.'
+                    ? "તમારી ગોપનીયતા સુરક્ષિત છે. અમે તમારી સંમતિ વિના વિગતો ક્યારેય શેર કરતા નથી."
                     : isHi
-                    ? 'आपकी गोपनीयता पूर्णतः सुरक्षित है। हम आपकी सहमति के बिना आपकी जानकारी कभी साझा नहीं करते।'
-                    : 'Your privacy is protected. We will never share your contacts or circumstances without consent.'}
+                      ? "आपकी गोपनीयता पूर्णतः सुरक्षित है। हम आपकी सहमति के बिना आपकी जानकारी कभी साझा नहीं करते।"
+                      : "Your privacy is protected. We will never share your contacts or circumstances without consent."}
                 </span>
               </div>
 
@@ -519,9 +570,9 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
                 <button
                   type="button"
                   onClick={() => setStep(2)}
-                  className="px-4 py-2 text-xs text-[#5C564C] hover:text-black font-medium cursor-pointer"
+                  className="px-4 py-2 text-xs text-[#5C564C] hover:text-black font-medium cursor-pointer bg-[#dcd7d7] rounded-lg"
                 >
-                  {isGu ? 'પાછા જાવ' : isHi ? 'पीछे जाएं' : 'Back'}
+                  {isGu ? "પાછા જાવ" : isHi ? "पीछे जाएं" : "Back"}
                 </button>
                 <button
                   type="submit"
@@ -529,10 +580,10 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
                 >
                   <span>
                     {isGu
-                      ? 'ગોપનીય પૂછપરછ સબમિટ કરો'
+                      ? "ગોપનીય પૂછપરછ સબમિટ કરો"
                       : isHi
-                      ? 'गोपनीय पूछताछ सबमिट करें'
-                      : 'Submit Confidential Enquiry'}
+                        ? "गोपनीय पूछताछ सबमिट करें"
+                        : "Submit Confidential Enquiry"}
                   </span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </button>
@@ -549,46 +600,57 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
 
               <div>
                 <span className="inline-block px-3 py-1 bg-[#F2EDE2] text-[#5E5648] text-xs font-mono font-medium rounded-xs mb-2">
-                  {isGu ? 'સંદર્ભ ક્રમાંક' : isHi ? 'संदर्भ संख्या' : 'Reference'}: {referenceId}
+                  {isGu
+                    ? "સંદર્ભ ક્રમાંક"
+                    : isHi
+                      ? "संदर्भ संख्या"
+                      : "Reference"}
+                  : {referenceId}
                 </span>
                 <h4
                   className={`text-xl sm:text-2xl text-[#1E1D1A] ${
-                    isGu || isHi ? 'font-sans font-semibold' : 'font-serif'
+                    isGu || isHi ? "font-sans font-semibold" : "font-serif"
                   }`}
                 >
                   {isGu
                     ? `આભાર, ${formData.fullName}`
                     : isHi
-                    ? `धन्यवाद, ${formData.fullName}`
-                    : `Thank You, ${formData.fullName}.`}
+                      ? `धन्यवाद, ${formData.fullName}`
+                      : `Thank You, ${formData.fullName}.`}
                 </h4>
                 <p className="text-xs sm:text-sm text-[#5C564C] max-w-md mx-auto mt-2 leading-relaxed">
                   {isGu
-                    ? 'અમને તમારી પૂછપરછ મળી ગઈ છે. અમારા કેસ કોઓર્ડિનેટર વિગતો ચકાસીને ૨ વ્યાવસાયિક કલાકમાં તમારો સંપર્ક કરશે.'
+                    ? "અમને તમારી પૂછપરછ મળી ગઈ છે. અમારા કેસ કોઓર્ડિનેટર વિગતો ચકાસીને ૨ વ્યાવસાયિક કલાકમાં તમારો સંપર્ક કરશે."
                     : isHi
-                    ? 'हमें आपकी पूछताछ प्राप्त हो गई है। हमारे केस समन्वयक आपके विवरण की समीक्षा करेंगे और २ व्यावसायिक घंटों में संपर्क करेंगे।'
-                    : `We have received your enquiry regarding ${category}. Our case coordinator will review your notes and reach out within 2 business hours.`}
+                      ? "हमें आपकी पूछताछ प्राप्त हो गई है। हमारे केस समन्वयक आपके विवरण की समीक्षा करेंगे और २ व्यावसायिक घंटों में संपर्क करेंगे।"
+                      : `We have received your enquiry regarding ${category}. Our case coordinator will review your notes and reach out within 2 business hours.`}
                 </p>
               </div>
 
               <div className="p-4 bg-white border border-[#E6E1D6] rounded-sm max-w-md mx-auto text-left text-xs space-y-2 text-[#4A453C]">
                 <div className="flex justify-between">
-                  <span className="text-[#878072]">{isGu ? 'સ્થિતિ:' : isHi ? 'स्थिति:' : 'Status:'}</span>
+                  <span className="text-[#878072]">
+                    {isGu ? "સ્થિતિ:" : isHi ? "स्थिति:" : "Status:"}
+                  </span>
                   <span className="font-medium text-[#2F662C]">
                     {isGu
-                      ? 'પ્રારંભિક સમીક્ષા હેઠળ'
+                      ? "પ્રારંભિક સમીક્ષા હેઠળ"
                       : isHi
-                      ? 'प्रारंभिक समीक्षाधीन'
-                      : 'Under Preliminary Review'}
+                        ? "प्रारंभिक समीक्षाधीन"
+                        : "Under Preliminary Review"}
                   </span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-[#878072]">{isGu ? 'માધ્યમ:' : isHi ? 'पसंदीदा माध्यम:' : 'Preferred Mode:'}</span>
-                  <span className="font-medium text-[#1E1D1A]">{formData.mode}</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-[#878072]">{isGu ? 'સંપર્ક નંબર:' : isHi ? 'संपर्क नंबर:' : 'Contact Number:'}</span>
-                  <span className="font-medium text-[#1E1D1A]">{formData.phone}</span>
+                  <span className="text-[#878072]">
+                    {isGu
+                      ? "સંપર્ક નંબર:"
+                      : isHi
+                        ? "संपर्क नंबर:"
+                        : "Contact Number:"}
+                  </span>
+                  <span className="font-medium text-[#1E1D1A]">
+                    {formData.phone}
+                  </span>
                 </div>
               </div>
 
@@ -597,20 +659,27 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
                   onClick={openWhatsAppConfirmation}
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-[#25D366] hover:bg-[#1EBE5D] text-white text-xs font-medium rounded-sm transition-all cursor-pointer"
                 >
-                  <MessageSquare className="w-4 h-4" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="h-3.5 w-3.5"
+                  >
+                    <path d="M20.52 3.48A11.86 11.86 0 0 0 12.04 0C5.49 0 .16 5.33.16 11.88c0 2.09.55 4.13 1.6 5.92L.05 24l6.35-1.66a11.87 11.87 0 0 0 5.64 1.43h.01c6.55 0 11.88-5.33 11.88-11.88 0-3.18-1.24-6.17-3.41-8.41Zm-8.47 18.32h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.77.99 1.01-3.67-.23-.38a9.9 9.9 0 1 1 8.39 4.65Zm5.43-7.41c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.5 1.69.64.71.23 1.35.2 1.86.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z" />
+                  </svg>
                   <span>
                     {isGu
-                      ? 'વોટ્સએપ પર તરત જોડાઓ'
+                      ? "વોટ્સએપ પર તરત જોડાઓ"
                       : isHi
-                      ? 'व्हाट्सएप पर तुरंत जुड़ें'
-                      : 'Connect Instantly on WhatsApp'}
+                        ? "व्हाट्सएप पर तुरंत जुड़ें"
+                        : "Connect Instantly on WhatsApp"}
                   </span>
                 </button>
                 <button
-                  onClick={onClose}
+                  onClick={handleClose}
                   className="w-full sm:w-auto px-5 py-2.5 bg-[#1F1E1B] text-white text-xs font-medium rounded-sm cursor-pointer"
                 >
-                  {isGu ? 'પૂર્ણ' : isHi ? 'संपन्न' : 'Done'}
+                  {isGu ? "પૂર્ણ" : isHi ? "संपन्न" : "Done"}
                 </button>
               </div>
             </div>

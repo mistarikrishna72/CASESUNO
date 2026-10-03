@@ -52,3 +52,39 @@
 .nav-link-underline.active::after {
   width: 100%;
 }
+/* ================================
+   CASE SUNO SERVICES MARQUEE
+================================ */
+
+.services-marquee-track {
+  animation: services-marquee 45s linear infinite;
+  will-change: transform;
+}
+
+.services-marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes services-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - 10px));
+  }
+}
+
+/* Slightly faster on mobile */
+@media (max-width: 640px) {
+  .services-marquee-track {
+    animation-duration: 35s;
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .services-marquee-track {
+    animation: none;
+  }
+}

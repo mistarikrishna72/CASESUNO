@@ -79,106 +79,201 @@ const translations = {
             ]
         },
         services: {
-            kicker: "Our Services",
-            title: "Support Across Real-Life Situations",
-            desc: "From personal matters to business operations, CASE SUNO helps you understand your options and connect with the right professionals, where required.",
-            viewAll: "View All Services",
-            learnMore: "Learn More",
+            kicker: 'Our Services',
+            title: 'Support Across Real-Life Situations',
+            desc: 'From personal matters to business operations, CASE SUNO helps you understand your options and connect with the right professionals, where required.',
+            viewAll: 'View All Services',
+            learnMore: 'Learn More',
             items: [
                 {
-                    id: "individual-assistance",
-                    title: "Individual Assistance",
-                    shortDesc: "Support for personal, family and everyday matters.",
-                    overview: "Personal and family challenges often come with confusion and anxiety. CASE SUNO provides a calm, confidential space to talk through your concerns, sort facts from noise, and determine your rights, remedies, and practical next steps.",
+                    id: 'notice-summons-court-case',
+                    title: 'Notice, Summons & Court / Case',
+                    shortDesc: 'Guidance for legal notices, summons, court matters and ongoing cases.',
+                    overview: 'If you have received a legal notice, summons, court communication, or are already involved in a case, CASE SUNO helps you understand the situation, organise the relevant information and identify the appropriate next step.',
                     whatWeDo: [
-                        "Confidential 1-on-1 preliminary consultation",
-                        "Fact-finding and timeline clarification",
-                        "Family, property, consumer, or tenant matter guidance",
-                        "Guidance on dispute settlement vs. legal notices"
+                        'Understand the notice, summons or case information',
+                        'Organise relevant documents and timelines',
+                        'Explain available procedural next steps',
+                        'Coordinate with an appropriate professional where required'
                     ],
                     commonSituations: [
-                        "Family settlements, inheritance, and wills",
-                        "Landlord or tenant disputes",
-                        "Consumer grievances and vendor disputes",
-                        "Personal contract or employment transitions"
+                        'Legal notices',
+                        'Court summons',
+                        'Pending court cases',
+                        'Replies to notices'
                     ],
-                    deliveryMode: "Confidential online video call or in-person in Surat (by appointment)"
+                    deliveryMode: 'Online assistance with professional coordination where required'
                 },
                 {
-                    id: "business-support",
-                    title: "Business Support",
-                    shortDesc: "Operational, compliance and documentation assistance.",
-                    overview: "Running an enterprise requires keeping operational contracts, vendor relations, and compliance streamlined. We assist MSMEs, founders, and traders in establishing disciplined processes and resolving day-to-day administrative bottlenecks.",
+                    id: 'police-cyber-online-fraud',
+                    title: 'Police, Cyber & Online Fraud',
+                    shortDesc: 'Support for police matters, cyber issues and online fraud situations.',
+                    overview: 'Cyber incidents, online fraud and police-related situations can be stressful and time-sensitive. CASE SUNO helps you organise the facts, preserve relevant information and understand the appropriate next steps.',
                     whatWeDo: [
-                        "Commercial contract review and structuring",
-                        "Vendor negotiation and terms clarification",
-                        "Statutory compliance filing checklist preparation",
-                        "Internal policy frameworks and partnership agreements"
+                        'Understand and organise incident details',
+                        'Prepare a clear timeline of events',
+                        'Organise relevant digital records and communications',
+                        'Coordinate with the appropriate professional where required'
                     ],
                     commonSituations: [
-                        "Vendor payment delays and formal recovery notices",
-                        "New business partner onboarding and equity agreements",
-                        "Standard terms of service and client engagement letters",
-                        "Regulatory compliance audits for local Surat businesses"
+                        'Online payment fraud',
+                        'Cyber complaints',
+                        'Online scams',
+                        'Police-related matters'
                     ],
-                    deliveryMode: "Dedicated executive liaison with virtual & on-premise review"
+                    deliveryMode: 'Online assistance with professional coordination where required'
                 },
                 {
-                    id: "documentation-help",
-                    title: "Documentation Help",
-                    shortDesc: "Drafting support and document organisation.",
-                    overview: "Disorganized or ambiguous paperwork is the #1 reason legal and commercial problems escalate. We systematically organize your papers, draft clean formal representations, and ensure your dossier is airtight.",
+                    id: 'property-land',
+                    title: 'Property & Land',
+                    shortDesc: 'Assistance with property, land, ownership and related documentation.',
+                    overview: 'Property and land matters often involve multiple documents, parties and records. CASE SUNO helps organise the information and documents so you can understand what needs attention and what to do next.',
                     whatWeDo: [
-                        "Document indexing, timeline building, and archiving",
-                        "Drafting formal letters, representations, and replies",
-                        "Affidavit, power of attorney, and NOC verification",
-                        "Preparing organized case bundles for advocate briefing"
+                        'Organise property-related documents',
+                        'Build a clear ownership and event timeline',
+                        'Identify missing or relevant documentation',
+                        'Coordinate with appropriate legal or technical professionals'
                     ],
                     commonSituations: [
-                        "Preparing formal replies to government or legal notices",
-                        "Organizing property chain documents before sale or purchase",
-                        "Drafting unambiguous service level agreements",
-                        "Creating digital archives of critical family or firm records"
+                        'Property ownership matters',
+                        'Land-related disputes',
+                        'Property documentation',
+                        'Sale or purchase-related concerns'
                     ],
-                    deliveryMode: "Secure document upload portal + review meetings"
+                    deliveryMode: 'Secure document review with professional coordination where required'
                 },
                 {
-                    id: "professional-coordination",
-                    title: "Professional Coordination",
-                    shortDesc: "Connect with verified independent professionals where required.",
-                    overview: "Finding the right lawyer, chartered accountant, or domain specialist can be daunting. We connect you with verified, independent, peer-reviewed professionals suited specifically to your exact case requirements and budget.",
+                    id: 'bank-loan-money-recovery',
+                    title: 'Bank, Loan, Money & Recovery',
+                    shortDesc: 'Support for banking, loans, financial disputes and recovery matters.',
+                    overview: 'Banking, loan and recovery matters can involve notices, agreements, payments and deadlines. CASE SUNO helps you organise the situation and understand the appropriate next steps.',
                     whatWeDo: [
-                        "Assessing specialization needs (civil, criminal, corporate, tax)",
-                        "Briefing verified professionals with structured dossiers",
-                        "Clarifying fee structures, milestones, and timelines",
-                        "Eliminating preliminary consultation guesswork"
+                        'Organise loan and banking documents',
+                        'Review the sequence of communications and notices',
+                        'Prepare a clear summary of the matter',
+                        'Coordinate with an appropriate professional where required'
                     ],
                     commonSituations: [
-                        "High Court or District Court litigation representation",
-                        "GST, income tax assessment appeals with senior CAs",
-                        "Patent, trademark, and intellectual property filings",
-                        "Property title search and technical valuation reports"
+                        'Loan-related notices',
+                        'Banking disputes',
+                        'Payment and recovery issues',
+                        'Financial documentation'
                     ],
-                    deliveryMode: "Curated introductions with structured case handover"
+                    deliveryMode: 'Online assistance with professional coordination where required'
                 },
                 {
-                    id: "ongoing-support",
-                    title: "Ongoing Support",
-                    shortDesc: "Follow-up and administrative assistance till completion.",
-                    overview: "Most matters stretch over weeks or months, during which tracking dates and following up becomes overwhelming. CASE SUNO stays by your side as an administrative partner until your issue reaches its conclusion.",
+                    id: 'vehicle-rto',
+                    title: 'Vehicle & RTO',
+                    shortDesc: 'Assistance with vehicle, RTO and related documentation matters.',
+                    overview: 'Vehicle and RTO matters may involve documentation, ownership, registration or disputes. CASE SUNO helps organise the relevant information and identify the appropriate way forward.',
                     whatWeDo: [
-                        "Hearing and submission date tracking and calendar sync",
-                        "Document retrieval and compliance follow-ups",
-                        "Objective status reporting so you are never left guessing",
-                        "Single point of contact for case continuity"
+                        'Organise vehicle and RTO documents',
+                        'Understand the matter and timeline',
+                        'Identify missing information or documents',
+                        'Coordinate with relevant professionals where required'
                     ],
                     commonSituations: [
-                        "Pending registration with local authorities",
-                        "Arbitration or mediation hearing schedules",
-                        "Staged contractual payments and deliverables tracking",
-                        "Quarterly compliance reviews and renewals"
+                        'RTO documentation',
+                        'Vehicle ownership matters',
+                        'Registration-related issues',
+                        'Vehicle disputes'
                     ],
-                    deliveryMode: "Regular status briefings via WhatsApp, portal, and monthly check-ins"
+                    deliveryMode: 'Online assistance with appointment-based support where required'
+                },
+                {
+                    id: 'family-matters',
+                    title: 'Family Matters',
+                    shortDesc: 'Support for family, relationship, inheritance and personal matters.',
+                    overview: 'Family matters can be sensitive and emotionally difficult. CASE SUNO provides a confidential space to organise the situation, understand the available options and identify appropriate next steps.',
+                    whatWeDo: [
+                        'Listen to and organise the situation',
+                        'Build a clear timeline of events',
+                        'Organise relevant family and legal documents',
+                        'Coordinate with an appropriate professional where required'
+                    ],
+                    commonSituations: [
+                        'Family disputes',
+                        'Inheritance matters',
+                        'Wills and related documents',
+                        'Relationship-related concerns'
+                    ],
+                    deliveryMode: 'Confidential online assistance with professional coordination where required'
+                },
+                {
+                    id: 'business-commercial',
+                    title: 'Business & Commercial Matters',
+                    shortDesc: 'Support for business operations, contracts and commercial matters.',
+                    overview: 'Business and commercial matters often require clear documentation and structured communication. CASE SUNO helps businesses organise their requirements and connect with the appropriate professionals where needed.',
+                    whatWeDo: [
+                        'Organise commercial documents',
+                        'Structure business requirements',
+                        'Prepare clear summaries and timelines',
+                        'Coordinate with legal or financial professionals where required'
+                    ],
+                    commonSituations: [
+                        'Business agreements',
+                        'Commercial disputes',
+                        'Vendor or client matters',
+                        'Business documentation'
+                    ],
+                    deliveryMode: 'Online assistance with professional coordination where required'
+                },
+                {
+                    id: 'consumer-insurance',
+                    title: 'Consumer & Insurance',
+                    shortDesc: 'Assistance with consumer complaints, claims and insurance matters.',
+                    overview: 'Consumer and insurance matters can involve policies, bills, communications and claim documentation. CASE SUNO helps organise the information and understand the available next steps.',
+                    whatWeDo: [
+                        'Organise complaint and claim documents',
+                        'Create a clear timeline of events',
+                        'Structure communications and supporting information',
+                        'Coordinate with an appropriate professional where required'
+                    ],
+                    commonSituations: [
+                        'Consumer complaints',
+                        'Insurance claims',
+                        'Claim-related disputes',
+                        'Service-related issues'
+                    ],
+                    deliveryMode: 'Online assistance with professional coordination where required'
+                },
+                {
+                    id: 'documents-government-services',
+                    title: 'Documents & Government Services',
+                    shortDesc: 'Help with documentation, applications and government-related processes.',
+                    overview: 'Government processes can require multiple forms, documents and follow-ups. CASE SUNO helps you organise the requirements and understand the process involved.',
+                    whatWeDo: [
+                        'Organise required documents',
+                        'Create document checklists',
+                        'Help structure applications and representations',
+                        'Coordinate with relevant professionals where required'
+                    ],
+                    commonSituations: [
+                        'Government applications',
+                        'Official documentation',
+                        'Certificates and records',
+                        'Application-related issues'
+                    ],
+                    deliveryMode: 'Online assistance with appointment-based support where required'
+                },
+                {
+                    id: 'others',
+                    title: 'OTHERS',
+                    shortDesc: 'Have a matter that does not fit the categories above? Start here.',
+                    overview: 'Not every situation fits neatly into a category. If you are unsure where your requirement belongs, share the details with CASE SUNO and we can help organise the matter and identify the appropriate next step.',
+                    whatWeDo: [
+                        'Understand your requirement',
+                        'Organise the available information',
+                        'Identify the relevant category or area',
+                        'Coordinate with an appropriate professional where required'
+                    ],
+                    commonSituations: [
+                        'Unique personal matters',
+                        'Unusual documentation requirements',
+                        'Mixed or complex situations',
+                        'Other professional assistance'
+                    ],
+                    deliveryMode: 'Online assistance with professional coordination where required'
                 }
             ]
         },
@@ -373,106 +468,201 @@ const translations = {
             ]
         },
         services: {
-            kicker: "અમારી સેવાઓ",
-            title: "વાસ્તવિક જીવનની પરિસ્થિતિઓમાં સંપૂર્ણ સહાય",
-            desc: "વ્યક્તિગત બાબતોથી લઈને વ્યવસાયિક કામગીરી સુધી, CASE SUNO તમને તમારા વિકલ્પો સમજવામાં અને જરૂર જણાય ત્યાં યોગ્ય વ્યાવસાયિકો સાથે જોડવામાં મદદ કરે છે.",
-            viewAll: "બધી સેવાઓ જુઓ",
-            learnMore: "વધુ જાણો",
+            kicker: 'અમારી સેવાઓ',
+            title: 'વાસ્તવિક જીવનની પરિસ્થિતિઓમાં સહાય',
+            desc: 'વ્યક્તિગત બાબતોથી લઈને વ્યવસાયિક મુદ્દાઓ સુધી, CASE SUNO તમને પરિસ્થિતિ સમજવામાં અને જરૂર જણાય ત્યાં યોગ્ય વ્યાવસાયિકો સાથે જોડાવામાં મદદ કરે છે.',
+            viewAll: 'બધી સેવાઓ જુઓ',
+            learnMore: 'વધુ જાણો',
             items: [
                 {
-                    id: "individual-assistance",
-                    title: "વ્યક્તિગત સહાય (Individual Assistance)",
-                    shortDesc: "વ્યક્તિગત, પારિવારિક અને રોજિંદા પ્રશ્નો માટે માર્ગદર્શન.",
-                    overview: "પારિવારિક અને વ્યક્તિગત મુશ્કેલીઓ ઘણીવાર મૂંઝવણ અને ચિંતા લાવે છે. CASE SUNO શાંતિપૂર્ણ અને ગોપનીય વાતાવરણ પૂરું પાડે છે જ્યાં તમે તમારી ચિંતાઓ મુક્તપણે જણાવી શકો છો અને આગળના વ્યવહારુ પગલાં સમજી શકો છો.",
+                    id: 'notice-summons-court-case',
+                    title: 'નોટિસ, સમન્સ અને કોર્ટ / કેસ',
+                    shortDesc: 'કાનૂની નોટિસ, સમન્સ, કોર્ટ અને કેસ સંબંધિત સહાય.',
+                    overview: 'જો તમને કાનૂની નોટિસ, સમન્સ અથવા કોર્ટ સંબંધિત સંચાર મળ્યો હોય, તો CASE SUNO પરિસ્થિતિ સમજવામાં, જરૂરી માહિતી ગોઠવવામાં અને આગળનું યોગ્ય પગલું ઓળખવામાં મદદ કરે છે.',
                     whatWeDo: [
-                        "ગોપનીય વન-ઓન-વન પ્રારંભિક પરામર્શ",
-                        "હકીકતો અને ઘટનાક્રમની સ્પષ્ટતા",
-                        "મિલકત, વારસાઈ, ભાડુઆત કે ગ્રાહક તકરારમાં માર્ગદર્શન",
-                        "વિવાદ સમાધાન કે કાનૂની નોટિસ અંગે સલાહ"
+                        'નોટિસ અથવા કેસની માહિતી સમજવી',
+                        'જરૂરી દસ્તાવેજો અને સમયરેખા ગોઠવવી',
+                        'આગળની પ્રક્રિયાની સમજ આપવી',
+                        'જરૂર પડે ત્યાં યોગ્ય વ્યાવસાયિક સાથે જોડાણ'
                     ],
                     commonSituations: [
-                        "પારિવારિક વસિયતનામું અને વારસાઈ વહેંચણી",
-                        "મકાનમાલિક-ભાડુઆત વિવાદો",
-                        "ગ્રાહક તકરાર અને વિક્રેતા સાથે મતભેદ",
-                        "વ્યક્તિગત કરાર અને રોજગાર સંબંધિત સંક્રમણો"
+                        'કાનૂની નોટિસ',
+                        'કોર્ટ સમન્સ',
+                        'ચાલુ કોર્ટ કેસ',
+                        'નોટિસના જવાબ'
                     ],
-                    deliveryMode: "સુરક્ષિત ઓનલાઇન વિડીયો કોલ અથવા સુરત ઓફિસમાં રૂબરૂ (માત્ર એપોઇન્ટમેન્ટ દ્વારા)"
+                    deliveryMode: 'ઓનલાઇન સહાય અને જરૂર મુજબ વ્યાવસાયિક સાથે સંકલન'
                 },
                 {
-                    id: "business-support",
-                    title: "વ્યવસાય સહાય (Business Support)",
-                    shortDesc: "સંચાલન, નિયમપાલન અને દસ્તાવેજીકરણ સહાય.",
-                    overview: "કોઈપણ વેપાર કે વ્યવસાય ચલાવતી વખતે કરારો, વેપારી સંબંધો અને કાયદાકીય પાલન અત્યંત મહત્વપૂર્ણ છે. અમે MSME, સ્ટાર્ટઅપ અને વેપારીઓને વહીવટી અડચણો દૂર કરવામાં સહાય કરીએ છીએ.",
+                    id: 'police-cyber-online-fraud',
+                    title: 'પોલીસ, સાયબર અને ઓનલાઈન ફ્રોડ',
+                    shortDesc: 'પોલીસ, સાયબર સમસ્યાઓ અને ઓનલાઈન ફ્રોડ માટે સહાય.',
+                    overview: 'સાયબર ઘટના, ઓનલાઈન ફ્રોડ અથવા પોલીસ સંબંધિત પરિસ્થિતિમાં CASE SUNO હકીકતો ગોઠવવામાં, જરૂરી માહિતી સાચવવામાં અને આગળનું યોગ્ય પગલું સમજવામાં મદદ કરે છે.',
                     whatWeDo: [
-                        "વાણિજ્યિક કરારોની સમીક્ષા અને ડ્રાફ્ટિંગ",
-                        "વેપારી વાટાઘાટો અને શરતોની સ્પષ્ટતા",
-                        "કાનૂની નિયમપાલન માટેની ચેકલિસ્ટ તૈયારી",
-                        "આંતરિક નીતિ માળખું અને ભાગીદારી કરારો"
+                        'ઘટનાની વિગતો સમજવી અને ગોઠવવી',
+                        'ઘટનાક્રમની સ્પષ્ટ સમયરેખા બનાવવી',
+                        'ડિજિટલ રેકોર્ડ અને સંચાર ગોઠવવા',
+                        'જરૂર પડે ત્યાં યોગ્ય વ્યાવસાયિક સાથે જોડાણ'
                     ],
                     commonSituations: [
-                        "વેપારી પેમેન્ટમાં વિલંબ અને રિકવરી નોટિસ",
-                        "નવા ભાગીદાર જોડાણ અને ઇક્વિટી કરારો",
-                        "સેવા શરતો અને ક્લાયન્ટ એગ્રીમેન્ટ",
-                        "સુરતના સ્થાનિક ઉદ્યોગો માટે નિયમપાલન ઓડિટ"
+                        'ઓનલાઈન પેમેન્ટ ફ્રોડ',
+                        'સાયબર ફરિયાદ',
+                        'ઓનલાઈન સ્કેમ',
+                        'પોલીસ સંબંધિત બાબતો'
                     ],
-                    deliveryMode: "સમર્પિત એક્ઝિક્યુટિવ સંપર્ક સાથે વર્ચ્યુઅલ અને રૂબરૂ સમીક્ષા"
+                    deliveryMode: 'ઓનલાઇન સહાય અને જરૂર મુજબ વ્યાવસાયિક સાથે સંકલન'
                 },
                 {
-                    id: "documentation-help",
-                    title: "દસ્તાવેજીકરણ સહાય (Documentation Help)",
-                    shortDesc: "ડ્રાફ્ટિંગ સપોર્ટ અને દસ્તાવેજોનું વ્યવસ્થિત સંચાલન.",
-                    overview: "અસ્પષ્ટ અથવા અવ્યવસ્થિત કાગળો એ વિવાદો વધવાનું મુખ્ય કારણ છે. અમે તમારા કાગળોને વ્યવસ્થિત કરીએ છીએ, યોગ્ય રજૂઆતો ડ્રાફ્ટ કરીએ છીએ અને સંપૂર્ણ કેસ ફાઇલ તૈયાર કરીએ છીએ.",
+                    id: 'property-land',
+                    title: 'મિલકત અને જમીન',
+                    shortDesc: 'મિલકત, જમીન, માલિકી અને સંબંધિત દસ્તાવેજો માટે સહાય.',
+                    overview: 'મિલકત અને જમીન સંબંધિત બાબતોમાં ઘણા દસ્તાવેજો અને પક્ષો સામેલ હોઈ શકે છે. CASE SUNO માહિતી અને દસ્તાવેજો ગોઠવીને આગળ શું કરવું તે સમજવામાં મદદ કરે છે.',
                     whatWeDo: [
-                        "દસ્તાવેજ અનુક્રમણિકા અને ટાઇમલાઇન બનાવવી",
-                        "ઔપચારિક પત્રો, જવાબો અને રજૂઆતો ડ્રાફ્ટ કરવી",
-                        "સોગંદનામું, પાવર ઓફ એટર્ની અને NOC ચકાસણી",
-                        "વકીલ અથવા સીએ માટે કેસ ફાઇલની સચોટ તૈયારી"
+                        'મિલકત સંબંધિત દસ્તાવેજો ગોઠવવા',
+                        'માલિકી અને ઘટનાક્રમની સમયરેખા તૈયાર કરવી',
+                        'ખૂટતા અથવા જરૂરી દસ્તાવેજો ઓળખવા',
+                        'જરૂર મુજબ કાનૂની અથવા ટેકનિકલ નિષ્ણાત સાથે જોડાણ'
                     ],
                     commonSituations: [
-                        "સરકારી અથવા કાનૂની નોટિસના લેખિત જવાબો તૈયાર કરવા",
-                        "જમીન-મિલકત ખરીદ-વેચાણ પહેલાં ટાઇટલ દસ્તાવેજો ચકાસવા",
-                        "સ્પષ્ટ સેવા કરારો અને બાહેંધરી પત્રો",
-                        "મહત્વના કૌટુંબિક અથવા પેઢીના રેકોર્ડનું ડિજિટલ આર્કાઇવિંગ"
+                        'મિલકત માલિકી',
+                        'જમીન સંબંધિત વિવાદ',
+                        'મિલકત દસ્તાવેજીકરણ',
+                        'મિલકત ખરીદી અથવા વેચાણ'
                     ],
-                    deliveryMode: "સુરક્ષિત ડિજિટલ અપલોડ પોર્ટલ અને વ્યક્તિગત સમીક્ષા સત્રો"
+                    deliveryMode: 'સુરક્ષિત દસ્તાવેજ સમીક્ષા અને જરૂર મુજબ વ્યાવસાયિક સાથે સંકલન'
                 },
                 {
-                    id: "professional-coordination",
-                    title: "વ્યાવસાયિક સંકલન (Professional Coordination)",
-                    shortDesc: "જ્યાં જરૂરી હોય ત્યાં ચકાસાયેલા સ્વતંત્ર વ્યાવસાયિકો સાથે જોડાણ.",
-                    overview: "સાચા વકીલ, ચાર્ટર્ડ એકાઉન્ટન્ટ કે નિષ્ણાત શોધવું મુશ્કેલ બની શકે છે. અમે તમારા કેસ અને બજેટ અનુસાર ચકાસાયેલા અને અનુભવી સ્વતંત્ર વ્યાવસાયિકો સાથે તમારો સંપર્ક કરાવીએ છીએ.",
+                    id: 'bank-loan-money-recovery',
+                    title: 'બેંક, લોન, પૈસા અને રિકવરી',
+                    shortDesc: 'બેંકિંગ, લોન, નાણાકીય વિવાદ અને રિકવરી બાબતો માટે સહાય.',
+                    overview: 'બેંકિંગ અને લોન સંબંધિત બાબતોમાં નોટિસ, કરાર, પેમેન્ટ અને સમયમર્યાદા સામેલ હોઈ શકે છે. CASE SUNO પરિસ્થિતિ ગોઠવવામાં અને આગળનું પગલું સમજવામાં મદદ કરે છે.',
                     whatWeDo: [
-                        "કેસના પ્રકાર મુજબ વિશિષ્ટ નિષ્ણાતની ઓળખ (દીવાની, ફોજદારી, ટેક્સ, કોર્પોરેટ)",
-                        "તૈયાર કરેલ કેસ ફાઇલ સાથે વ્યાવસાયિકોને બ્રીફિંગ",
-                        "ફી માળખું, તબક્કાઓ અને સમયરેખાની સ્પષ્ટતા",
-                        "અગાઉથી બિનજરૂરી ખર્ચ અને અસમંજસતા નિવારણ"
+                        'લોન અને બેંક સંબંધિત દસ્તાવેજો ગોઠવવા',
+                        'નોટિસ અને સંચારની સમયરેખા સમજવી',
+                        'બાબતનો સ્પષ્ટ સારાંશ તૈયાર કરવો',
+                        'જરૂર મુજબ યોગ્ય વ્યાવસાયિક સાથે જોડાણ'
                     ],
                     commonSituations: [
-                        "હાઈકોર્ટ કે જિલ્લા અદાલતમાં કેસ પ્રતિનિધિત્વ",
-                        "GST અને ઇન્કમટેક્સ આકારણી સામે સિનિયર CA સહાય",
-                        "ટ્રેડમાર્ક, પેટન્ટ અને બૌદ્ધિક સંપદા રક્ષણ",
-                        "જમીન માપણી, ટાઇટલ સર્ચ અને વેલ્યુએશન રિપોર્ટ્સ"
+                        'લોન સંબંધિત નોટિસ',
+                        'બેંકિંગ વિવાદ',
+                        'પેમેન્ટ અને રિકવરી મુદ્દાઓ',
+                        'નાણાકીય દસ્તાવેજીકરણ'
                     ],
-                    deliveryMode: "સુવ્યવસ્થિત કેસ હેન્ડઓવર સાથે પ્રમાણિત પરિચય"
+                    deliveryMode: 'ઓનલાઇન સહાય અને જરૂર મુજબ વ્યાવસાયિક સાથે સંકલન'
                 },
                 {
-                    id: "ongoing-support",
-                    title: "સતત વહીવટી સહાય (Ongoing Support)",
-                    shortDesc: "સમસ્યા પૂર્ણ થાય ત્યાં સુધી ફોલો-અપ અને વહીવટી સહાય.",
-                    overview: "ઘણી બાબતો મહિનાઓ સુધી ચાલે છે, જેમાં તારીખો યાદ રાખવી અને સતત ફોલો-અપ લેવું મુશ્કેલ બને છે. પરિણામ ન આવે ત્યાં સુધી CASE SUNO તમારી સાથે એક વહીવટી સહયોગી તરીકે જોડાયેલ રહે છે.",
+                    id: 'vehicle-rto',
+                    title: 'વાહન અને RTO',
+                    shortDesc: 'વાહન, RTO અને સંબંધિત દસ્તાવેજો માટે સહાય.',
+                    overview: 'વાહન અને RTO સંબંધિત બાબતોમાં દસ્તાવેજો, માલિકી અને રજિસ્ટ્રેશનનો સમાવેશ થઈ શકે છે. CASE SUNO માહિતી ગોઠવવામાં અને યોગ્ય માર્ગ સમજવામાં મદદ કરે છે.',
                     whatWeDo: [
-                        "મુદ્દતની તારીખો અને સબમિશન સમયરેખાનું કેલેન્ડર ટ્રેકિંગ",
-                        "જરૂરી કાગળો મેળવવા અને નિયમપાલન ફોલો-અપ",
-                        "નિયમિત અને પારદર્શક સ્થિતિ અહેવાલ જેથી તમે ચિંતામુક્ત રહો",
-                        "સતત સંપર્ક માટે એક નિશ્ચિત પ્રતિનિધિ"
+                        'વાહન અને RTO દસ્તાવેજો ગોઠવવા',
+                        'બાબત અને સમયરેખા સમજવી',
+                        'ખૂટતી માહિતી અથવા દસ્તાવેજો ઓળખવા',
+                        'જરૂર મુજબ સંબંધિત વ્યાવસાયિક સાથે જોડાણ'
                     ],
                     commonSituations: [
-                        "સ્થાનિક સત્તામંડળો પાસે પેન્ડિંગ રજિસ્ટ્રેશન",
-                        "લવાદ (Arbitration) અથવા મધ્યસ્થી સુનાવણી શેડ્યૂલ",
-                        "તબક્કાવાર કરાર પેમેન્ટ અને ડિલિવરેબલ ટ્રેકિંગ",
-                        "ત્રિમાસિક નિયમપાલન સમીક્ષાઓ અને રિન્યુઅલ્સ"
+                        'RTO દસ્તાવેજીકરણ',
+                        'વાહન માલિકી',
+                        'રજિસ્ટ્રેશન સંબંધિત સમસ્યાઓ',
+                        'વાહન વિવાદ'
                     ],
-                    deliveryMode: "વોટ્સએપ, પોર્ટલ અને માસિક ચેક-ઇન દ્વારા નિયમિત અપડેટ્સ"
+                    deliveryMode: 'ઓનલાઇન સહાય અને જરૂર મુજબ એપોઇન્ટમેન્ટ આધારિત સહાય'
+                },
+                {
+                    id: 'family-matters',
+                    title: 'પારિવારિક બાબતો',
+                    shortDesc: 'પરિવાર, સંબંધો, વારસાઈ અને વ્યક્તિગત બાબતો માટે સહાય.',
+                    overview: 'પારિવારિક બાબતો સંવેદનશીલ હોઈ શકે છે. CASE SUNO ગોપનીય રીતે પરિસ્થિતિ ગોઠવવામાં, ઉપલબ્ધ વિકલ્પો સમજવામાં અને યોગ્ય આગળનું પગલું ઓળખવામાં મદદ કરે છે.',
+                    whatWeDo: [
+                        'પરિસ્થિતિ સાંભળવી અને ગોઠવવી',
+                        'ઘટનાઓની સ્પષ્ટ સમયરેખા બનાવવી',
+                        'જરૂરી પારિવારિક અને કાનૂની દસ્તાવેજો ગોઠવવા',
+                        'જરૂર મુજબ યોગ્ય વ્યાવસાયિક સાથે જોડાણ'
+                    ],
+                    commonSituations: [
+                        'પારિવારિક વિવાદ',
+                        'વારસાઈ સંબંધિત બાબતો',
+                        'વસિયત અને સંબંધિત દસ્તાવેજો',
+                        'સંબંધિત વ્યક્તિગત બાબતો'
+                    ],
+                    deliveryMode: 'ગોપનીય ઓનલાઇન સહાય અને જરૂર મુજબ વ્યાવસાયિક સાથે સંકલન'
+                },
+                {
+                    id: 'business-commercial',
+                    title: 'વ્યવસાય અને કોમર્શિયલ બાબતો',
+                    shortDesc: 'વ્યવસાય, કરાર અને કોમર્શિયલ બાબતો માટે સહાય.',
+                    overview: 'વ્યવસાયિક બાબતોમાં સ્પષ્ટ દસ્તાવેજીકરણ અને વ્યવસ્થિત સંચાર જરૂરી હોય છે. CASE SUNO તમારી જરૂરિયાત ગોઠવવામાં અને યોગ્ય વ્યાવસાયિક સાથે જોડવામાં મદદ કરે છે.',
+                    whatWeDo: [
+                        'કોમર્શિયલ દસ્તાવેજો ગોઠવવા',
+                        'વ્યવસાયિક જરૂરિયાતોને માળખું આપવું',
+                        'સ્પષ્ટ સારાંશ અને સમયરેખા તૈયાર કરવી',
+                        'જરૂર મુજબ કાનૂની અથવા નાણાકીય નિષ્ણાત સાથે જોડાણ'
+                    ],
+                    commonSituations: [
+                        'વ્યવસાયિક કરારો',
+                        'કોમર્શિયલ વિવાદ',
+                        'વેન્ડર અથવા ક્લાયન્ટ બાબતો',
+                        'વ્યવસાયિક દસ્તાવેજીકરણ'
+                    ],
+                    deliveryMode: 'ઓનલાઇન સહાય અને જરૂર મુજબ વ્યાવસાયિક સાથે સંકલન'
+                },
+                {
+                    id: 'consumer-insurance',
+                    title: 'ગ્રાહક અને વીમા',
+                    shortDesc: 'ગ્રાહક ફરિયાદો, ક્લેમ અને વીમા સંબંધિત બાબતો માટે સહાય.',
+                    overview: 'ગ્રાહક અને વીમા સંબંધિત બાબતોમાં પોલિસી, બિલ, સંચાર અને ક્લેમ દસ્તાવેજો સામેલ હોઈ શકે છે. CASE SUNO માહિતી ગોઠવીને આગળનું પગલું સમજવામાં મદદ કરે છે.',
+                    whatWeDo: [
+                        'ફરિયાદ અને ક્લેમ દસ્તાવેજો ગોઠવવા',
+                        'ઘટનાની સમયરેખા તૈયાર કરવી',
+                        'સંચાર અને આધારભૂત માહિતી ગોઠવવી',
+                        'જરૂર મુજબ યોગ્ય વ્યાવસાયિક સાથે જોડાણ'
+                    ],
+                    commonSituations: [
+                        'ગ્રાહક ફરિયાદ',
+                        'વીમા ક્લેમ',
+                        'ક્લેમ સંબંધિત વિવાદ',
+                        'સેવા સંબંધિત સમસ્યાઓ'
+                    ],
+                    deliveryMode: 'ઓનલાઇન સહાય અને જરૂર મુજબ વ્યાવસાયિક સાથે સંકલન'
+                },
+                {
+                    id: 'documents-government-services',
+                    title: 'દસ્તાવેજો અને સરકારી સેવાઓ',
+                    shortDesc: 'દસ્તાવેજીકરણ, અરજીઓ અને સરકારી પ્રક્રિયાઓ માટે સહાય.',
+                    overview: 'સરકારી પ્રક્રિયામાં ઘણા ફોર્મ, દસ્તાવેજો અને ફોલો-અપની જરૂર પડી શકે છે. CASE SUNO જરૂરી બાબતો ગોઠવવામાં અને પ્રક્રિયા સમજવામાં મદદ કરે છે.',
+                    whatWeDo: [
+                        'જરૂરી દસ્તાવેજો ગોઠવવા',
+                        'દસ્તાવેજોની ચેકલિસ્ટ તૈયાર કરવી',
+                        'અરજી અને રજૂઆતો ગોઠવવામાં મદદ',
+                        'જરૂર મુજબ સંબંધિત વ્યાવસાયિક સાથે જોડાણ'
+                    ],
+                    commonSituations: [
+                        'સરકારી અરજીઓ',
+                        'સત્તાવાર દસ્તાવેજો',
+                        'સર્ટિફિકેટ અને રેકોર્ડ',
+                        'અરજી સંબંધિત સમસ્યાઓ'
+                    ],
+                    deliveryMode: 'ઓનલાઇન સહાય અને જરૂર મુજબ એપોઇન્ટમેન્ટ આધારિત સહાય'
+                },
+                {
+                    id: 'others',
+                    title: 'અન્ય',
+                    shortDesc: 'ઉપરની કેટેગરીમાં ન આવતી બાબતો માટે અહીંથી શરૂઆત કરો.',
+                    overview: 'દરેક બાબત કોઈ ચોક્કસ કેટેગરીમાં ફિટ થાય તે જરૂરી નથી. જો તમને ખબર ન હોય કે તમારી જરૂરિયાત કઈ કેટેગરીમાં આવે છે, તો CASE SUNO સાથે વિગતો શેર કરો.',
+                    whatWeDo: [
+                        'તમારી જરૂરિયાત સમજવી',
+                        'ઉપલબ્ધ માહિતી ગોઠવવી',
+                        'યોગ્ય કેટેગરી અથવા ક્ષેત્ર ઓળખવું',
+                        'જરૂર મુજબ યોગ્ય વ્યાવસાયિક સાથે જોડાણ'
+                    ],
+                    commonSituations: [
+                        'વિશિષ્ટ વ્યક્તિગત બાબતો',
+                        'અલગ પ્રકારની દસ્તાવેજીકરણ જરૂરિયાત',
+                        'મિશ્ર અથવા જટિલ બાબતો',
+                        'અન્ય વ્યાવસાયિક સહાય'
+                    ],
+                    deliveryMode: 'ઓનલાઇન સહાય અને જરૂર મુજબ વ્યાવસાયિક સાથે સંકલન'
                 }
             ]
         },
@@ -667,106 +857,201 @@ const translations = {
             ]
         },
         services: {
-            kicker: "हमारी सेवाएं",
-            title: "वास्तविक जीवन की स्थितियों में संपूर्ण सहयोग",
-            desc: "व्यक्तिगत मामलों से लेकर व्यापारिक संचालन तक, CASE SUNO आपको अपने विकल्पों को समझने और आवश्यकता पड़ने पर सही विशेषज्ञों से जुड़ने में मदद करता है।",
-            viewAll: "सभी सेवाएं देखें",
-            learnMore: "और जानें",
+            kicker: 'हमारी सेवाएं',
+            title: 'वास्तविक जीवन की स्थितियों में सहायता',
+            desc: 'व्यक्तिगत मामलों से लेकर व्यावसायिक मुद्दों तक, CASE SUNO आपको स्थिति समझने और आवश्यकता पड़ने पर सही पेशेवरों से जुड़ने में मदद करता है।',
+            viewAll: 'सभी सेवाएं देखें',
+            learnMore: 'और जानें',
             items: [
                 {
-                    id: "individual-assistance",
-                    title: "व्यक्तिगत सहायता (Individual Assistance)",
-                    shortDesc: "व्यक्तिगत, पारिवारिक और रोजमर्रा के मामलों में मार्गदर्शन।",
-                    overview: "पारिवारिक और व्यक्तिगत चुनौतियां अक्सर चिंता और भ्रम लेकर आती हैं। CASE SUNO एक शांत और गोपनीय वातावरण प्रदान करता है जहां आप अपनी चिंताओं पर खुलकर चर्चा कर सकते हैं, तथ्यों को समझ सकते हैं और व्यावहारिक कदम उठा सकते हैं।",
+                    id: 'notice-summons-court-case',
+                    title: 'नोटिस, समन और कोर्ट / केस',
+                    shortDesc: 'कानूनी नोटिस, समन, कोर्ट और केस से जुड़े मामलों में सहायता।',
+                    overview: 'यदि आपको कानूनी नोटिस, समन या कोर्ट से संबंधित सूचना मिली है, तो CASE SUNO स्थिति समझने, जरूरी जानकारी व्यवस्थित करने और अगले उचित कदम को पहचानने में मदद करता है।',
                     whatWeDo: [
-                        "गोपनीय 1-ऑन-1 प्रारंभिक परामर्श",
-                        "तथ्यों और समयरेखा का स्पष्टीकरण",
-                        "पारिवारिक, संपत्ति, उपभोक्ता या किराएदार मामलों में मार्गदर्शन",
-                        "विवाद समाधान या कानूनी नोटिस पर स्पष्ट राय"
+                        'नोटिस या केस की जानकारी समझना',
+                        'जरूरी दस्तावेज और समयरेखा व्यवस्थित करना',
+                        'आगे की प्रक्रिया को समझना',
+                        'आवश्यकता पड़ने पर सही पेशेवर से जोड़ना'
                     ],
                     commonSituations: [
-                        "पारिवारिक संपत्ति विभाजन और वसीयत",
-                        "मकान मालिक-किराएदार विवाद",
-                        "उपभोक्ता शिकायतें व विक्रेता विवाद",
-                        "व्यक्तिगत अनुबंध व रोजगार बदलाव"
+                        'कानूनी नोटिस',
+                        'कोर्ट समन',
+                        'चल रहे कोर्ट केस',
+                        'नोटिस के जवाब'
                     ],
-                    deliveryMode: "गोपनीय ऑनलाइन वीडियो कॉल या सूरत कार्यालय में व्यक्तिगत बैठक (केवल अपॉइंटमेंट द्वारा)"
+                    deliveryMode: 'ऑनलाइन सहायता और आवश्यकता पड़ने पर पेशेवर समन्वय'
                 },
                 {
-                    id: "business-support",
-                    title: "व्यापार सहायता (Business Support)",
-                    shortDesc: "परिचालन, अनुपालन और अनुबंध संबंधित सहायता।",
-                    overview: "व्यापार चलाने के लिए परिचालन अनुबंधों, विक्रेता संबंधों और विनियामक अनुपालन को व्यवस्थित रखना आवश्यक है। हम MSME, संस्थापकों और व्यापारियों को प्रशासनिक बाधाओं को दूर करने में सहायता करते हैं।",
+                    id: 'police-cyber-online-fraud',
+                    title: 'पुलिस, साइबर और ऑनलाइन फ्रॉड',
+                    shortDesc: 'पुलिस, साइबर समस्याओं और ऑनलाइन फ्रॉड से जुड़े मामलों में सहायता।',
+                    overview: 'साइबर घटना, ऑनलाइन फ्रॉड या पुलिस से जुड़े मामलों में CASE SUNO तथ्यों को व्यवस्थित करने, जरूरी जानकारी सुरक्षित रखने और अगले उचित कदम को समझने में मदद करता है।',
                     whatWeDo: [
-                        "वाणिज्यिक अनुबंधों की समीक्षा और संरचना",
-                        "विक्रेता बातचीत और शर्तों की स्पष्टता",
-                        "वैधानिक अनुपालन चेकलिस्ट की तैयारी",
-                        "आंतरिक नीति रूपरेखा और साझेदारी समझौते"
+                        'घटना की जानकारी समझना और व्यवस्थित करना',
+                        'घटनाक्रम की स्पष्ट समयरेखा बनाना',
+                        'डिजिटल रिकॉर्ड और संचार व्यवस्थित करना',
+                        'आवश्यकता पड़ने पर सही पेशेवर से जोड़ना'
                     ],
                     commonSituations: [
-                        "विक्रेता भुगतान में देरी और रिकवरी नोटिस",
-                        "नए व्यापारिक साझेदार और इक्विटी अनुबंध",
-                        "सेवा शर्तें और ग्राहक अनुबंध पत्र",
-                        "सूरत के स्थानीय व्यवसायों के लिए अनुपालन ऑडिट"
+                        'ऑनलाइन पेमेंट फ्रॉड',
+                        'साइबर शिकायत',
+                        'ऑनलाइन स्कैम',
+                        'पुलिस से संबंधित मामले'
                     ],
-                    deliveryMode: "समर्पित कार्यकारी संपर्क के साथ वर्चुअल और व्यक्तिगत समीक्षा"
+                    deliveryMode: 'ऑनलाइन सहायता और आवश्यकता पड़ने पर पेशेवर समन्वय'
                 },
                 {
-                    id: "documentation-help",
-                    title: "दस्तावेज़ीकरण सहायता (Documentation Help)",
-                    shortDesc: "ड्राफ्टिंग समर्थन और फाइलों का सुव्यवस्थित संगठन।",
-                    overview: "अव्यवस्थित कागजात विवादों के बढ़ने का प्रमुख कारण होते हैं। हम आपके दस्तावेजों को व्यवस्थित करते हैं, औपचारिक उत्तर ड्राफ्ट करते हैं और यह सुनिश्चित करते हैं कि आपका केस रिकॉर्ड मजबूत हो।",
+                    id: 'property-land',
+                    title: 'संपत्ति और भूमि',
+                    shortDesc: 'संपत्ति, भूमि, स्वामित्व और संबंधित दस्तावेजों के लिए सहायता।',
+                    overview: 'संपत्ति और भूमि से जुड़े मामलों में कई दस्तावेज और पक्ष शामिल हो सकते हैं। CASE SUNO जानकारी और दस्तावेज व्यवस्थित करके आगे क्या करना है यह समझने में मदद करता है।',
                     whatWeDo: [
-                        "दस्तावेज अनुक्रमणिका और समयरेखा तैयार करना",
-                        "औपचारिक पत्रों, नोटिसों के उत्तर का मसौदा तैयार करना",
-                        "शपथ पत्र, मुख्तारनामा (PoA) व NOC सत्यापन",
-                        "अधिवक्ता या सीए के लिए सुव्यवस्थित केस फाइल तैयार करना"
+                        'संपत्ति से जुड़े दस्तावेज व्यवस्थित करना',
+                        'स्वामित्व और घटनाओं की समयरेखा बनाना',
+                        'जरूरी या उपलब्ध न होने वाले दस्तावेज पहचानना',
+                        'आवश्यकता पड़ने पर कानूनी या तकनीकी पेशेवर से जोड़ना'
                     ],
                     commonSituations: [
-                        "सरकारी या कानूनी नोटिस के औपचारिक उत्तर तैयार करना",
-                        "खरीद-बिक्री से पहले संपत्ति के दस्तावेजों की श्रृंखला जांचना",
-                        "स्पष्ट सेवा अनुबंध ड्राफ्ट करना",
-                        "पारिवारिक या फर्म के पुराने रिकॉर्ड्स का डिजिटल संग्रह"
+                        'संपत्ति स्वामित्व',
+                        'भूमि संबंधी विवाद',
+                        'संपत्ति दस्तावेज',
+                        'संपत्ति खरीद या बिक्री'
                     ],
-                    deliveryMode: "सुरक्षित दस्तावेज अपलोड पोर्टल और व्यक्तिगत समीक्षा सत्र"
+                    deliveryMode: 'सुरक्षित दस्तावेज समीक्षा और आवश्यकता पड़ने पर पेशेवर समन्वय'
                 },
                 {
-                    id: "professional-coordination",
-                    title: "पेशेवर समन्वय (Professional Coordination)",
-                    shortDesc: "आवश्यकतानुसार सत्यापित स्वतंत्र पेशेवरों से जुड़ाव।",
-                    overview: "सही वकील, चार्टर्ड एकाउंटेंट या डोमेन विशेषज्ञ खोजना कठिन हो सकता है। हम आपको आपकी आवश्यकता और बजट के अनुसार जाँचे-परखे स्वतंत्र पेशेवरों से जोड़ते हैं।",
+                    id: 'bank-loan-money-recovery',
+                    title: 'बैंक, लोन, पैसा और रिकवरी',
+                    shortDesc: 'बैंकिंग, लोन, वित्तीय विवाद और रिकवरी मामलों में सहायता।',
+                    overview: 'बैंकिंग और लोन मामलों में नोटिस, अनुबंध, भुगतान और समयसीमा शामिल हो सकती है। CASE SUNO स्थिति व्यवस्थित करने और अगले कदम को समझने में मदद करता है।',
                     whatWeDo: [
-                        "केस की प्रकृति के अनुसार विशेषज्ञ की पहचान (दीवानी, फौजदारी, कॉर्पोरेट, टैक्स)",
-                        "तैयार केस फाइल के साथ विशेषज्ञों को ब्रीफिंग",
-                        "शुल्क संरचना, चरणों और समयरेखा की स्पष्टता",
-                        "अनावश्यक परामर्श समय और खर्च की बचत"
+                        'लोन और बैंक से जुड़े दस्तावेज व्यवस्थित करना',
+                        'नोटिस और संचार की समयरेखा समझना',
+                        'मामले का स्पष्ट सारांश तैयार करना',
+                        'आवश्यकता पड़ने पर सही पेशेवर से जोड़ना'
                     ],
                     commonSituations: [
-                        "हाईकोर्ट या जिला न्यायालय में केस प्रतिनिधित्व",
-                        "GST और आयकर निर्धारण अपीलों में वरिष्ठ सीए परामर्श",
-                        "ट्रेडमार्क, पेटेंट और बौद्धिक संपदा पंजीकरण",
-                        "भूमि सर्वेक्षण, टाइटल सर्च और वैल्यूएशन रिपोर्ट"
+                        'लोन से जुड़े नोटिस',
+                        'बैंकिंग विवाद',
+                        'भुगतान और रिकवरी समस्याएं',
+                        'वित्तीय दस्तावेजीकरण'
                     ],
-                    deliveryMode: "सुव्यवस्थित केस हैंडओवर के साथ प्रमाणित परिचय"
+                    deliveryMode: 'ऑनलाइन सहायता और आवश्यकता पड़ने पर पेशेवर समन्वय'
                 },
                 {
-                    id: "ongoing-support",
-                    title: "निरंतर प्रशासनिक सहायता (Ongoing Support)",
-                    shortDesc: "समाधान होने तक नियमित ट्रैकिंग और फॉलो-अप।",
-                    overview: "कई मामले हफ्तों या महीनों तक चलते हैं, जिनमें तारीखें याद रखना और फॉलो-अप लेना तनावपूर्ण हो सकता है। CASE SUNO आपके मामले के संपन्न होने तक प्रशासनिक सहयोगी के रूप में आपके साथ रहता है।",
+                    id: 'vehicle-rto',
+                    title: 'वाहन और RTO',
+                    shortDesc: 'वाहन, RTO और संबंधित दस्तावेजों के मामलों में सहायता।',
+                    overview: 'वाहन और RTO से जुड़े मामलों में दस्तावेज, स्वामित्व और पंजीकरण शामिल हो सकते हैं। CASE SUNO जानकारी व्यवस्थित करने और सही दिशा समझने में मदद करता है।',
                     whatWeDo: [
-                        "सुनवाई और प्रस्तुति की तारीखों की कैलेंडर ट्रैकिंग",
-                        "दस्तावेजों की प्राप्ति और अनुपालन फॉलो-अप",
-                        "पारदर्शी और नियमित स्थिति रिपोर्ट",
-                        "संपर्क के लिए एक निश्चित प्रतिनिधि"
+                        'वाहन और RTO दस्तावेज व्यवस्थित करना',
+                        'मामले और समयरेखा को समझना',
+                        'आवश्यक जानकारी या दस्तावेज पहचानना',
+                        'आवश्यकता पड़ने पर संबंधित पेशेवर से जोड़ना'
                     ],
                     commonSituations: [
-                        "स्थानीय प्राधिकरणों के पास लंबित पंजीकरण",
-                        "मध्यस्थता (Arbitration) सुनवाई का समय निर्धारण",
-                        "चरणबद्ध अनुबंध भुगतान और कार्यों की ट्रैकिंग",
-                        "त्रैमासिक अनुपालन समीक्षा और नवीनीकरण"
+                        'RTO दस्तावेजीकरण',
+                        'वाहन स्वामित्व',
+                        'पंजीकरण संबंधी समस्याएं',
+                        'वाहन विवाद'
                     ],
-                    deliveryMode: "व्हाट्सएप, पोर्टल और मासिक चेक-इन के माध्यम से नियमित अपडेट्स"
+                    deliveryMode: 'ऑनलाइन सहायता और आवश्यकता पड़ने पर अपॉइंटमेंट आधारित सहायता'
+                },
+                {
+                    id: 'family-matters',
+                    title: 'पारिवारिक मामले',
+                    shortDesc: 'परिवार, रिश्तों, विरासत और व्यक्तिगत मामलों में सहायता।',
+                    overview: 'पारिवारिक मामले संवेदनशील हो सकते हैं। CASE SUNO गोपनीय तरीके से स्थिति व्यवस्थित करने, उपलब्ध विकल्पों को समझने और उचित अगले कदम की पहचान करने में मदद करता है।',
+                    whatWeDo: [
+                        'स्थिति को सुनना और व्यवस्थित करना',
+                        'घटनाओं की स्पष्ट समयरेखा बनाना',
+                        'जरूरी पारिवारिक और कानूनी दस्तावेज व्यवस्थित करना',
+                        'आवश्यकता पड़ने पर सही पेशेवर से जोड़ना'
+                    ],
+                    commonSituations: [
+                        'पारिवारिक विवाद',
+                        'विरासत से जुड़े मामले',
+                        'वसीयत और संबंधित दस्तावेज',
+                        'व्यक्तिगत पारिवारिक मामले'
+                    ],
+                    deliveryMode: 'गोपनीय ऑनलाइन सहायता और आवश्यकता पड़ने पर पेशेवर समन्वय'
+                },
+                {
+                    id: 'business-commercial',
+                    title: 'व्यवसाय और कमर्शियल मामले',
+                    shortDesc: 'व्यवसाय, अनुबंध और कमर्शियल मामलों में सहायता।',
+                    overview: 'व्यावसायिक मामलों में स्पष्ट दस्तावेजीकरण और व्यवस्थित संचार जरूरी होता है। CASE SUNO आपकी जरूरत को व्यवस्थित करने और सही पेशेवर से जोड़ने में मदद करता है।',
+                    whatWeDo: [
+                        'कमर्शियल दस्तावेज व्यवस्थित करना',
+                        'व्यावसायिक आवश्यकताओं को संरचित करना',
+                        'स्पष्ट सारांश और समयरेखा तैयार करना',
+                        'आवश्यकता पड़ने पर कानूनी या वित्तीय पेशेवर से जोड़ना'
+                    ],
+                    commonSituations: [
+                        'व्यावसायिक अनुबंध',
+                        'कमर्शियल विवाद',
+                        'वेंडर या क्लाइंट मामले',
+                        'व्यावसायिक दस्तावेजीकरण'
+                    ],
+                    deliveryMode: 'ऑनलाइन सहायता और आवश्यकता पड़ने पर पेशेवर समन्वय'
+                },
+                {
+                    id: 'consumer-insurance',
+                    title: 'उपभोक्ता और बीमा',
+                    shortDesc: 'उपभोक्ता शिकायत, क्लेम और बीमा मामलों में सहायता।',
+                    overview: 'उपभोक्ता और बीमा मामलों में पॉलिसी, बिल, संचार और क्लेम दस्तावेज शामिल हो सकते हैं। CASE SUNO जानकारी व्यवस्थित करके अगले कदम को समझने में मदद करता है।',
+                    whatWeDo: [
+                        'शिकायत और क्लेम दस्तावेज व्यवस्थित करना',
+                        'घटना की समयरेखा तैयार करना',
+                        'संचार और संबंधित जानकारी व्यवस्थित करना',
+                        'आवश्यकता पड़ने पर सही पेशेवर से जोड़ना'
+                    ],
+                    commonSituations: [
+                        'उपभोक्ता शिकायत',
+                        'बीमा क्लेम',
+                        'क्लेम संबंधी विवाद',
+                        'सेवा संबंधी समस्याएं'
+                    ],
+                    deliveryMode: 'ऑनलाइन सहायता और आवश्यकता पड़ने पर पेशेवर समन्वय'
+                },
+                {
+                    id: 'documents-government-services',
+                    title: 'दस्तावेज और सरकारी सेवाएं',
+                    shortDesc: 'दस्तावेज, आवेदन और सरकारी प्रक्रियाओं के लिए सहायता।',
+                    overview: 'सरकारी प्रक्रियाओं में कई फॉर्म, दस्तावेज और फॉलो-अप की आवश्यकता हो सकती है। CASE SUNO जरूरी चीजों को व्यवस्थित करने और प्रक्रिया समझने में मदद करता है।',
+                    whatWeDo: [
+                        'जरूरी दस्तावेज व्यवस्थित करना',
+                        'दस्तावेज चेकलिस्ट तैयार करना',
+                        'आवेदन और प्रस्तुतियों को व्यवस्थित करने में मदद',
+                        'आवश्यकता पड़ने पर संबंधित पेशेवर से जोड़ना'
+                    ],
+                    commonSituations: [
+                        'सरकारी आवेदन',
+                        'आधिकारिक दस्तावेज',
+                        'प्रमाणपत्र और रिकॉर्ड',
+                        'आवेदन से जुड़ी समस्याएं'
+                    ],
+                    deliveryMode: 'ऑनलाइन सहायता और आवश्यकता पड़ने पर अपॉइंटमेंट आधारित सहायता'
+                },
+                {
+                    id: 'others',
+                    title: 'अन्य',
+                    shortDesc: 'ऊपर दी गई श्रेणियों में न आने वाले मामलों के लिए यहां से शुरुआत करें।',
+                    overview: 'हर मामला किसी एक श्रेणी में फिट नहीं होता। यदि आपको पता नहीं है कि आपकी जरूरत किस श्रेणी में आती है, तो CASE SUNO के साथ अपनी जानकारी साझा करें।',
+                    whatWeDo: [
+                        'आपकी आवश्यकता को समझना',
+                        'उपलब्ध जानकारी व्यवस्थित करना',
+                        'सही श्रेणी या क्षेत्र पहचानना',
+                        'आवश्यकता पड़ने पर सही पेशेवर से जोड़ना'
+                    ],
+                    commonSituations: [
+                        'विशेष व्यक्तिगत मामले',
+                        'अलग प्रकार की दस्तावेजी जरूरत',
+                        'मिश्रित या जटिल मामले',
+                        'अन्य पेशेवर सहायता'
+                    ],
+                    deliveryMode: 'ऑनलाइन सहायता और आवश्यकता पड़ने पर पेशेवर समन्वय'
                 }
             ]
         },
@@ -998,7 +1283,7 @@ const LanguageProvider = ({ children })=>{
         children: children
     }, void 0, false, {
         fileName: "[project]/context/LanguageContext.tsx",
-        lineNumber: 1257,
+        lineNumber: 1602,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };

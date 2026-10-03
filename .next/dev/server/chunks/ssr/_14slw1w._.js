@@ -1383,92 +1383,126 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-ssr] (ecmascript) <export default as ArrowRight>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-check.js [app-ssr] (ecmascript) <export default as CheckCircle2>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Shield$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shield.js [app-ssr] (ecmascript) <export default as Shield>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$square$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageSquare$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/message-square.js [app-ssr] (ecmascript) <export default as MessageSquare>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$LanguageContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/context/LanguageContext.tsx [app-ssr] (ecmascript)");
 ;
 ;
 ;
 ;
-const EnquiryModal = ({ isOpen, onClose, initialCategory = 'Individual Assistance' })=>{
+const EnquiryModal = ({ isOpen, onClose, initialCategory = "" })=>{
     const { language } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$LanguageContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLanguage"])();
-    const isGu = language === 'gu';
-    const isHi = language === 'hi';
+    const isGu = language === "gu";
+    const isHi = language === "hi";
     const [step, setStep] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(1);
     const [category, setCategory] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(initialCategory);
-    const [urgency, setUrgency] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('Normal');
-    const [hasDocuments, setHasDocuments] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('partial');
-    const [description, setDescription] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('');
+    const [urgency, setUrgency] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("Normal");
+    const [hasDocuments, setHasDocuments] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("partial");
+    const [description, setDescription] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
     const [formData, setFormData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
-        fullName: '',
-        phone: '',
-        email: '',
-        city: 'Surat',
-        mode: 'Online (Video/Audio)'
+        fullName: "",
+        phone: "",
+        email: "",
+        city: ""
     });
-    const [referenceId, setReferenceId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('');
-    const [errorMsg, setErrorMsg] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('');
+    const [referenceId, setReferenceId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
+    const [errorMsg, setErrorMsg] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
+    const resetEnquiry = ()=>{
+        setStep(1);
+        setCategory(initialCategory);
+        setUrgency("Normal");
+        setHasDocuments("partial");
+        setDescription("");
+        setFormData({
+            fullName: "",
+            phone: "",
+            email: "",
+            city: ""
+        });
+        setReferenceId("");
+        setErrorMsg("");
+    };
+    const handleClose = ()=>{
+        resetEnquiry();
+        onClose();
+    };
     if (!isOpen) return null;
     const categories = [
         {
-            id: 'Individual Assistance',
-            label: isGu ? 'વ્યક્તિગત સહાય' : isHi ? 'व्यक्तिगत सहायता' : 'Individual Assistance',
-            desc: isGu ? 'પારિવારિક, વારસાઈ, મિલકત, ભાડુઆત તકરાર' : isHi ? 'पारिवारिक, संपत्ति, वसीयत, किराएदार विवाद' : 'Personal, family, inheritance, property, tenant'
+            id: "Notice, Summons & Court / Case",
+            label: isGu ? "નોટિસ, સમન્સ અને કોર્ટ / કેસ" : isHi ? "नोटिस, समन और कोर्ट / केस" : "Notice, Summons & Court / Case",
+            desc: isGu ? "કોર્ટ, સમન્સ, સરકારી અને ડિમાન્ડ નોટિસ, કેસ સહાય, દસ્તાવેજો, સુનાવણી અને કેસ ટ્રેકિંગ" : isHi ? "कोर्ट, समन, सरकारी और डिमांड नोटिस, केस सहायता, दस्तावेज़, सुनवाई और केस ट्रैकिंग" : "Court, summons, government & demand notices, case assistance, documents, hearings & tracking"
         },
         {
-            id: 'Business Support',
-            label: isGu ? 'વ્યવસાય સહાય' : isHi ? 'व्यापार सहायता' : 'Business Support',
-            desc: isGu ? 'સંચાલન, વેપારી કરાર, કંપની નિયમપાલન' : isHi ? 'परिचालन, विक्रेता अनुबंध, विनियामक अनुपालन' : 'Operations, vendor contracts, corporate compliance'
+            id: "Police, Cyber & Online Fraud",
+            label: isGu ? "પોલીસ, સાયબર અને ઓનલાઈન છેતરપિંડી" : isHi ? "पुलिस, साइबर और ऑनलाइन धोखाधड़ी" : "Police, Cyber & Online Fraud",
+            desc: isGu ? "ફરિયાદ, FIR, પોલીસ નોટિસ, જપ્તી, UPI, બેંકિંગ છેતરપિંડી, હેકિંગ અને સ્કેમ" : isHi ? "शिकायत, FIR, पुलिस नोटिस, जब्ती, UPI, बैंकिंग धोखाधड़ी, हैकिंग और स्कैम" : "Complaints, FIR, police notices, seizure, UPI, banking fraud, hacking & scams"
         },
         {
-            id: 'Documentation Help',
-            label: isGu ? 'દસ્તાવેજીકરણ સહાય' : isHi ? 'दस्तावेज़ीकरण सहायता' : 'Documentation Help',
-            desc: isGu ? 'કાનૂની જવાબો ડ્રાફ્ટ કરવા, કાગળો વ્યવસ્થિત કરવા' : isHi ? 'ड्राफ्टिंग समर्थन, फाइलों का सुव्यवस्थित संगठन' : 'Drafting replies, sorting records, dossier building'
+            id: "Property & Land",
+            label: isGu ? "મિલકત અને જમીન" : isHi ? "संपत्ति और भूमि" : "Property & Land",
+            desc: isGu ? "કબજો, મિલકત અને જમીન વિવાદ, બેંક દ્વારા સીલ કરેલી મિલકત અને સોસાયટી બાબતો" : isHi ? "कब्जा, संपत्ति और भूमि विवाद, बैंक द्वारा सील संपत्ति और सोसायटी मामले" : "Possession, property & land disputes, bank-sealed property & society matters"
         },
         {
-            id: 'Professional Coordination',
-            label: isGu ? 'વ્યાવસાયિક સંકલન' : isHi ? 'विशेषज्ञ समन्वय' : 'Professional Coordination',
-            desc: isGu ? 'એડવોકેટ્સ, સિનિયર CA, વેલ્યુઅર્સ, મધ્યસ્થી' : isHi ? 'अधिवक्ता, वरिष्ठ सीए, मध्यस्थ व मूल्यांकनकर्ता' : 'Advocates, Senior CAs, Valuers, Arbitrators'
+            id: "Bank, Loan, Money & Recovery",
+            label: isGu ? "બેંક, લોન, પૈસા અને વસૂલાત" : isHi ? "बैंक, लोन, पैसे और रिकवरी" : "Bank, Loan, Money & Recovery",
+            desc: isGu ? "EMI, લોન, મોર્ટગેજ, બેંક એકાઉન્ટ, બેંક રિકવરી, ચુકવણી, ઇનવોઇસ, રિફંડ અને પૈસાની વસૂલાત" : isHi ? "EMI, लोन, मॉर्गेज, बैंक अकाउंट, बैंक रिकवरी, भुगतान, इनवॉइस, रिफंड और पैसे की रिकवरी" : "EMI, loans, mortgage, bank accounts, bank recovery, payments, invoices, refunds & money recovery"
         },
         {
-            id: 'Ongoing Support',
-            label: isGu ? 'સતત સહાય' : isHi ? 'निरंतर प्रशासनिक सहायता' : 'Ongoing Support',
-            desc: isGu ? 'મુદ્દત ટ્રેકિંગ, વહીવટી ફોલો-અપ' : isHi ? 'सुनवाई ट्रैकिंग, नियमित अपडेट्स व फॉलो-अप' : 'Hearing tracking, administrative follow-through'
+            id: "Vehicle & RTO",
+            label: isGu ? "વાહન અને RTO" : isHi ? "वाहन और RTO" : "Vehicle & RTO",
+            desc: isGu ? "ચલણ, વાહન જપ્તી, RC, લાઇસન્સ, RTO બાબતો અને અકસ્માત" : isHi ? "चालान, वाहन जब्ती, RC, लाइसेंस, RTO मामले और दुर्घटनाएं" : "Challans, vehicle seizure, RC, licence, RTO matters & accidents"
         },
         {
-            id: 'Other Matters',
-            label: isGu ? 'સામાન્ય / અન્ય બાબત' : isHi ? 'सामान्य / अन्य विषय' : 'General / Other Matter',
-            desc: isGu ? 'જો તમને યોગ્ય શ્રેણી પસંદ કરવામાં મૂંઝવણ હોય' : isHi ? 'यदि आप उचित श्रेणी चुनने में असमंजस में हैं' : 'Unsure where to categorize your situation'
+            id: "Family Matters",
+            label: isGu ? "કૌટુંબિક બાબતો" : isHi ? "पारिवारिक मामले" : "Family Matters",
+            desc: isGu ? "લગ્ન સંબંધિત બાબતો, ભરણપોષણ અને કૌટુંબિક વિવાદ" : isHi ? "विवाह संबंधी मामले, भरण-पोषण और पारिवारिक विवाद" : "Matrimonial matters, maintenance & family disputes"
+        },
+        {
+            id: "Business & Commercial Matters",
+            label: isGu ? "વ્યવસાય અને કોમર્શિયલ બાબતો" : isHi ? "व्यवसाय और व्यावसायिक मामले" : "Business & Commercial Matters",
+            desc: isGu ? "વ્યવસાયિક વિવાદ, બિઝનેસ દસ્તાવેજો, કરાર, ચુકવણી અને કોમર્શિયલ બાબતો" : isHi ? "व्यावसायिक विवाद, बिजनेस दस्तावेज़, अनुबंध, भुगतान और व्यावसायिक मामले" : "Business disputes, business documents, contracts, payments & commercial matters"
+        },
+        {
+            id: "Consumer & Insurance",
+            label: isGu ? "ગ્રાહક અને વીમો" : isHi ? "उपभोक्ता और बीमा" : "Consumer & Insurance",
+            desc: isGu ? "પ્રોડક્ટ અને સેવા સંબંધિત સમસ્યાઓ, ગ્રાહક બાબતો અને વીમા દાવા" : isHi ? "उत्पाद और सेवा संबंधी समस्याएं, उपभोक्ता मामले और बीमा दावे" : "Product & service issues, consumer matters & insurance claims"
+        },
+        {
+            id: "Documents & Government Services",
+            label: isGu ? "દસ્તાવેજો અને સરકારી સેવાઓ" : isHi ? "दस्तावेज़ और सरकारी सेवाएं" : "Documents & Government Services",
+            desc: isGu ? "દસ્તાવેજીકરણ, અરજીઓ, પ્રમાણપત્રો અને સત્તાવાર સરકારી પ્રક્રિયાઓ" : isHi ? "दस्तावेज़ीकरण, आवेदन, प्रमाणपत्र और आधिकारिक सरकारी प्रक्रियाएं" : "Documentation, applications, certificates & official government processes"
+        },
+        {
+            id: "Others",
+            label: isGu ? "અન્ય બાબતો" : isHi ? "अन्य मामले" : "OTHERS..",
+            desc: isGu ? "ઉપરની કોઈ શ્રેણીમાં ન આવતી અન્ય બાબતો — અમારા કોઓર્ડિનેટર યોગ્ય શ્રેણી નક્કી કરવામાં મદદ કરશે" : isHi ? "ऊपर दी गई श्रेणियों में शामिल न होने वाले अन्य मामले — हमारे समन्वयक सही श्रेणी तय करने में मदद करेंगे" : "Any matter not covered above — our coordinator will help identify the appropriate category"
         }
     ];
-    const handleNextStep1 = ()=>{
-        setStep(2);
-    };
     const handleNextStep2 = ()=>{
         if (!description.trim()) {
-            setErrorMsg(isGu ? 'કૃપા કરીને તમારી સમસ્યાનો ટૂંકો સારાંશ લખો.' : isHi ? 'कृपया अपनी समस्या का संक्षिप्त विवरण लिखें।' : 'Please write a brief summary of what you are dealing with.');
+            setErrorMsg(isGu ? "કૃપા કરીને તમારી સમસ્યાનો ટૂંકો સારાંશ લખો." : isHi ? "कृपया अपनी समस्या का संक्षिप्त विवरण लिखें।" : "Please write a brief summary of what you are dealing with.");
             return;
         }
-        setErrorMsg('');
+        setErrorMsg("");
         setStep(3);
     };
     const handleSubmit = (e)=>{
         e.preventDefault();
         if (!formData.fullName.trim()) {
-            setErrorMsg(isGu ? 'કૃપા કરીને તમારું પૂરું નામ લખો.' : isHi ? 'कृपया अपना पूरा नाम लिखें।' : 'Please enter your full name.');
+            setErrorMsg(isGu ? "કૃપા કરીને તમારું પૂરું નામ લખો." : isHi ? "कृपया अपना पूरा नाम लिखें।" : "Please enter your full name.");
             return;
         }
         if (!formData.phone.trim() || formData.phone.length < 8) {
-            setErrorMsg(isGu ? 'કૃપા કરીને માન્ય વોટ્સએપ/મોબાઇલ નંબર લખો.' : isHi ? 'कृपया मान्य व्हाट्सएप/मोबाइल नंबर दर्ज करें।' : 'Please enter a valid mobile / WhatsApp number.');
+            setErrorMsg(isGu ? "કૃપા કરીને માન્ય વોટ્સએપ/મોબાઇલ નંબર લખો." : isHi ? "कृपया मान्य व्हाट्सएप/मोबाइल नंबर दर्ज करें।" : "Please enter a valid mobile / WhatsApp number.");
             return;
         }
-        setErrorMsg('');
-        const randomRef = 'CS-' + new Date().getFullYear() + '-' + Math.floor(1000 + Math.random() * 9000);
+        setErrorMsg("");
+        const randomRef = "CS-" + new Date().getFullYear() + "-" + Math.floor(1000 + Math.random() * 9000);
         setReferenceId(randomRef);
         setStep(4);
     };
     const openWhatsAppConfirmation = ()=>{
         const message = encodeURIComponent(`Hello CASE SUNO, I submitted an enquiry (${referenceId}) regarding ${category}.\nName: ${formData.fullName}\nCity: ${formData.city}\nBrief: ${description.slice(0, 100)}...`);
-        window.open(`https://wa.me/919876543210?text=${message}`, '_blank');
+        window.open(`https://wa.me/918000784778?text=${message}`, "_blank");
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-200",
@@ -1484,24 +1518,24 @@ const EnquiryModal = ({ isOpen, onClose, initialCategory = 'Individual Assistanc
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "text-[10px] font-bold tracking-[0.25em] text-[#8C8479] uppercase block",
-                                    children: isGu ? 'CASE SUNO પૂછપરછ' : isHi ? 'CASE SUNO पूछताछ' : 'Case Suno Enquiry'
+                                    children: isGu ? "CASE SUNO પૂછપરછ" : isHi ? "CASE SUNO पूछताछ" : "Case Suno Enquiry"
                                 }, void 0, false, {
                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                    lineNumber: 159,
+                                    lineNumber: 267,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                    className: `text-lg sm:text-xl text-[#1E1D1A] ${isGu || isHi ? 'font-sans font-semibold' : 'font-serif'}`,
-                                    children: step === 4 ? isGu ? 'પૂછપરછ નોંધાઈ ગઈ છે' : isHi ? 'पूछताछ दर्ज कर ली गई है' : 'Enquiry Registered' : isGu ? 'તમારી પૂછપરછ શરૂ કરો' : isHi ? 'अपनी पूछताछ शुरू करें' : 'Start Your Enquiry'
+                                    className: `text-lg sm:text-xl text-[#1E1D1A] ${isGu || isHi ? "font-sans font-semibold" : "font-serif"}`,
+                                    children: step === 4 ? isGu ? "પૂછપરછ નોંધાઈ ગઈ છે" : isHi ? "पूछताछ दर्ज कर ली गई है" : "Enquiry Registered" : isGu ? "તમારી પૂછપરછ શરૂ કરો" : isHi ? "अपनी पूछताछ शुरू करें" : "Start Your Enquiry"
                                 }, void 0, false, {
                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                    lineNumber: 162,
+                                    lineNumber: 274,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/EnquiryModal.tsx",
-                            lineNumber: 158,
+                            lineNumber: 266,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1509,38 +1543,38 @@ const EnquiryModal = ({ isOpen, onClose, initialCategory = 'Individual Assistanc
                             children: [
                                 step < 4 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "text-xs text-[#787268] tabular-nums font-medium",
-                                    children: isGu ? `તબક્કો ${step} / ૩` : isHi ? `चरण ${step} / ३` : `Step ${step} of 3`
+                                    children: isGu ? `તબક્કો ${step} / 3` : isHi ? `चरण ${step} / 3` : `Step ${step} of 3`
                                 }, void 0, false, {
                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                    lineNumber: 183,
+                                    lineNumber: 295,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    onClick: onClose,
+                                    onClick: handleClose,
                                     className: "p-1.5 rounded-full text-[#6B655B] hover:text-black hover:bg-[#F2EFE9] transition-colors cursor-pointer",
                                     "aria-label": "Close dialog",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
                                         className: "w-5 h-5"
                                     }, void 0, false, {
                                         fileName: "[project]/components/EnquiryModal.tsx",
-                                        lineNumber: 196,
+                                        lineNumber: 308,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                    lineNumber: 191,
+                                    lineNumber: 303,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/EnquiryModal.tsx",
-                            lineNumber: 181,
+                            lineNumber: 293,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/EnquiryModal.tsx",
-                    lineNumber: 157,
+                    lineNumber: 265,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1552,40 +1586,43 @@ const EnquiryModal = ({ isOpen, onClose, initialCategory = 'Individual Assistanc
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                            className: `text-base sm:text-lg text-[#1E1D1A] ${isGu || isHi ? 'font-sans font-semibold' : 'font-serif'}`,
-                                            children: isGu ? 'તમારી પરિસ્થિતિ સાથે સુસંગત શ્રેણી પસંદ કરો:' : isHi ? 'अपनी स्थिति से संबंधित श्रेणी चुनें:' : 'Select the category that best matches your situation:'
+                                            className: `text-base sm:text-lg text-[#1E1D1A] ${isGu || isHi ? "font-sans font-semibold" : "font-serif"}`,
+                                            children: isGu ? "તમારી પરિસ્થિતિ સાથે સુસંગત શ્રેણી પસંદ કરો:" : isHi ? "अपनी स्थिति से संबंधित श्रेणी चुनें:" : "Select the category that best matches your situation:"
                                         }, void 0, false, {
                                             fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 207,
+                                            lineNumber: 319,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "text-xs text-[#6B655B] mt-1",
-                                            children: isGu ? 'ચિંતા કરશો નહીં જો એકથી વધુ લાગુ પડતી હોય, અમારા કોઓર્ડિનેટર કોલ પર સ્પષ્ટતા કરી આપશે.' : isHi ? 'यदि एक से अधिक श्रेणियां लागू होती हैं तो चिंता न करें, हमारे समन्वयक कॉल पर स्पष्ट कर देंगे।' : "Don't worry if multiple apply; our coordinator will clarify during intake."
+                                            children: isGu ? "ચિંતા કરશો નહીં જો એકથી વધુ લાગુ પડતી હોય, અમારા કોઓર્ડિનેટર કોલ પર સ્પષ્ટતા કરી આપશે." : isHi ? "यदि एक से अधिक श्रेणियां लागू होती हैं तो चिंता न करें, हमारे समन्वयक कॉल पर स्पष्ट कर देंगे।" : "Don't worry if multiple apply; our coordinator will clarify during intake."
                                         }, void 0, false, {
                                             fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 218,
+                                            lineNumber: 330,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                    lineNumber: 206,
+                                    lineNumber: 318,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3 pt-1",
                                     children: categories.map((c)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             type: "button",
-                                            onClick: ()=>setCategory(c.id),
-                                            className: `p-3 sm:p-3.5 text-left border rounded-sm transition-all duration-150 cursor-pointer ${category === c.id ? 'border-[#1E1D1A] bg-white shadow-xs ring-1 ring-[#1E1D1A]' : 'border-[#E3DED4] bg-[#FAF9F6] hover:bg-white hover:border-[#B5AEA1]'}`,
+                                            onClick: ()=>{
+                                                setCategory(c.id);
+                                                setStep(2);
+                                            },
+                                            className: `p-3 sm:p-3.5 text-left border rounded-sm transition-all duration-150 cursor-pointer ${category === c.id ? "border-[#1E1D1A] bg-white shadow-xs ring-1 ring-[#1E1D1A]" : "border-[#E3DED4] bg-[#FAF9F6] hover:bg-white hover:border-[#B5AEA1]"}`,
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-sm font-semibold text-[#1E1D1A]",
                                                     children: c.label
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                                    lineNumber: 239,
+                                                    lineNumber: 354,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1593,56 +1630,24 @@ const EnquiryModal = ({ isOpen, onClose, initialCategory = 'Individual Assistanc
                                                     children: c.desc
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                                    lineNumber: 240,
+                                                    lineNumber: 357,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, c.id, true, {
                                             fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 229,
+                                            lineNumber: 341,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)))
                                 }, void 0, false, {
                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                    lineNumber: 227,
-                                    columnNumber: 15
-                                }, ("TURBOPACK compile-time value", void 0)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "pt-3 flex justify-end",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        type: "button",
-                                        onClick: handleNextStep1,
-                                        className: "w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-[#1F1E1B] hover:bg-[#33312B] text-white text-xs font-medium tracking-wide rounded-sm transition-all cursor-pointer",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                children: isGu ? 'આગળ વધો' : isHi ? 'आगे बढ़ें' : 'Continue'
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/EnquiryModal.tsx",
-                                                lineNumber: 251,
-                                                columnNumber: 19
-                                            }, ("TURBOPACK compile-time value", void 0)),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
-                                                className: "w-3.5 h-3.5"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/EnquiryModal.tsx",
-                                                lineNumber: 252,
-                                                columnNumber: 19
-                                            }, ("TURBOPACK compile-time value", void 0))
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/components/EnquiryModal.tsx",
-                                        lineNumber: 246,
-                                        columnNumber: 17
-                                    }, ("TURBOPACK compile-time value", void 0))
-                                }, void 0, false, {
-                                    fileName: "[project]/components/EnquiryModal.tsx",
-                                    lineNumber: 245,
+                                    lineNumber: 339,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/EnquiryModal.tsx",
-                            lineNumber: 205,
+                            lineNumber: 317,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         step === 2 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1651,25 +1656,25 @@ const EnquiryModal = ({ isOpen, onClose, initialCategory = 'Individual Assistanc
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                            className: `text-base sm:text-lg text-[#1E1D1A] ${isGu || isHi ? 'font-sans font-semibold' : 'font-serif'}`,
-                                            children: isGu ? 'તમે કઈ સમસ્યાનો સામનો કરી રહ્યા છો તે જણાવો' : isHi ? 'आप किस समस्या या आवश्यकता का सामना कर रहे हैं?' : 'Describe what you are facing'
+                                            className: `text-base sm:text-lg text-[#1E1D1A] ${isGu || isHi ? "font-sans font-semibold" : "font-serif"}`,
+                                            children: isGu ? "તમે કઈ સમસ્યાનો સામનો કરી રહ્યા છો તે જણાવો" : isHi ? "आप किस समस्या या आवश्यकता का सामना कर रहे हैं?" : "Describe what you are facing"
                                         }, void 0, false, {
                                             fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 262,
+                                            lineNumber: 368,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "text-xs text-[#6B655B] mt-1",
-                                            children: isGu ? 'તમે જેટલું યોગ્ય સમજો એટલું જ જણાવો. તમામ માહિતી સંપૂર્ણપણે ગોપનીય રાખવામાં આવે છે.' : isHi ? 'जितनी जानकारी आप सहजता से देना चाहें उतनी ही साझा करें। सभी विवरण पूर्णतः गोपनीय रहेंगे।' : 'Share only as much as you feel comfortable. All information is strictly confidential.'
+                                            children: isGu ? "તમે જેટલું યોગ્ય સમજો એટલું જ જણાવો. તમામ માહિતી સંપૂર્ણપણે ગોપનીય રાખવામાં આવે છે." : isHi ? "जितनी जानकारी आप सहजता से देना चाहें उतनी ही साझा करें। सभी विवरण पूर्णतः गोपनीय रहेंगे।" : "Share only as much as you feel comfortable. All information is strictly confidential."
                                         }, void 0, false, {
                                             fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 273,
+                                            lineNumber: 379,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                    lineNumber: 261,
+                                    lineNumber: 367,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 errorMsg && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1677,131 +1682,34 @@ const EnquiryModal = ({ isOpen, onClose, initialCategory = 'Individual Assistanc
                                     children: errorMsg
                                 }, void 0, false, {
                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                    lineNumber: 283,
+                                    lineNumber: 389,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                             className: "block text-xs font-semibold text-[#302E2A] mb-1.5",
-                                            children: isGu ? 'પરિસ્થિતિ / જરૂરિયાતનો સંક્ષિપ્ત સારાંશ *' : isHi ? 'स्थिति / आवश्यकता का संक्षिप्त विवरण *' : 'Brief Summary of the Situation / Requirement *'
+                                            children: isGu ? "પરિસ્થિતિ / જરૂરિયાતનો સંક્ષિપ્ત સારાંશ *" : isHi ? "स्थिति / आवश्यकता का संक्षिप्त विवरण *" : "Brief Summary of the Situation / Requirement *"
                                         }, void 0, false, {
                                             fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 289,
+                                            lineNumber: 395,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
                                             rows: 4,
                                             value: description,
                                             onChange: (e)=>setDescription(e.target.value),
-                                            placeholder: isGu ? 'દા.ત., વારસાઈ મિલકત અંગે નોટિસ મળી છે / ભાગીદારી કરાર ચકાસવો છે / વેપારી પેમેન્ટ અટક્યું છે...' : isHi ? 'उदा. संपत्ति या वसीयत पर नोटिस प्राप्त हुआ / साझेदारी अनुबंध की जांच करानी है / विक्रेता भुगतान लंबित है...' : 'e.g., Received a notice regarding property inheritance / Need help reviewing a partnership deed / In a payment dispute with a supplier...',
+                                            placeholder: isGu ? "દા.ત., વારસાઈ મિલકત અંગે નોટિસ મળી છે / ભાગીદારી કરાર ચકાસવો છે / વેપારી પેમેન્ટ અટક્યું છે..." : isHi ? "उदा. संपत्ति या वसीयत पर नोटिस प्राप्त हुआ / साझेदारी अनुबंध की जांच करानी है / विक्रेता भुगतान लंबित है..." : "e.g., Received a notice regarding property inheritance / Need help reviewing a partnership deed / In a payment dispute with a supplier...",
                                             className: "w-full p-3 text-sm bg-white border border-[#D5CFBF] rounded-sm focus:outline-hidden focus:ring-1 focus:ring-[#1E1D1A] text-[#1E1D1A] placeholder:text-[#9C9588]"
                                         }, void 0, false, {
                                             fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 296,
+                                            lineNumber: 402,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                    lineNumber: 288,
-                                    columnNumber: 15
-                                }, ("TURBOPACK compile-time value", void 0)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-1",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                    className: "block text-xs font-semibold text-[#302E2A] mb-1.5",
-                                                    children: isGu ? 'કેટલી ઉતાવળમાં પગલું ભરવું છે?' : isHi ? 'कितनी जल्दी कदम उठाने की आवश्यकता है?' : 'How soon do you need to take action?'
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/EnquiryModal.tsx",
-                                                    lineNumber: 313,
-                                                    columnNumber: 19
-                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex gap-2",
-                                                    children: [
-                                                        'Normal',
-                                                        'Priority',
-                                                        'Immediate'
-                                                    ].map((lvl)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                            type: "button",
-                                                            onClick: ()=>setUrgency(lvl),
-                                                            className: `flex-1 py-2 text-xs font-medium border rounded-sm transition-colors cursor-pointer ${urgency === lvl ? 'bg-[#1E1D1A] text-white border-[#1E1D1A]' : 'bg-white text-[#4A463E] border-[#D9D3C7] hover:border-[#9E9789]'}`,
-                                                            children: isGu ? lvl === 'Normal' ? 'સામાન્ય' : lvl === 'Priority' ? 'અગ્રતા' : 'તાત્કાલિક' : isHi ? lvl === 'Normal' ? 'सामान्य' : lvl === 'Priority' ? 'प्राथमिकता' : 'तत्काल' : lvl
-                                                        }, lvl, false, {
-                                                            fileName: "[project]/components/EnquiryModal.tsx",
-                                                            lineNumber: 322,
-                                                            columnNumber: 23
-                                                        }, ("TURBOPACK compile-time value", void 0)))
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/EnquiryModal.tsx",
-                                                    lineNumber: 320,
-                                                    columnNumber: 19
-                                                }, ("TURBOPACK compile-time value", void 0))
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 312,
-                                            columnNumber: 17
-                                        }, ("TURBOPACK compile-time value", void 0)),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                    className: "block text-xs font-semibold text-[#302E2A] mb-1.5",
-                                                    children: isGu ? 'દસ્તાવેજો / નોટિસ ઉપલબ્ધ છે?' : isHi ? 'दस्तावेज / नोटिस उपलब्ध हैं?' : 'Do you have documents/notices ready?'
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/EnquiryModal.tsx",
-                                                    lineNumber: 351,
-                                                    columnNumber: 19
-                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
-                                                    value: hasDocuments,
-                                                    onChange: (e)=>setHasDocuments(e.target.value),
-                                                    className: "w-full p-2.5 text-xs bg-white border border-[#D5CFBF] rounded-sm text-[#1E1D1A] cursor-pointer",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                            value: "yes",
-                                                            children: isGu ? 'હા, પૂરા દસ્તાવેજો છે' : isHi ? 'हाँ, पूर्ण दस्तावेज मौजूद हैं' : 'Yes, have complete documents'
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/components/EnquiryModal.tsx",
-                                                            lineNumber: 363,
-                                                            columnNumber: 21
-                                                        }, ("TURBOPACK compile-time value", void 0)),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                            value: "partial",
-                                                            children: isGu ? 'અમુક કાગળો છે / અધૂરા છે' : isHi ? 'कुछ कागजात हैं / अधूरे हैं' : 'Have some papers / incomplete'
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/components/EnquiryModal.tsx",
-                                                            lineNumber: 366,
-                                                            columnNumber: 21
-                                                        }, ("TURBOPACK compile-time value", void 0)),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                            value: "no",
-                                                            children: isGu ? 'હજી કોઈ કાગળો નથી / માત્ર સલાહ જોઈએ છે' : isHi ? 'अभी कोई दस्तावेज नहीं / केवल मार्गदर्शन चाहिए' : 'No documents yet / just seeking guidance'
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/components/EnquiryModal.tsx",
-                                                            lineNumber: 369,
-                                                            columnNumber: 21
-                                                        }, ("TURBOPACK compile-time value", void 0))
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/components/EnquiryModal.tsx",
-                                                    lineNumber: 358,
-                                                    columnNumber: 19
-                                                }, ("TURBOPACK compile-time value", void 0))
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 350,
-                                            columnNumber: 17
-                                        }, ("TURBOPACK compile-time value", void 0))
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/EnquiryModal.tsx",
-                                    lineNumber: 311,
+                                    lineNumber: 394,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1810,11 +1718,11 @@ const EnquiryModal = ({ isOpen, onClose, initialCategory = 'Individual Assistanc
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             type: "button",
                                             onClick: ()=>setStep(1),
-                                            className: "px-4 py-2 text-xs text-[#5C564C] hover:text-black font-medium cursor-pointer",
-                                            children: isGu ? 'પાછા જાવ' : isHi ? 'पीछे जाएं' : 'Back'
+                                            className: "px-4 py-2 text-xs text-[#5C564C] hover:text-black font-medium cursor-pointer bg-[#dcd7d7] rounded-lg",
+                                            children: isGu ? "પાછા જાવ" : isHi ? "पीछे जाएं" : "Back"
                                         }, void 0, false, {
                                             fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 377,
+                                            lineNumber: 418,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1823,35 +1731,35 @@ const EnquiryModal = ({ isOpen, onClose, initialCategory = 'Individual Assistanc
                                             className: "inline-flex items-center gap-2 px-6 py-2.5 bg-[#1F1E1B] hover:bg-[#33312B] text-white text-xs font-medium tracking-wide rounded-sm transition-all cursor-pointer",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    children: isGu ? 'સંપર્ક વિગતો' : isHi ? 'संपर्क विवरण' : 'Next: Contact Details'
+                                                    children: isGu ? "સંપર્ક વિગતો" : isHi ? "संपर्क विवरण" : "Next: Contact Details"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                                    lineNumber: 389,
+                                                    lineNumber: 430,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
                                                     className: "w-3.5 h-3.5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                                    lineNumber: 390,
+                                                    lineNumber: 437,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 384,
+                                            lineNumber: 425,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                    lineNumber: 376,
+                                    lineNumber: 417,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/EnquiryModal.tsx",
-                            lineNumber: 260,
+                            lineNumber: 366,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         step === 3 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -1861,25 +1769,25 @@ const EnquiryModal = ({ isOpen, onClose, initialCategory = 'Individual Assistanc
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                            className: `text-base sm:text-lg text-[#1E1D1A] ${isGu || isHi ? 'font-sans font-semibold' : 'font-serif'}`,
-                                            children: isGu ? 'અમારા કોઓર્ડિનેટર તમારો સંપર્ક કેવી રીતે કરે?' : isHi ? 'हमारे समन्वयक आपसे किस प्रकार संपर्क करें?' : 'How should our coordinator reach you?'
+                                            className: `text-base sm:text-lg text-[#1E1D1A] ${isGu || isHi ? "font-sans font-semibold" : "font-serif"}`,
+                                            children: isGu ? "અમારા કોઓર્ડિનેટર તમારો સંપર્ક કેવી રીતે કરે?" : isHi ? "हमारे समन्वयक आपसे किस प्रकार संपर्क करें?" : "How should our coordinator reach you?"
                                         }, void 0, false, {
                                             fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 400,
+                                            lineNumber: 447,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "text-xs text-[#6B655B] mt-1",
-                                            children: isGu ? 'અમે શાંતિપૂર્વક વાતચીત માટે અનુકૂળ સમય નક્કી કરવા તમારો સંપર્ક કરીશું.' : isHi ? 'हम शांत और सुगम बातचीत के लिए उपयुक्त समय तय करने हेतु संपर्क करेंगे।' : 'We will contact you to confirm a quiet appointment time.'
+                                            children: isGu ? "અમે શાંતિપૂર્વક વાતચીત માટે અનુકૂળ સમય નક્કી કરવા તમારો સંપર્ક કરીશું." : isHi ? "हम शांत और सुगम बातचीत के लिए उपयुक्त समय तय करने हेतु संपर्क करेंगे।" : "We will contact you to confirm a quiet appointment time."
                                         }, void 0, false, {
                                             fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 411,
+                                            lineNumber: 458,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                    lineNumber: 399,
+                                    lineNumber: 446,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 errorMsg && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1887,7 +1795,7 @@ const EnquiryModal = ({ isOpen, onClose, initialCategory = 'Individual Assistanc
                                     children: errorMsg
                                 }, void 0, false, {
                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                    lineNumber: 421,
+                                    lineNumber: 468,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1897,10 +1805,10 @@ const EnquiryModal = ({ isOpen, onClose, initialCategory = 'Individual Assistanc
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                     className: "block text-xs font-semibold text-[#302E2A] mb-1",
-                                                    children: isGu ? 'તમારું પૂરું નામ *' : isHi ? 'आपका पूरा नाम *' : 'Your Full Name *'
+                                                    children: isGu ? "તમારું પૂરું નામ *" : isHi ? "आपका पूरा नाम *" : "Your Full Name *"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                                    lineNumber: 428,
+                                                    lineNumber: 475,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1911,27 +1819,27 @@ const EnquiryModal = ({ isOpen, onClose, initialCategory = 'Individual Assistanc
                                                             ...formData,
                                                             fullName: e.target.value
                                                         }),
-                                                    placeholder: isGu ? 'દા.ત. રાજેશ પટેલ' : isHi ? 'उदा. राजेश शर्मा' : 'e.g. Rajesh Patel',
+                                                    placeholder: isGu ? "દા.ત. રાજેશ પટેલ" : isHi ? "उदा. राजेश शर्मा" : "e.g. Rajesh Patel",
                                                     className: "w-full p-2.5 text-sm bg-white border border-[#D5CFBF] rounded-sm text-[#1E1D1A]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                                    lineNumber: 431,
+                                                    lineNumber: 482,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 427,
+                                            lineNumber: 474,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                     className: "block text-xs font-semibold text-[#302E2A] mb-1",
-                                                    children: isGu ? 'વોટ્સએપ / મોબાઇલ નંબર *' : isHi ? 'व्हाट्सएप / मोबाइल नंबर *' : 'WhatsApp / Mobile Number *'
+                                                    children: isGu ? "વોટ્સએપ / મોબાઇલ નંબર *" : isHi ? "व्हाट्सएप / मोबाइल नंबर *" : "WhatsApp / Mobile Number *"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                                    lineNumber: 442,
+                                                    lineNumber: 501,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1946,23 +1854,23 @@ const EnquiryModal = ({ isOpen, onClose, initialCategory = 'Individual Assistanc
                                                     className: "w-full p-2.5 text-sm bg-white border border-[#D5CFBF] rounded-sm text-[#1E1D1A]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                                    lineNumber: 445,
+                                                    lineNumber: 508,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 441,
+                                            lineNumber: 500,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                     className: "block text-xs font-semibold text-[#302E2A] mb-1",
-                                                    children: isGu ? 'ઇમેઇલ (વૈકલ્પિક)' : isHi ? 'ईमेल (वैकल्पिक)' : 'Email Address (Optional)'
+                                                    children: isGu ? "ઇમેઇલ (વૈકલ્પિક)" : isHi ? "ईमेल (वैकल्पिक)" : "Email Address (Optional)"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                                    lineNumber: 456,
+                                                    lineNumber: 521,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1976,23 +1884,23 @@ const EnquiryModal = ({ isOpen, onClose, initialCategory = 'Individual Assistanc
                                                     className: "w-full p-2.5 text-sm bg-white border border-[#D5CFBF] rounded-sm text-[#1E1D1A]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                                    lineNumber: 459,
+                                                    lineNumber: 528,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 455,
+                                            lineNumber: 520,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                     className: "block text-xs font-semibold text-[#302E2A] mb-1",
-                                                    children: isGu ? 'શહેર / સ્થળ' : isHi ? 'शहर / स्थान' : 'City / Location'
+                                                    children: isGu ? "શહેર / સ્થળ" : isHi ? "शहर / स्थान" : "City / Location"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                                    lineNumber: 469,
+                                                    lineNumber: 540,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2002,62 +1910,23 @@ const EnquiryModal = ({ isOpen, onClose, initialCategory = 'Individual Assistanc
                                                             ...formData,
                                                             city: e.target.value
                                                         }),
-                                                    placeholder: "Surat, Gujarat",
+                                                    placeholder: "city, state",
                                                     className: "w-full p-2.5 text-sm bg-white border border-[#D5CFBF] rounded-sm text-[#1E1D1A]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                                    lineNumber: 472,
+                                                    lineNumber: 547,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 468,
+                                            lineNumber: 539,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                    lineNumber: 426,
-                                    columnNumber: 15
-                                }, ("TURBOPACK compile-time value", void 0)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                            className: "block text-xs font-semibold text-[#302E2A] mb-1",
-                                            children: isGu ? 'પરામર્શ માટે અનુકૂળ માધ્યમ' : isHi ? 'परामर्श के लिए पसंदीदा माध्यम' : 'Preferred Consultation Mode'
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 483,
-                                            columnNumber: 17
-                                        }, ("TURBOPACK compile-time value", void 0)),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "grid grid-cols-1 sm:grid-cols-2 gap-2.5",
-                                            children: [
-                                                isGu ? 'ઓનલાઇન (વિડીયો/ઓડિયો)' : isHi ? 'ऑनलाइन (वीडियो/ऑडियो)' : 'Online (Video/Audio)',
-                                                isGu ? 'સુરત ઓફિસ (રૂબરૂ)' : isHi ? 'सूरत कार्यालय (व्यक्तिगत)' : 'Surat Office (In-Person)'
-                                            ].map((m)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                    type: "button",
-                                                    onClick: ()=>setFormData({
-                                                            ...formData,
-                                                            mode: m
-                                                        }),
-                                                    className: `p-2.5 text-xs text-left border rounded-sm font-medium transition-colors cursor-pointer ${formData.mode === m ? 'border-[#1E1D1A] bg-white text-[#1E1D1A] ring-1 ring-[#1E1D1A]' : 'border-[#D9D3C7] bg-[#FAF9F6] text-[#59544B]'}`,
-                                                    children: m
-                                                }, m, false, {
-                                                    fileName: "[project]/components/EnquiryModal.tsx",
-                                                    lineNumber: 491,
-                                                    columnNumber: 21
-                                                }, ("TURBOPACK compile-time value", void 0)))
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 486,
-                                            columnNumber: 17
-                                        }, ("TURBOPACK compile-time value", void 0))
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/EnquiryModal.tsx",
-                                    lineNumber: 482,
+                                    lineNumber: 473,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2067,20 +1936,20 @@ const EnquiryModal = ({ isOpen, onClose, initialCategory = 'Individual Assistanc
                                             className: "w-4 h-4 text-[#756C5B] shrink-0"
                                         }, void 0, false, {
                                             fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 508,
+                                            lineNumber: 559,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            children: isGu ? 'તમારી ગોપનીયતા સુરક્ષિત છે. અમે તમારી સંમતિ વિના વિગતો ક્યારેય શેર કરતા નથી.' : isHi ? 'आपकी गोपनीयता पूर्णतः सुरक्षित है। हम आपकी सहमति के बिना आपकी जानकारी कभी साझा नहीं करते।' : 'Your privacy is protected. We will never share your contacts or circumstances without consent.'
+                                            children: isGu ? "તમારી ગોપનીયતા સુરક્ષિત છે. અમે તમારી સંમતિ વિના વિગતો ક્યારેય શેર કરતા નથી." : isHi ? "आपकी गोपनीयता पूर्णतः सुरक्षित है। हम आपकी सहमति के बिना आपकी जानकारी कभी साझा नहीं करते।" : "Your privacy is protected. We will never share your contacts or circumstances without consent."
                                         }, void 0, false, {
                                             fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 509,
+                                            lineNumber: 560,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                    lineNumber: 507,
+                                    lineNumber: 558,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2089,11 +1958,11 @@ const EnquiryModal = ({ isOpen, onClose, initialCategory = 'Individual Assistanc
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             type: "button",
                                             onClick: ()=>setStep(2),
-                                            className: "px-4 py-2 text-xs text-[#5C564C] hover:text-black font-medium cursor-pointer",
-                                            children: isGu ? 'પાછા જાવ' : isHi ? 'पीछे जाएं' : 'Back'
+                                            className: "px-4 py-2 text-xs text-[#5C564C] hover:text-black font-medium cursor-pointer bg-[#dcd7d7] rounded-lg",
+                                            children: isGu ? "પાછા જાવ" : isHi ? "पीछे जाएं" : "Back"
                                         }, void 0, false, {
                                             fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 519,
+                                            lineNumber: 570,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2101,35 +1970,35 @@ const EnquiryModal = ({ isOpen, onClose, initialCategory = 'Individual Assistanc
                                             className: "inline-flex items-center gap-2 px-6 py-2.5 bg-[#1F1E1B] hover:bg-[#33312B] text-white text-xs font-medium tracking-wide rounded-sm transition-all cursor-pointer",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    children: isGu ? 'ગોપનીય પૂછપરછ સબમિટ કરો' : isHi ? 'गोपनीय पूछताछ सबमिट करें' : 'Submit Confidential Enquiry'
+                                                    children: isGu ? "ગોપનીય પૂછપરછ સબમિટ કરો" : isHi ? "गोपनीय पूछताछ सबमिट करें" : "Submit Confidential Enquiry"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                                    lineNumber: 530,
+                                                    lineNumber: 581,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
                                                     className: "w-3.5 h-3.5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                                    lineNumber: 537,
+                                                    lineNumber: 588,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 526,
+                                            lineNumber: 577,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                    lineNumber: 518,
+                                    lineNumber: 569,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/EnquiryModal.tsx",
-                            lineNumber: 398,
+                            lineNumber: 445,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         step === 4 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2141,12 +2010,12 @@ const EnquiryModal = ({ isOpen, onClose, initialCategory = 'Individual Assistanc
                                         className: "w-8 h-8"
                                     }, void 0, false, {
                                         fileName: "[project]/components/EnquiryModal.tsx",
-                                        lineNumber: 547,
+                                        lineNumber: 598,
                                         columnNumber: 17
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                    lineNumber: 546,
+                                    lineNumber: 597,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2154,35 +2023,35 @@ const EnquiryModal = ({ isOpen, onClose, initialCategory = 'Individual Assistanc
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "inline-block px-3 py-1 bg-[#F2EDE2] text-[#5E5648] text-xs font-mono font-medium rounded-xs mb-2",
                                             children: [
-                                                isGu ? 'સંદર્ભ ક્રમાંક' : isHi ? 'संदर्भ संख्या' : 'Reference',
+                                                isGu ? "સંદર્ભ ક્રમાંક" : isHi ? "संदर्भ संख्या" : "Reference",
                                                 ": ",
                                                 referenceId
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 551,
+                                            lineNumber: 602,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                            className: `text-xl sm:text-2xl text-[#1E1D1A] ${isGu || isHi ? 'font-sans font-semibold' : 'font-serif'}`,
+                                            className: `text-xl sm:text-2xl text-[#1E1D1A] ${isGu || isHi ? "font-sans font-semibold" : "font-serif"}`,
                                             children: isGu ? `આભાર, ${formData.fullName}` : isHi ? `धन्यवाद, ${formData.fullName}` : `Thank You, ${formData.fullName}.`
                                         }, void 0, false, {
                                             fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 554,
+                                            lineNumber: 610,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "text-xs sm:text-sm text-[#5C564C] max-w-md mx-auto mt-2 leading-relaxed",
-                                            children: isGu ? 'અમને તમારી પૂછપરછ મળી ગઈ છે. અમારા કેસ કોઓર્ડિનેટર વિગતો ચકાસીને ૨ વ્યાવસાયિક કલાકમાં તમારો સંપર્ક કરશે.' : isHi ? 'हमें आपकी पूछताछ प्राप्त हो गई है। हमारे केस समन्वयक आपके विवरण की समीक्षा करेंगे और २ व्यावसायिक घंटों में संपर्क करेंगे।' : `We have received your enquiry regarding ${category}. Our case coordinator will review your notes and reach out within 2 business hours.`
+                                            children: isGu ? "અમને તમારી પૂછપરછ મળી ગઈ છે. અમારા કેસ કોઓર્ડિનેટર વિગતો ચકાસીને ૨ વ્યાવસાયિક કલાકમાં તમારો સંપર્ક કરશે." : isHi ? "हमें आपकी पूछताछ प्राप्त हो गई है। हमारे केस समन्वयक आपके विवरण की समीक्षा करेंगे और २ व्यावसायिक घंटों में संपर्क करेंगे।" : `We have received your enquiry regarding ${category}. Our case coordinator will review your notes and reach out within 2 business hours.`
                                         }, void 0, false, {
                                             fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 565,
+                                            lineNumber: 621,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                    lineNumber: 550,
+                                    lineNumber: 601,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2193,24 +2062,24 @@ const EnquiryModal = ({ isOpen, onClose, initialCategory = 'Individual Assistanc
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "text-[#878072]",
-                                                    children: isGu ? 'સ્થિતિ:' : isHi ? 'स्थिति:' : 'Status:'
+                                                    children: isGu ? "સ્થિતિ:" : isHi ? "स्थिति:" : "Status:"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                                    lineNumber: 576,
+                                                    lineNumber: 632,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "font-medium text-[#2F662C]",
-                                                    children: isGu ? 'પ્રારંભિક સમીક્ષા હેઠળ' : isHi ? 'प्रारंभिक समीक्षाधीन' : 'Under Preliminary Review'
+                                                    children: isGu ? "પ્રારંભિક સમીક્ષા હેઠળ" : isHi ? "प्रारंभिक समीक्षाधीन" : "Under Preliminary Review"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                                    lineNumber: 577,
+                                                    lineNumber: 635,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 575,
+                                            lineNumber: 631,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2218,35 +2087,10 @@ const EnquiryModal = ({ isOpen, onClose, initialCategory = 'Individual Assistanc
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "text-[#878072]",
-                                                    children: isGu ? 'માધ્યમ:' : isHi ? 'पसंदीदा माध्यम:' : 'Preferred Mode:'
+                                                    children: isGu ? "સંપર્ક નંબર:" : isHi ? "संपर्क नंबर:" : "Contact Number:"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                                    lineNumber: 586,
-                                                    columnNumber: 19
-                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "font-medium text-[#1E1D1A]",
-                                                    children: formData.mode
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/EnquiryModal.tsx",
-                                                    lineNumber: 587,
-                                                    columnNumber: 19
-                                                }, ("TURBOPACK compile-time value", void 0))
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 585,
-                                            columnNumber: 17
-                                        }, ("TURBOPACK compile-time value", void 0)),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex justify-between",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-[#878072]",
-                                                    children: isGu ? 'સંપર્ક નંબર:' : isHi ? 'संपर्क नंबर:' : 'Contact Number:'
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/EnquiryModal.tsx",
-                                                    lineNumber: 590,
+                                                    lineNumber: 644,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2254,19 +2098,19 @@ const EnquiryModal = ({ isOpen, onClose, initialCategory = 'Individual Assistanc
                                                     children: formData.phone
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                                    lineNumber: 591,
+                                                    lineNumber: 651,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 589,
+                                            lineNumber: 643,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                    lineNumber: 574,
+                                    lineNumber: 630,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2276,62 +2120,72 @@ const EnquiryModal = ({ isOpen, onClose, initialCategory = 'Individual Assistanc
                                             onClick: openWhatsAppConfirmation,
                                             className: "w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-[#25D366] hover:bg-[#1EBE5D] text-white text-xs font-medium rounded-sm transition-all cursor-pointer",
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$square$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageSquare$3e$__["MessageSquare"], {
-                                                    className: "w-4 h-4"
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                    xmlns: "http://www.w3.org/2000/svg",
+                                                    viewBox: "0 0 24 24",
+                                                    fill: "currentColor",
+                                                    className: "h-3.5 w-3.5",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                        d: "M20.52 3.48A11.86 11.86 0 0 0 12.04 0C5.49 0 .16 5.33.16 11.88c0 2.09.55 4.13 1.6 5.92L.05 24l6.35-1.66a11.87 11.87 0 0 0 5.64 1.43h.01c6.55 0 11.88-5.33 11.88-11.88 0-3.18-1.24-6.17-3.41-8.41Zm-8.47 18.32h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.77.99 1.01-3.67-.23-.38a9.9 9.9 0 1 1 8.39 4.65Zm5.43-7.41c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.5 1.69.64.71.23 1.35.2 1.86.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/EnquiryModal.tsx",
+                                                        lineNumber: 668,
+                                                        columnNumber: 21
+                                                    }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                                    lineNumber: 600,
+                                                    lineNumber: 662,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    children: isGu ? 'વોટ્સએપ પર તરત જોડાઓ' : isHi ? 'व्हाट्सएप पर तुरंत जुड़ें' : 'Connect Instantly on WhatsApp'
+                                                    children: isGu ? "વોટ્સએપ પર તરત જોડાઓ" : isHi ? "व्हाट्सएप पर तुरंत जुड़ें" : "Connect Instantly on WhatsApp"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                                    lineNumber: 601,
+                                                    lineNumber: 670,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 596,
+                                            lineNumber: 658,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                            onClick: onClose,
+                                            onClick: handleClose,
                                             className: "w-full sm:w-auto px-5 py-2.5 bg-[#1F1E1B] text-white text-xs font-medium rounded-sm cursor-pointer",
-                                            children: isGu ? 'પૂર્ણ' : isHi ? 'संपन्न' : 'Done'
+                                            children: isGu ? "પૂર્ણ" : isHi ? "संपन्न" : "Done"
                                         }, void 0, false, {
                                             fileName: "[project]/components/EnquiryModal.tsx",
-                                            lineNumber: 609,
+                                            lineNumber: 678,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/EnquiryModal.tsx",
-                                    lineNumber: 595,
+                                    lineNumber: 657,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/EnquiryModal.tsx",
-                            lineNumber: 545,
+                            lineNumber: 596,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/EnquiryModal.tsx",
-                    lineNumber: 202,
+                    lineNumber: 314,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/components/EnquiryModal.tsx",
-            lineNumber: 155,
+            lineNumber: 263,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/components/EnquiryModal.tsx",
-        lineNumber: 150,
+        lineNumber: 258,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -3481,8 +3335,8 @@ const Hero = ({ onOpenEnquiry, onOpenLocationInfo })=>{
     const isIndic = language === "gu" || language === "hi";
     const heroImages = {
         en: "/images/hero2.webp",
-        hi: "/images/heroH.webp",
-        gu: "/images/heroG.webp"
+        hi: "/images/hindiHero.png",
+        gu: "/images/gujHero.png"
     };
     const heroImage = heroImages[language] ?? heroImages.en;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -3566,18 +3420,6 @@ const Hero = ({ onOpenEnquiry, onOpenLocationInfo })=>{
                                                     children: t.hero.titleLine1
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/Hero.tsx",
-                                                    lineNumber: 162,
-                                                    columnNumber: 17
-                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                    fileName: "[project]/components/Hero.tsx",
-                                                    lineNumber: 163,
-                                                    columnNumber: 17
-                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    children: t.hero.titleLine2
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/Hero.tsx",
                                                     lineNumber: 164,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
@@ -3587,7 +3429,7 @@ const Hero = ({ onOpenEnquiry, onOpenLocationInfo })=>{
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    children: t.hero.titleLine3
+                                                    children: t.hero.titleLine2
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/Hero.tsx",
                                                     lineNumber: 166,
@@ -3599,16 +3441,28 @@ const Hero = ({ onOpenEnquiry, onOpenLocationInfo })=>{
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    children: t.hero.titleLine4
+                                                    children: t.hero.titleLine3
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/Hero.tsx",
                                                     lineNumber: 168,
+                                                    columnNumber: 17
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                    fileName: "[project]/components/Hero.tsx",
+                                                    lineNumber: 169,
+                                                    columnNumber: 17
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    children: t.hero.titleLine4
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Hero.tsx",
+                                                    lineNumber: 170,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/Hero.tsx",
-                                            lineNumber: 144,
+                                            lineNumber: 146,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3616,39 +3470,82 @@ const Hero = ({ onOpenEnquiry, onOpenLocationInfo })=>{
                                             children: t.hero.desc
                                         }, void 0, false, {
                                             fileName: "[project]/components/Hero.tsx",
-                                            lineNumber: 172,
+                                            lineNumber: 174,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "pt-1 sm:pt-2",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                type: "button",
-                                                onClick: onOpenEnquiry,
-                                                className: "\n                    group\n                    w-full\n                    sm:w-auto\n                    inline-flex\n                    items-center\n                    justify-center\n                    gap-3\n                    px-6\n                    sm:px-7\n                    py-3.5\n                    sm:py-4\n                    bg-[#1F1E1B]\n                    hover:bg-[#33312B]\n                    text-white\n                    text-[13px]\n                    sm:text-[14px]\n                    font-medium\n                    tracking-wide\n                    rounded-sm\n                    transition-all\n                    duration-200\n                    active:scale-[0.98]\n                    shadow-sm\n                    cursor-pointer\n                  ",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        children: t.hero.ctaPrimary
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/components/Hero.tsx",
-                                                        lineNumber: 218,
-                                                        columnNumber: 19
-                                                    }, ("TURBOPACK compile-time value", void 0)),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
-                                                        className: "\n                      w-4\n                      h-4\n                      transition-transform\n                      duration-200\n                      group-hover:translate-x-1\n                    "
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/components/Hero.tsx",
-                                                        lineNumber: 220,
-                                                        columnNumber: 19
-                                                    }, ("TURBOPACK compile-time value", void 0))
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/components/Hero.tsx",
-                                                lineNumber: 188,
-                                                columnNumber: 17
-                                            }, ("TURBOPACK compile-time value", void 0))
-                                        }, void 0, false, {
+                                            className: "pt-1 sm:pt-2 flex gap-5 sm:flex-row flex-col items-start sm:items-start",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                    type: "button",
+                                                    onClick: onOpenEnquiry,
+                                                    className: "\n                    group\n                    w-full\n                    sm:w-auto\n                    inline-flex\n                    items-center\n                    justify-center\n                    gap-3\n                    px-6\n                    sm:px-7\n                    py-3.5\n                    sm:py-4\n                    bg-[#1F1E1B]\n                    hover:bg-[#33312B]\n                    text-white\n                    text-[13px]\n                    sm:text-[14px]\n                    font-medium\n                    tracking-wide\n                    rounded-sm\n                    transition-all\n                    duration-200\n                    active:scale-[0.98]\n                    shadow-sm\n                    cursor-pointer\n                  ",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            children: t.hero.ctaPrimary
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/Hero.tsx",
+                                                            lineNumber: 221,
+                                                            columnNumber: 19
+                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
+                                                            className: "\n                      w-4\n                      h-4\n                      transition-transform\n                      duration-200\n                      group-hover:translate-x-1\n                    "
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/Hero.tsx",
+                                                            lineNumber: 223,
+                                                            columnNumber: 19
+                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/Hero.tsx",
+                                                    lineNumber: 191,
+                                                    columnNumber: 17
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                    onClick: ()=>window.open("https://wa.me/918000784778?text=Hello%20CASE%20SUNO%2C%20I%20would%20like%20to%20make%20an%20enquiry.", "_blank"),
+                                                    className: "group\n                  bg-[#1F5C50] \n                  hover:bg-[#174A41]\n                    w-full\n                    sm:w-auto\n                    inline-flex\n                    items-center\n                    justify-center\n                    gap-3\n                    px-6\n                    sm:px-7\n                    py-3.5\n                    sm:py-4\n                    text-white\n                    text-[13px]\n                    sm:text-[14px]\n                    font-medium\n                    tracking-wide\n                    rounded-sm\n                    transition-all\n                    duration-200\n                    active:scale-[0.98]\n                    shadow-sm\n                    cursor-pointer",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                            xmlns: "http://www.w3.org/2000/svg",
+                                                            viewBox: "0 0 24 24",
+                                                            fill: "currentColor",
+                                                            className: "h-3.5 w-3.5",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M20.52 3.48A11.86 11.86 0 0 0 12.04 0C5.49 0 .16 5.33.16 11.88c0 2.09.55 4.13 1.6 5.92L.05 24l6.35-1.66a11.87 11.87 0 0 0 5.64 1.43h.01c6.55 0 11.88-5.33 11.88-11.88 0-3.18-1.24-6.17-3.41-8.41Zm-8.47 18.32h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.77.99 1.01-3.67-.23-.38a9.9 9.9 0 1 1 8.39 4.65Zm5.43-7.41c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.5 1.69.64.71.23 1.35.2 1.86.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/Hero.tsx",
+                                                                lineNumber: 272,
+                                                                columnNumber: 21
+                                                            }, ("TURBOPACK compile-time value", void 0))
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/Hero.tsx",
+                                                            lineNumber: 266,
+                                                            columnNumber: 19
+                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            children: "WhatsApp"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/Hero.tsx",
+                                                            lineNumber: 274,
+                                                            columnNumber: 19
+                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
+                                                            className: "w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/Hero.tsx",
+                                                            lineNumber: 275,
+                                                            columnNumber: 19
+                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/Hero.tsx",
+                                                    lineNumber: 234,
+                                                    columnNumber: 17
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            ]
+                                        }, void 0, true, {
                                             fileName: "[project]/components/Hero.tsx",
-                                            lineNumber: 187,
+                                            lineNumber: 189,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
@@ -3671,12 +3568,12 @@ const Hero = ({ onOpenEnquiry, onOpenLocationInfo })=>{
                                                             className: "w-4 h-4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/Hero.tsx",
-                                                            lineNumber: 274,
+                                                            lineNumber: 321,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/Hero.tsx",
-                                                        lineNumber: 259,
+                                                        lineNumber: 306,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3687,7 +3584,7 @@ const Hero = ({ onOpenEnquiry, onOpenLocationInfo })=>{
                                                                 children: t.hero.badgeConfidential
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/Hero.tsx",
-                                                                lineNumber: 278,
+                                                                lineNumber: 325,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3695,19 +3592,19 @@ const Hero = ({ onOpenEnquiry, onOpenLocationInfo })=>{
                                                                 children: t.hero.badgeConfidentialSub
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/Hero.tsx",
-                                                                lineNumber: 282,
+                                                                lineNumber: 329,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/Hero.tsx",
-                                                        lineNumber: 277,
+                                                        lineNumber: 324,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/Hero.tsx",
-                                                lineNumber: 258,
+                                                lineNumber: 305,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3719,12 +3616,12 @@ const Hero = ({ onOpenEnquiry, onOpenLocationInfo })=>{
                                                             className: "w-4 h-4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/Hero.tsx",
-                                                            lineNumber: 305,
+                                                            lineNumber: 352,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/Hero.tsx",
-                                                        lineNumber: 290,
+                                                        lineNumber: 337,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3735,7 +3632,7 @@ const Hero = ({ onOpenEnquiry, onOpenLocationInfo })=>{
                                                                 children: t.hero.badgeTransparent
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/Hero.tsx",
-                                                                lineNumber: 309,
+                                                                lineNumber: 356,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3743,19 +3640,19 @@ const Hero = ({ onOpenEnquiry, onOpenLocationInfo })=>{
                                                                 children: t.hero.badgeTransparentSub
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/Hero.tsx",
-                                                                lineNumber: 313,
+                                                                lineNumber: 360,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/Hero.tsx",
-                                                        lineNumber: 308,
+                                                        lineNumber: 355,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/Hero.tsx",
-                                                lineNumber: 289,
+                                                lineNumber: 336,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3767,12 +3664,12 @@ const Hero = ({ onOpenEnquiry, onOpenLocationInfo })=>{
                                                             className: "w-4 h-4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/Hero.tsx",
-                                                            lineNumber: 336,
+                                                            lineNumber: 383,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/Hero.tsx",
-                                                        lineNumber: 321,
+                                                        lineNumber: 368,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3783,7 +3680,7 @@ const Hero = ({ onOpenEnquiry, onOpenLocationInfo })=>{
                                                                 children: t.hero.badgeOnline
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/Hero.tsx",
-                                                                lineNumber: 340,
+                                                                lineNumber: 387,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3791,30 +3688,30 @@ const Hero = ({ onOpenEnquiry, onOpenLocationInfo })=>{
                                                                 children: t.hero.badgeOnlineSub
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/Hero.tsx",
-                                                                lineNumber: 344,
+                                                                lineNumber: 391,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/Hero.tsx",
-                                                        lineNumber: 339,
+                                                        lineNumber: 386,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/Hero.tsx",
-                                                lineNumber: 320,
+                                                lineNumber: 367,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/Hero.tsx",
-                                        lineNumber: 247,
+                                        lineNumber: 294,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/components/Hero.tsx",
-                                    lineNumber: 236,
+                                    lineNumber: 283,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
@@ -3827,7 +3724,7 @@ const Hero = ({ onOpenEnquiry, onOpenLocationInfo })=>{
                             className: "\n              hidden\n              lg:flex\n              lg:col-span-6\n              xl:col-span-7\n              relative\n              min-h-[520px]\n              items-center\n              justify-center\n            "
                         }, void 0, false, {
                             fileName: "[project]/components/Hero.tsx",
-                            lineNumber: 356,
+                            lineNumber: 403,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
@@ -5351,48 +5248,89 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/file-text.js [app-ssr] (ecmascript) <export default as FileText>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$network$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Network$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/network.js [app-ssr] (ecmascript) <export default as Network>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$headphones$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Headphones$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/headphones.js [app-ssr] (ecmascript) <export default as Headphones>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shield-check.js [app-ssr] (ecmascript) <export default as ShieldCheck>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$building$2d$2$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Building2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/building-2.js [app-ssr] (ecmascript) <export default as Building2>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$car$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Car$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/car.js [app-ssr] (ecmascript) <export default as Car>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/heart.js [app-ssr] (ecmascript) <export default as Heart>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$landmark$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Landmark$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/landmark.js [app-ssr] (ecmascript) <export default as Landmark>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$scale$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Scale$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/scale.js [app-ssr] (ecmascript) <export default as Scale>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$LanguageContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/context/LanguageContext.tsx [app-ssr] (ecmascript)");
 ;
 ;
 ;
 const serviceIcons = {
-    'individual-assistance': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"], {
+    'notice-summons-court-case': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$scale$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Scale$3e$__["Scale"], {
         className: "w-5 h-5 text-[#38352F]"
     }, void 0, false, {
         fileName: "[project]/components/ServicesSection.tsx",
-        lineNumber: 17,
-        columnNumber: 28
+        lineNumber: 31,
+        columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0)),
-    'business-support': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$briefcase$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Briefcase$3e$__["Briefcase"], {
+    'police-cyber-online-fraud': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__["ShieldCheck"], {
         className: "w-5 h-5 text-[#38352F]"
     }, void 0, false, {
         fileName: "[project]/components/ServicesSection.tsx",
-        lineNumber: 18,
-        columnNumber: 23
+        lineNumber: 35,
+        columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0)),
-    'documentation-help': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__["FileText"], {
+    'property-land': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$building$2d$2$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Building2$3e$__["Building2"], {
         className: "w-5 h-5 text-[#38352F]"
     }, void 0, false, {
         fileName: "[project]/components/ServicesSection.tsx",
-        lineNumber: 19,
-        columnNumber: 25
+        lineNumber: 39,
+        columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0)),
-    'professional-coordination': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$network$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Network$3e$__["Network"], {
+    'bank-loan-money-recovery': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$landmark$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Landmark$3e$__["Landmark"], {
         className: "w-5 h-5 text-[#38352F]"
     }, void 0, false, {
         fileName: "[project]/components/ServicesSection.tsx",
-        lineNumber: 20,
-        columnNumber: 32
+        lineNumber: 43,
+        columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0)),
-    'ongoing-support': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$headphones$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Headphones$3e$__["Headphones"], {
+    'vehicle-rto': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$car$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Car$3e$__["Car"], {
         className: "w-5 h-5 text-[#38352F]"
     }, void 0, false, {
         fileName: "[project]/components/ServicesSection.tsx",
-        lineNumber: 21,
-        columnNumber: 22
+        lineNumber: 47,
+        columnNumber: 5
+    }, ("TURBOPACK compile-time value", void 0)),
+    'family-matters': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__["Heart"], {
+        className: "w-5 h-5 text-[#38352F]"
+    }, void 0, false, {
+        fileName: "[project]/components/ServicesSection.tsx",
+        lineNumber: 51,
+        columnNumber: 5
+    }, ("TURBOPACK compile-time value", void 0)),
+    'business-commercial': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$briefcase$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Briefcase$3e$__["Briefcase"], {
+        className: "w-5 h-5 text-[#38352F]"
+    }, void 0, false, {
+        fileName: "[project]/components/ServicesSection.tsx",
+        lineNumber: 55,
+        columnNumber: 5
+    }, ("TURBOPACK compile-time value", void 0)),
+    'consumer-insurance': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$headphones$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Headphones$3e$__["Headphones"], {
+        className: "w-5 h-5 text-[#38352F]"
+    }, void 0, false, {
+        fileName: "[project]/components/ServicesSection.tsx",
+        lineNumber: 59,
+        columnNumber: 5
+    }, ("TURBOPACK compile-time value", void 0)),
+    'documents-government-services': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__["FileText"], {
+        className: "w-5 h-5 text-[#38352F]"
+    }, void 0, false, {
+        fileName: "[project]/components/ServicesSection.tsx",
+        lineNumber: 63,
+        columnNumber: 5
+    }, ("TURBOPACK compile-time value", void 0)),
+    'others': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$network$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Network$3e$__["Network"], {
+        className: "w-5 h-5 text-[#38352F]"
+    }, void 0, false, {
+        fileName: "[project]/components/ServicesSection.tsx",
+        lineNumber: 67,
+        columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0))
 };
-const ServicesSection = ({ onSelectService, onViewAllServices })=>{
+const ServicesSection = ({ onSelectService })=>{
     const { t, language } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$LanguageContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLanguage"])();
     const services = t.services.items.map((item)=>({
             ...item,
@@ -5400,17 +5338,22 @@ const ServicesSection = ({ onSelectService, onViewAllServices })=>{
                 className: "w-5 h-5 text-[#38352F]"
             }, void 0, false, {
                 fileName: "[project]/components/ServicesSection.tsx",
-                lineNumber: 37,
-                columnNumber: 36
+                lineNumber: 84,
+                columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0))
         }));
+    // Duplicate the services so the marquee can loop seamlessly
+    const marqueeServices = [
+        ...services,
+        ...services
+    ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "services",
         className: "w-full py-12 sm:py-16 lg:py-24 bg-[#FAF9F6] border-t border-[#E8E4DB]",
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 lg:mb-16",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5424,20 +5367,20 @@ const ServicesSection = ({ onSelectService, onViewAllServices })=>{
                                             "aria-hidden": "true"
                                         }, void 0, false, {
                                             fileName: "[project]/components/ServicesSection.tsx",
-                                            lineNumber: 48,
+                                            lineNumber: 103,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             children: t.services.kicker
                                         }, void 0, false, {
                                             fileName: "[project]/components/ServicesSection.tsx",
-                                            lineNumber: 49,
+                                            lineNumber: 107,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/ServicesSection.tsx",
-                                    lineNumber: 47,
+                                    lineNumber: 102,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -5445,149 +5388,147 @@ const ServicesSection = ({ onSelectService, onViewAllServices })=>{
                                     children: t.services.title
                                 }, void 0, false, {
                                     fileName: "[project]/components/ServicesSection.tsx",
-                                    lineNumber: 52,
+                                    lineNumber: 110,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ServicesSection.tsx",
-                            lineNumber: 45,
+                            lineNumber: 100,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "max-w-md space-y-3",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-[13.5px] text-[#635E56] leading-relaxed",
-                                    children: t.services.desc
-                                }, void 0, false, {
-                                    fileName: "[project]/components/ServicesSection.tsx",
-                                    lineNumber: 62,
-                                    columnNumber: 13
-                                }, ("TURBOPACK compile-time value", void 0)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        onClick: onViewAllServices,
-                                        className: "inline-flex items-center gap-1.5 text-xs font-semibold text-[#1F1E1B] hover:text-[#57534D] transition-colors group cursor-pointer",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                children: t.services.viewAll
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/ServicesSection.tsx",
-                                                lineNumber: 70,
-                                                columnNumber: 17
-                                            }, ("TURBOPACK compile-time value", void 0)),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
-                                                className: "w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-1"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/ServicesSection.tsx",
-                                                lineNumber: 71,
-                                                columnNumber: 17
-                                            }, ("TURBOPACK compile-time value", void 0))
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/components/ServicesSection.tsx",
-                                        lineNumber: 66,
-                                        columnNumber: 15
-                                    }, ("TURBOPACK compile-time value", void 0))
-                                }, void 0, false, {
-                                    fileName: "[project]/components/ServicesSection.tsx",
-                                    lineNumber: 65,
-                                    columnNumber: 13
-                                }, ("TURBOPACK compile-time value", void 0))
-                            ]
-                        }, void 0, true, {
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-[13.5px] text-[#635E56] leading-relaxed",
+                                children: t.services.desc
+                            }, void 0, false, {
+                                fileName: "[project]/components/ServicesSection.tsx",
+                                lineNumber: 122,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0))
+                        }, void 0, false, {
                             fileName: "[project]/components/ServicesSection.tsx",
-                            lineNumber: 61,
+                            lineNumber: 121,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/ServicesSection.tsx",
-                    lineNumber: 44,
-                    columnNumber: 9
-                }, ("TURBOPACK compile-time value", void 0)),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-4.5",
-                    children: services.map((service)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            onClick: ()=>onSelectService(service),
-                            className: "group flex flex-col justify-between p-5 sm:p-5 lg:p-6 bg-white border border-[#E8E4DB] rounded-sm hover:border-[#BFB6A6] hover:shadow-md transition-all duration-200 cursor-pointer min-h-[250px] sm:min-h-[270px]",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "w-10 h-10 rounded-sm bg-[#F5F2EA] flex items-center justify-center mb-5 group-hover:bg-[#EBE5D8] transition-colors",
-                                            children: service.icon
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/ServicesSection.tsx",
-                                            lineNumber: 87,
-                                            columnNumber: 17
-                                        }, ("TURBOPACK compile-time value", void 0)),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: `text-base sm:text-lg lg:text-[18.5px] font-medium text-[#1E1D1A] leading-snug mb-2.5 ${language === 'gu' || language === 'hi' ? 'font-sans font-semibold' : 'font-serif'}`,
-                                            children: service.title
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/ServicesSection.tsx",
-                                            lineNumber: 92,
-                                            columnNumber: 17
-                                        }, ("TURBOPACK compile-time value", void 0)),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-[12.5px] text-[#6B655B] leading-relaxed line-clamp-3",
-                                            children: service.shortDesc
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/ServicesSection.tsx",
-                                            lineNumber: 101,
-                                            columnNumber: 17
-                                        }, ("TURBOPACK compile-time value", void 0))
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/ServicesSection.tsx",
-                                    lineNumber: 85,
-                                    columnNumber: 15
-                                }, ("TURBOPACK compile-time value", void 0)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "pt-5 mt-2 border-t border-[#F2EFE9] flex items-center justify-between text-xs font-medium text-[#1E1D1A] group-hover:text-[#806B49] transition-colors",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            children: t.services.learnMore
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/ServicesSection.tsx",
-                                            lineNumber: 108,
-                                            columnNumber: 17
-                                        }, ("TURBOPACK compile-time value", void 0)),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
-                                            className: "w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-1"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/ServicesSection.tsx",
-                                            lineNumber: 109,
-                                            columnNumber: 17
-                                        }, ("TURBOPACK compile-time value", void 0))
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/ServicesSection.tsx",
-                                    lineNumber: 107,
-                                    columnNumber: 15
-                                }, ("TURBOPACK compile-time value", void 0))
-                            ]
-                        }, service.id, true, {
-                            fileName: "[project]/components/ServicesSection.tsx",
-                            lineNumber: 80,
-                            columnNumber: 13
-                        }, ("TURBOPACK compile-time value", void 0)))
-                }, void 0, false, {
-                    fileName: "[project]/components/ServicesSection.tsx",
-                    lineNumber: 78,
+                    lineNumber: 99,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
-            ]
-        }, void 0, true, {
-            fileName: "[project]/components/ServicesSection.tsx",
-            lineNumber: 42,
-            columnNumber: 7
-        }, ("TURBOPACK compile-time value", void 0))
-    }, void 0, false, {
+            }, void 0, false, {
+                fileName: "[project]/components/ServicesSection.tsx",
+                lineNumber: 96,
+                columnNumber: 7
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "relative w-full overflow-hidden",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "pointer-events-none absolute left-0 top-0 bottom-0 w-8 sm:w-12 lg:w-16 z-10 bg-gradient-to-r from-[#FAF9F6] to-transparent"
+                        }, void 0, false, {
+                            fileName: "[project]/components/ServicesSection.tsx",
+                            lineNumber: 136,
+                            columnNumber: 5
+                        }, ("TURBOPACK compile-time value", void 0)),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "pointer-events-none absolute right-0 top-0 bottom-0 w-8 sm:w-12 lg:w-16 z-10 bg-gradient-to-l from-[#FAF9F6] to-transparent"
+                        }, void 0, false, {
+                            fileName: "[project]/components/ServicesSection.tsx",
+                            lineNumber: 139,
+                            columnNumber: 5
+                        }, ("TURBOPACK compile-time value", void 0)),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "services-marquee-track flex w-max gap-4 lg:gap-5",
+                            children: marqueeServices.map((service, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    onClick: ()=>onSelectService(service),
+                                    className: "\n            group\n            flex-shrink-0\n            flex\n            flex-col\n            justify-between\n            p-5\n            sm:p-5\n            lg:p-6\n            bg-white\n            border\n            border-[#E8E4DB]\n            rounded-sm\n            hover:border-[#BFB6A6]\n            hover:shadow-md\n            transition-all\n            duration-200\n            cursor-pointer\n            w-[250px]\n            sm:w-[275px]\n            lg:w-[290px]\n            min-h-[250px]\n            sm:min-h-[270px]\n          ",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "w-10 h-10 rounded-sm bg-[#F5F2EA] flex items-center justify-center mb-5 group-hover:bg-[#EBE5D8] transition-colors",
+                                                    children: service.icon
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/ServicesSection.tsx",
+                                                    lineNumber: 172,
+                                                    columnNumber: 13
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                    className: `text-base sm:text-lg lg:text-[18.5px] font-medium text-[#1E1D1A] leading-snug mb-2.5 ${language === 'gu' || language === 'hi' ? 'font-sans font-semibold' : 'font-serif'}`,
+                                                    children: service.title
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/ServicesSection.tsx",
+                                                    lineNumber: 176,
+                                                    columnNumber: 13
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-[12.5px] text-[#6B655B] leading-relaxed line-clamp-3",
+                                                    children: service.shortDesc
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/ServicesSection.tsx",
+                                                    lineNumber: 186,
+                                                    columnNumber: 13
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/ServicesSection.tsx",
+                                            lineNumber: 171,
+                                            columnNumber: 11
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "pt-5 mt-2 border-t border-[#F2EFE9] flex items-center justify-between text-xs font-medium text-[#1E1D1A] group-hover:text-[#806B49] transition-colors",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    children: t.services.learnMore
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/ServicesSection.tsx",
+                                                    lineNumber: 192,
+                                                    columnNumber: 13
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
+                                                    className: "w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-1"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/ServicesSection.tsx",
+                                                    lineNumber: 194,
+                                                    columnNumber: 13
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/ServicesSection.tsx",
+                                            lineNumber: 191,
+                                            columnNumber: 11
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    ]
+                                }, `${service.id}-${index}`, true, {
+                                    fileName: "[project]/components/ServicesSection.tsx",
+                                    lineNumber: 143,
+                                    columnNumber: 9
+                                }, ("TURBOPACK compile-time value", void 0)))
+                        }, void 0, false, {
+                            fileName: "[project]/components/ServicesSection.tsx",
+                            lineNumber: 141,
+                            columnNumber: 5
+                        }, ("TURBOPACK compile-time value", void 0))
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/ServicesSection.tsx",
+                    lineNumber: 133,
+                    columnNumber: 3
+                }, ("TURBOPACK compile-time value", void 0))
+            }, void 0, false, {
+                fileName: "[project]/components/ServicesSection.tsx",
+                lineNumber: 132,
+                columnNumber: 1
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
         fileName: "[project]/components/ServicesSection.tsx",
-        lineNumber: 41,
+        lineNumber: 92,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -5613,36 +5554,207 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$LanguageContext$2
 ;
 const WhatsAppDrawer = ({ isOpen, onClose })=>{
     const { language } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$LanguageContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLanguage"])();
-    const isGu = language === 'gu';
-    const isHi = language === 'hi';
-    const defaultTopic = isGu ? 'સામાન્ય પરામર્શ' : isHi ? 'सामान्य परामर्श' : 'General Consultation';
-    const [topic, setTopic] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(defaultTopic);
-    const [customText, setCustomText] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(isGu ? 'નમસ્તે CASE SUNO, મેં તમારી વેબસાઇટ જોઈ છે અને મારી પરિસ્થિતિમાં આગળ શું કરવું તે અંગે મારે માર્ગદર્શન જોઈએ છે.' : isHi ? 'नमस्ते CASE SUNO, मैंने आपकी वेबसाइट देखी है और मुझे अपनी स्थिति में अगले कदम के संबंध में मार्गदर्शन चाहिए।' : 'Hello CASE SUNO, I saw your website and would like guidance on what step to take next regarding my situation.');
+    const getTopics = ()=>{
+        if (language === 'gu') {
+            return [
+                {
+                    id: 'notice-summons-court-case',
+                    label: 'નોટિસ, સમન્સ અને કોર્ટ / કેસ',
+                    message: 'નમસ્તે CASE SUNO, મને નોટિસ, સમન્સ અથવા કોર્ટ / કેસ સંબંધિત બાબતમાં મદદ જોઈએ છે.'
+                },
+                {
+                    id: 'police-cyber-online-fraud',
+                    label: 'પોલીસ, સાયબર અને ઓનલાઈન ફ્રોડ',
+                    message: 'નમસ્તે CASE SUNO, મને પોલીસ, સાયબર અથવા ઓનલાઈન ફ્રોડ સંબંધિત બાબતમાં મદદ જોઈએ છે.'
+                },
+                {
+                    id: 'property-land',
+                    label: 'મિલકત અને જમીન',
+                    message: 'નમસ્તે CASE SUNO, મને મિલકત અથવા જમીન સંબંધિત બાબતમાં મદદ જોઈએ છે.'
+                },
+                {
+                    id: 'bank-loan-money-recovery',
+                    label: 'બેંક, લોન, પૈસા અને રિકવરી',
+                    message: 'નમસ્તે CASE SUNO, મને બેંક, લોન, પૈસા અથવા રિકવરી સંબંધિત બાબતમાં મદદ જોઈએ છે.'
+                },
+                {
+                    id: 'vehicle-rto',
+                    label: 'વાહન અને RTO',
+                    message: 'નમસ્તે CASE SUNO, મને વાહન અથવા RTO સંબંધિત બાબતમાં મદદ જોઈએ છે.'
+                },
+                {
+                    id: 'family-matters',
+                    label: 'પારિવારિક બાબતો',
+                    message: 'નમસ્તે CASE SUNO, મને પારિવારિક બાબતમાં મદદ અથવા માર્ગદર્શન જોઈએ છે.'
+                },
+                {
+                    id: 'business-commercial',
+                    label: 'વ્યવસાય અને કોમર્શિયલ બાબતો',
+                    message: 'નમસ્તે CASE SUNO, મને વ્યવસાય અથવા કોમર્શિયલ બાબતમાં મદદ જોઈએ છે.'
+                },
+                {
+                    id: 'consumer-insurance',
+                    label: 'ગ્રાહક અને વીમા',
+                    message: 'નમસ્તે CASE SUNO, મને ગ્રાહક અથવા વીમા સંબંધિત બાબતમાં મદદ જોઈએ છે.'
+                },
+                {
+                    id: 'documents-government-services',
+                    label: 'દસ્તાવેજો અને સરકારી સેવાઓ',
+                    message: 'નમસ્તે CASE SUNO, મને દસ્તાવેજ અથવા સરકારી સેવા સંબંધિત બાબતમાં મદદ જોઈએ છે.'
+                },
+                {
+                    id: 'others',
+                    label: 'અન્ય',
+                    message: "Hello CASE SUNO, મારે એક બાબતે મદદ જોઈએ છે."
+                }
+            ];
+        }
+        if (language === 'hi') {
+            return [
+                {
+                    id: 'notice-summons-court-case',
+                    label: 'नोटिस, समन और कोर्ट / केस',
+                    message: 'नमस्ते CASE SUNO, मुझे नोटिस, समन या कोर्ट / केस से जुड़े मामले में मदद चाहिए।'
+                },
+                {
+                    id: 'police-cyber-online-fraud',
+                    label: 'पुलिस, साइबर और ऑनलाइन फ्रॉड',
+                    message: 'नमस्ते CASE SUNO, मुझे पुलिस, साइबर या ऑनलाइन फ्रॉड से जुड़े मामले में मदद चाहिए।'
+                },
+                {
+                    id: 'property-land',
+                    label: 'संपत्ति और भूमि',
+                    message: 'नमस्ते CASE SUNO, मुझे संपत्ति या जमीन से जुड़े मामले में मदद चाहिए।'
+                },
+                {
+                    id: 'bank-loan-money-recovery',
+                    label: 'बैंक, लोन, पैसा और रिकवरी',
+                    message: 'नमस्ते CASE SUNO, मुझे बैंक, लोन, पैसे या रिकवरी से जुड़े मामले में मदद चाहिए।'
+                },
+                {
+                    id: 'vehicle-rto',
+                    label: 'वाहन और RTO',
+                    message: 'नमस्ते CASE SUNO, मुझे वाहन या RTO से जुड़े मामले में मदद चाहिए।'
+                },
+                {
+                    id: 'family-matters',
+                    label: 'पारिवारिक मामले',
+                    message: 'नमस्ते CASE SUNO, मुझे पारिवारिक मामले में मदद या मार्गदर्शन चाहिए।'
+                },
+                {
+                    id: 'business-commercial',
+                    label: 'व्यवसाय और कमर्शियल मामले',
+                    message: 'नमस्ते CASE SUNO, मुझे व्यवसाय या कमर्शियल मामले में मदद चाहिए।'
+                },
+                {
+                    id: 'consumer-insurance',
+                    label: 'उपभोक्ता और बीमा',
+                    message: 'नमस्ते CASE SUNO, मुझे उपभोक्ता या बीमा से जुड़े मामले में मदद चाहिए।'
+                },
+                {
+                    id: 'documents-government-services',
+                    label: 'दस्तावेज और सरकारी सेवाएं',
+                    message: 'नमस्ते CASE SUNO, मुझे दस्तावेज या सरकारी सेवा से जुड़े मामले में मदद चाहिए।'
+                },
+                {
+                    id: 'others',
+                    label: 'अन्य',
+                    message: 'नमस्ते CASE SUNO, मुझे एक मामले में मदद चाहिए।'
+                }
+            ];
+        }
+        return [
+            {
+                id: 'notice-summons-court-case',
+                label: 'Notice, Summons & Court / Case',
+                message: 'Hello CASE SUNO, I need help with a notice, summons, or court / case matter.'
+            },
+            {
+                id: 'police-cyber-online-fraud',
+                label: 'Police, Cyber & Online Fraud',
+                message: 'Hello CASE SUNO, I need help with a police, cyber, or online fraud matter.'
+            },
+            {
+                id: 'property-land',
+                label: 'Property & Land',
+                message: 'Hello CASE SUNO, I need help with a property or land matter.'
+            },
+            {
+                id: 'bank-loan-money-recovery',
+                label: 'Bank, Loan, Money & Recovery',
+                message: 'Hello CASE SUNO, I need help with a bank, loan, money, or recovery matter.'
+            },
+            {
+                id: 'vehicle-rto',
+                label: 'Vehicle & RTO',
+                message: 'Hello CASE SUNO, I need help with a vehicle or RTO matter.'
+            },
+            {
+                id: 'family-matters',
+                label: 'Family Matters',
+                message: 'Hello CASE SUNO, I need help or guidance with a family matter.'
+            },
+            {
+                id: 'business-commercial',
+                label: 'Business & Commercial Matters',
+                message: 'Hello CASE SUNO, I need help with a business or commercial matter.'
+            },
+            {
+                id: 'consumer-insurance',
+                label: 'Consumer & Insurance',
+                message: 'Hello CASE SUNO, I need help with a consumer or insurance matter.'
+            },
+            {
+                id: 'documents-government-services',
+                label: 'Documents & Government Services',
+                message: 'Hello CASE SUNO, I need help with a document or government service matter.'
+            },
+            {
+                id: 'others',
+                label: 'Others',
+                message: 'Hello CASE SUNO, I have a query and would like some help.'
+            }
+        ];
+    };
+    const topics = getTopics();
+    const defaultTopic = topics[0];
+    const [selectedTopicId, setSelectedTopicId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(defaultTopic.id);
+    const [customText, setCustomText] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(defaultTopic.message);
+    /*
+   * Reset the default topic/message whenever the language changes.
+   * This prevents an English message from remaining after switching
+   * the website to Gujarati or Hindi.
+   */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        const firstTopic = getTopics()[0];
+        setSelectedTopicId(firstTopic.id);
+        setCustomText(firstTopic.message);
+    }, [
+        language
+    ]);
     if (!isOpen) return null;
-    const topics = isGu ? [
-        'વ્યક્તિગત સહાય',
-        'વ્યવસાય સહાય',
-        'દસ્તાવેજીકરણ સહાય',
-        'કાનૂની નોટિસ સમીક્ષા',
-        'સામાન્ય પરામર્શ'
-    ] : isHi ? [
-        'व्यक्तिगत सहायता',
-        'व्यापार सहायता',
-        'दस्तावेज़ीकरण सहायता',
-        'कानूनी नोटिस समीक्षा',
-        'सामान्य परामर्श'
-    ] : [
-        'Individual Assistance',
-        'Business Support',
-        'Documentation Help',
-        'Legal Notice Review',
-        'General Consultation'
-    ];
+    const handleTopicSelect = (topic)=>{
+        setSelectedTopicId(topic.id);
+        setCustomText(topic.message);
+    };
     const handleLaunchWhatsApp = ()=>{
-        const fullMsg = `*CASE SUNO Inquiry*\n*Topic:* ${topic}\n\n${customText}`;
+        const selectedTopic = topics.find((topic)=>topic.id === selectedTopicId);
+        const topicLabel = selectedTopic?.label || defaultTopic.label;
+        const fullMsg = `*CASE SUNO Inquiry*\n*Topic:* ${topicLabel}\n\n${customText}`;
         const url = `https://wa.me/919876543210?text=${encodeURIComponent(fullMsg)}`;
-        window.open(url, '_blank');
+        window.open(url, '_blank', 'noopener,noreferrer');
         onClose();
+    };
+    const text = {
+        headerTitle: language === 'gu' ? 'CASE SUNO સપોર્ટ' : language === 'hi' ? 'CASE SUNO सहायता' : 'CASE SUNO Support',
+        online: language === 'gu' ? 'ઓનલાઇન · ટૂંક સમયમાં જવાબ' : language === 'hi' ? 'ऑनलाइन · जल्द जवाब मिलेगा' : 'Online · Quick response',
+        welcome: language === 'gu' ? 'નમસ્તે 🙏 CASE SUNO માં આપનું સ્વાગત છે.' : language === 'hi' ? 'नमस्ते 🙏 CASE SUNO में आपका स्वागत है।' : 'Namaste 🙏 Welcome to CASE SUNO.',
+        intro: language === 'gu' ? 'તમારી સમસ્યા અથવા જરૂરિયાત જણાવો. નીચેનો વિષય પસંદ કરો અને અમને મેસેજ મોકલો.' : language === 'hi' ? 'अपनी समस्या या जरूरत बताएं। नीचे एक विषय चुनें और हमें मैसेज भेजें।' : 'Tell us about your situation. Choose a topic below and send us a message.',
+        now: language === 'gu' ? 'હમણાં જ' : language === 'hi' ? 'अभी' : 'Just now',
+        quickTopic: language === 'gu' ? 'વિષય પસંદ કરો' : language === 'hi' ? 'विषय चुनें' : 'Choose a topic',
+        messagePreview: language === 'gu' ? 'તમારો મેસેજ' : language === 'hi' ? 'आपका संदेश' : 'Your message',
+        secure: language === 'gu' ? 'WhatsApp પર સુરક્ષિત ચેટ' : language === 'hi' ? 'WhatsApp पर सुरक्षित चैट' : 'Secure chat on WhatsApp',
+        cancel: language === 'gu' ? 'રદ કરો' : language === 'hi' ? 'रद्द करें' : 'Cancel',
+        open: language === 'gu' ? 'વોટ્સએપ ખોલો' : language === 'hi' ? 'व्हाट्सएप खोलें' : 'Open WhatsApp'
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-200",
@@ -5663,64 +5775,65 @@ const WhatsAppDrawer = ({ isOpen, onClose })=>{
                                         className: "w-5 h-5 text-white"
                                     }, void 0, false, {
                                         fileName: "[project]/components/WhatsAppDrawer.tsx",
-                                        lineNumber: 56,
+                                        lineNumber: 350,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/components/WhatsAppDrawer.tsx",
-                                    lineNumber: 55,
+                                    lineNumber: 349,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                             className: "font-semibold text-sm leading-tight",
-                                            children: "CASE SUNO Support Desk"
+                                            children: text.headerTitle
                                         }, void 0, false, {
                                             fileName: "[project]/components/WhatsAppDrawer.tsx",
-                                            lineNumber: 59,
+                                            lineNumber: 354,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "text-[11px] text-[#A7D8CC]",
-                                            children: isGu ? 'ઓનલાઇન · થોડીવારમાં પ્રત્યુત્તર' : isHi ? 'ऑनलाइन · कुछ ही मिनटों में उत्तर' : 'Online · Replies within minutes'
+                                            children: text.online
                                         }, void 0, false, {
                                             fileName: "[project]/components/WhatsAppDrawer.tsx",
-                                            lineNumber: 60,
+                                            lineNumber: 358,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/WhatsAppDrawer.tsx",
-                                    lineNumber: 58,
+                                    lineNumber: 353,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/WhatsAppDrawer.tsx",
-                            lineNumber: 54,
+                            lineNumber: 348,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: onClose,
                             className: "p-1 rounded-full text-white/80 hover:text-white hover:bg-white/10 transition-colors cursor-pointer",
                             "aria-label": "Close",
+                            type: "button",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
                                 className: "w-5 h-5"
                             }, void 0, false, {
                                 fileName: "[project]/components/WhatsAppDrawer.tsx",
-                                lineNumber: 71,
+                                lineNumber: 370,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/components/WhatsAppDrawer.tsx",
-                            lineNumber: 66,
+                            lineNumber: 364,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/WhatsAppDrawer.tsx",
-                    lineNumber: 53,
+                    lineNumber: 347,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5733,36 +5846,36 @@ const WhatsAppDrawer = ({ isOpen, onClose })=>{
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "font-medium text-[#1E1D1A]",
-                                        children: isGu ? 'નમસ્તે 🙏 CASE SUNO માં આપનું સ્વાગત છે.' : isHi ? 'नमस्ते 🙏 CASE SUNO में आपका स्वागत है।' : 'Namaste 🙏 Welcome to CASE SUNO.'
+                                        children: text.welcome
                                     }, void 0, false, {
                                         fileName: "[project]/components/WhatsAppDrawer.tsx",
-                                        lineNumber: 80,
+                                        lineNumber: 379,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        children: isGu ? 'અમારા કેસ કોઓર્ડિનેટર આજે તમને કેવી રીતે મદદ કરી શકે? વિષય પસંદ કરો અને સીધા સંપર્કમાં આવો.' : isHi ? 'हमारे केस समन्वयक आज आपकी किस प्रकार सहायता कर सकते हैं? विषय चुनें और सीधे संपर्क करें।' : 'How can our case coordinators assist you today? Please choose your topic and we will connect you directly.'
+                                        children: text.intro
                                     }, void 0, false, {
                                         fileName: "[project]/components/WhatsAppDrawer.tsx",
-                                        lineNumber: 83,
+                                        lineNumber: 383,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "text-[9px] text-[#8C8479] text-right block",
-                                        children: isGu ? 'હમણાં જ' : isHi ? 'अभी' : 'Just now'
+                                        children: text.now
                                     }, void 0, false, {
                                         fileName: "[project]/components/WhatsAppDrawer.tsx",
-                                        lineNumber: 90,
+                                        lineNumber: 385,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/WhatsAppDrawer.tsx",
-                                lineNumber: 79,
+                                lineNumber: 378,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/components/WhatsAppDrawer.tsx",
-                            lineNumber: 78,
+                            lineNumber: 377,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5770,36 +5883,33 @@ const WhatsAppDrawer = ({ isOpen, onClose })=>{
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "text-[11px] font-semibold text-[#5A554D] uppercase tracking-wider block",
-                                    children: isGu ? 'ઝડપી વિષય પસંદ કરો:' : isHi ? 'त्वरित विषय चुनें:' : 'Quick Topic:'
+                                    children: text.quickTopic
                                 }, void 0, false, {
                                     fileName: "[project]/components/WhatsAppDrawer.tsx",
-                                    lineNumber: 98,
+                                    lineNumber: 393,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex flex-wrap gap-1.5",
-                                    children: topics.map((t)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    children: topics.map((topic)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             type: "button",
-                                            onClick: ()=>{
-                                                setTopic(t);
-                                                setCustomText(isGu ? `નમસ્તે CASE SUNO, મારે ${t} અંગે માર્ગદર્શન જોઈએ છે. કૃપા કરીને આગળની પ્રક્રિયા જણાવો.` : isHi ? `नमस्ते CASE SUNO, मुझे ${t} के संबंध में मार्गदर्शन चाहिए। कृपया आगे की प्रक्रिया बताएं।` : `Hello CASE SUNO, I need guidance regarding ${t}. Please let me know how we can proceed.`);
-                                            },
-                                            className: `px-2.5 py-1 text-[11px] rounded-full border transition-colors cursor-pointer ${topic === t ? 'bg-[#128C7E] text-white border-[#128C7E]' : 'bg-white text-[#38352F] border-[#D1CBC0] hover:bg-[#F7F5F0]'}`,
-                                            children: t
-                                        }, t, false, {
+                                            onClick: ()=>handleTopicSelect(topic),
+                                            className: `px-2.5 py-1 text-[11px] rounded-full border transition-colors cursor-pointer ${selectedTopicId === topic.id ? 'bg-[#128C7E] text-white border-[#128C7E]' : 'bg-white text-[#38352F] border-[#D1CBC0] hover:bg-[#F7F5F0]'}`,
+                                            children: topic.label
+                                        }, topic.id, false, {
                                             fileName: "[project]/components/WhatsAppDrawer.tsx",
-                                            lineNumber: 103,
+                                            lineNumber: 399,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)))
                                 }, void 0, false, {
                                     fileName: "[project]/components/WhatsAppDrawer.tsx",
-                                    lineNumber: 101,
+                                    lineNumber: 397,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/WhatsAppDrawer.tsx",
-                            lineNumber: 97,
+                            lineNumber: 392,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5807,26 +5917,26 @@ const WhatsAppDrawer = ({ isOpen, onClose })=>{
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                     className: "text-[11px] font-semibold text-[#5A554D] uppercase tracking-wider block",
-                                    children: isGu ? 'સંદેશ પૂર્વાવલોકન:' : isHi ? 'संदेश पूर्वावलोकन:' : 'Message Preview:'
+                                    children: text.messagePreview
                                 }, void 0, false, {
                                     fileName: "[project]/components/WhatsAppDrawer.tsx",
-                                    lineNumber: 130,
+                                    lineNumber: 417,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
                                     rows: 3,
                                     value: customText,
                                     onChange: (e)=>setCustomText(e.target.value),
-                                    className: "w-full p-2.5 text-xs bg-white border border-[#C5BFA3] rounded-md text-[#1E1D1A] focus:outline-hidden"
+                                    className: "w-full p-2.5 text-xs bg-white border border-[#C5BFA3] rounded-md text-[#1E1D1A] focus:outline-hidden resize-none"
                                 }, void 0, false, {
                                     fileName: "[project]/components/WhatsAppDrawer.tsx",
-                                    lineNumber: 133,
+                                    lineNumber: 421,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/WhatsAppDrawer.tsx",
-                            lineNumber: 129,
+                            lineNumber: 416,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5836,26 +5946,26 @@ const WhatsAppDrawer = ({ isOpen, onClose })=>{
                                     className: "w-3.5 h-3.5 text-[#128C7E] shrink-0"
                                 }, void 0, false, {
                                     fileName: "[project]/components/WhatsAppDrawer.tsx",
-                                    lineNumber: 142,
+                                    lineNumber: 431,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    children: isGu ? 'સુરક્ષિત વોટ્સએપ એન્ડ-ટુ-એન્ડ એન્ક્રિપ્ટેડ ચેટ' : isHi ? 'सुरक्षित व्हाट्सएप एंड-टू-एंड एन्क्रिप्टेड चैट' : 'Direct WhatsApp end-to-end encrypted chat'
+                                    children: text.secure
                                 }, void 0, false, {
                                     fileName: "[project]/components/WhatsAppDrawer.tsx",
-                                    lineNumber: 143,
+                                    lineNumber: 433,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/WhatsAppDrawer.tsx",
-                            lineNumber: 141,
+                            lineNumber: 430,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/WhatsAppDrawer.tsx",
-                    lineNumber: 76,
+                    lineNumber: 375,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5863,59 +5973,61 @@ const WhatsAppDrawer = ({ isOpen, onClose })=>{
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: onClose,
+                            type: "button",
                             className: "px-3.5 py-2 text-xs text-[#6B655B] hover:text-black font-medium cursor-pointer",
-                            children: isGu ? 'રદ કરો' : isHi ? 'रद्द करें' : 'Cancel'
+                            children: text.cancel
                         }, void 0, false, {
                             fileName: "[project]/components/WhatsAppDrawer.tsx",
-                            lineNumber: 155,
+                            lineNumber: 439,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: handleLaunchWhatsApp,
+                            type: "button",
                             className: "flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-[#25D366] hover:bg-[#1EBE5D] text-white text-xs font-semibold rounded-md shadow-xs transition-colors cursor-pointer",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Send$3e$__["Send"], {
                                     className: "w-3.5 h-3.5"
                                 }, void 0, false, {
                                     fileName: "[project]/components/WhatsAppDrawer.tsx",
-                                    lineNumber: 166,
+                                    lineNumber: 452,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    children: isGu ? 'વોટ્સએપ ખોલો' : isHi ? 'व्हाट्सएप खोलें' : 'Open in WhatsApp'
+                                    children: text.open
                                 }, void 0, false, {
                                     fileName: "[project]/components/WhatsAppDrawer.tsx",
-                                    lineNumber: 167,
+                                    lineNumber: 454,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$external$2d$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ExternalLink$3e$__["ExternalLink"], {
                                     className: "w-3.5 h-3.5"
                                 }, void 0, false, {
                                     fileName: "[project]/components/WhatsAppDrawer.tsx",
-                                    lineNumber: 168,
+                                    lineNumber: 456,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/WhatsAppDrawer.tsx",
-                            lineNumber: 162,
+                            lineNumber: 447,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/WhatsAppDrawer.tsx",
-                    lineNumber: 154,
+                    lineNumber: 438,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/components/WhatsAppDrawer.tsx",
-            lineNumber: 51,
+            lineNumber: 345,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/components/WhatsAppDrawer.tsx",
-        lineNumber: 46,
+        lineNumber: 340,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
